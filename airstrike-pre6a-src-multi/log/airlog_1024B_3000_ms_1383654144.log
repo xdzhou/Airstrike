@@ -1,0 +1,3179 @@
+1	Starting the game	0	0 Tue Nov  5 13:22:24 2013
+1	2 players; 2 teams; load 1024 Bytes each 3000ms	0	0 Tue Nov  5 13:22:24 2013
+2	Listening on port	1234	0 Tue Nov  5 13:22:24 2013
+5	Total Output	0	1020 Tue Nov  5 13:22:25 2013
+6	Total Input	0	1020 Tue Nov  5 13:22:25 2013
+3	Output	0	1020 Tue Nov  5 13:22:25 2013
+4	Input	0	1020 Tue Nov  5 13:22:25 2013
+12	fps	33	1020 Tue Nov  5 13:22:25 2013
+13	Clients	0	1020 Tue Nov  5 13:22:25 2013
+11	CPU %	0	1020 Tue Nov  5 13:22:25 2013
+5	Total Output	0	2040 Tue Nov  5 13:22:26 2013
+6	Total Input	0	2040 Tue Nov  5 13:22:26 2013
+3	Output	0	2040 Tue Nov  5 13:22:26 2013
+4	Input	0	2040 Tue Nov  5 13:22:26 2013
+12	fps	33	2040 Tue Nov  5 13:22:26 2013
+13	Clients	0	2040 Tue Nov  5 13:22:26 2013
+11	CPU %	1	2040 Tue Nov  5 13:22:26 2013
+5	Total Output	0	3060 Tue Nov  5 13:22:27 2013
+6	Total Input	0	3060 Tue Nov  5 13:22:27 2013
+3	Output	0	3060 Tue Nov  5 13:22:27 2013
+4	Input	0	3060 Tue Nov  5 13:22:27 2013
+12	fps	33	3060 Tue Nov  5 13:22:27 2013
+13	Clients	0	3060 Tue Nov  5 13:22:27 2013
+11	CPU %	0	3060 Tue Nov  5 13:22:27 2013
+5	Total Output	0	4080 Tue Nov  5 13:22:28 2013
+6	Total Input	0	4080 Tue Nov  5 13:22:28 2013
+3	Output	0	4080 Tue Nov  5 13:22:28 2013
+4	Input	0	4080 Tue Nov  5 13:22:28 2013
+12	fps	33	4080 Tue Nov  5 13:22:28 2013
+13	Clients	0	4080 Tue Nov  5 13:22:28 2013
+11	CPU %	1	4080 Tue Nov  5 13:22:28 2013
+5	Total Output	0	5100 Tue Nov  5 13:22:29 2013
+6	Total Input	0	5100 Tue Nov  5 13:22:29 2013
+3	Output	0	5100 Tue Nov  5 13:22:29 2013
+4	Input	0	5100 Tue Nov  5 13:22:29 2013
+12	fps	33	5100 Tue Nov  5 13:22:29 2013
+13	Clients	0	5100 Tue Nov  5 13:22:29 2013
+11	CPU %	1	5100 Tue Nov  5 13:22:29 2013
+15	A new client connected from 	16885952	5370 Tue Nov  5 13:22:30 2013
+7	MSG_HELLO message received from	0	5370 Tue Nov  5 13:22:30 2013
+7	MSG_HELLO sent to	0	5370 Tue Nov  5 13:22:30 2013
+5	Total Output	1684	6120 Tue Nov  5 13:22:30 2013
+6	Total Input	1584	6120 Tue Nov  5 13:22:30 2013
+3	Output	1684	6120 Tue Nov  5 13:22:30 2013
+4	Input	1584	6120 Tue Nov  5 13:22:30 2013
+12	fps	33	6120 Tue Nov  5 13:22:30 2013
+13	Clients	1	6120 Tue Nov  5 13:22:30 2013
+10	Ping average	500	6120 Tue Nov  5 13:22:30 2013
+8	Ping min	500	6120 Tue Nov  5 13:22:30 2013
+9	Ping max	500	6120 Tue Nov  5 13:22:30 2013
+11	CPU %	1	6120 Tue Nov  5 13:22:30 2013
+5	Total Output	2476	7140 Tue Nov  5 13:22:31 2013
+6	Total Input	3696	7140 Tue Nov  5 13:22:31 2013
+3	Output	792	7140 Tue Nov  5 13:22:31 2013
+4	Input	2112	7140 Tue Nov  5 13:22:31 2013
+12	fps	33	7140 Tue Nov  5 13:22:31 2013
+13	Clients	1	7140 Tue Nov  5 13:22:31 2013
+10	Ping average	500	7140 Tue Nov  5 13:22:31 2013
+8	Ping min	500	7140 Tue Nov  5 13:22:31 2013
+9	Ping max	500	7140 Tue Nov  5 13:22:31 2013
+11	CPU %	1	7140 Tue Nov  5 13:22:31 2013
+5	Total Output	3180	8160 Tue Nov  5 13:22:33 2013
+6	Total Input	5852	8160 Tue Nov  5 13:22:33 2013
+3	Output	704	8160 Tue Nov  5 13:22:33 2013
+4	Input	2156	8160 Tue Nov  5 13:22:33 2013
+12	fps	33	8160 Tue Nov  5 13:22:33 2013
+13	Clients	1	8160 Tue Nov  5 13:22:33 2013
+10	Ping average	500	8160 Tue Nov  5 13:22:33 2013
+8	Ping min	500	8160 Tue Nov  5 13:22:33 2013
+9	Ping max	500	8160 Tue Nov  5 13:22:33 2013
+11	CPU %	2	8160 Tue Nov  5 13:22:33 2013
+5	Total Output	4996	9180 Tue Nov  5 13:22:34 2013
+6	Total Input	7920	9180 Tue Nov  5 13:22:34 2013
+3	Output	1816	9180 Tue Nov  5 13:22:34 2013
+4	Input	2068	9180 Tue Nov  5 13:22:34 2013
+12	fps	33	9180 Tue Nov  5 13:22:34 2013
+13	Clients	1	9180 Tue Nov  5 13:22:34 2013
+10	Ping average	500	9180 Tue Nov  5 13:22:34 2013
+8	Ping min	500	9180 Tue Nov  5 13:22:34 2013
+9	Ping max	500	9180 Tue Nov  5 13:22:34 2013
+11	CPU %	0	9180 Tue Nov  5 13:22:34 2013
+5	Total Output	5700	10200 Tue Nov  5 13:22:35 2013
+6	Total Input	10032	10200 Tue Nov  5 13:22:35 2013
+3	Output	704	10200 Tue Nov  5 13:22:35 2013
+4	Input	2112	10200 Tue Nov  5 13:22:35 2013
+12	fps	33	10200 Tue Nov  5 13:22:35 2013
+13	Clients	1	10200 Tue Nov  5 13:22:35 2013
+10	Ping average	500	10200 Tue Nov  5 13:22:35 2013
+8	Ping min	500	10200 Tue Nov  5 13:22:35 2013
+9	Ping max	500	10200 Tue Nov  5 13:22:35 2013
+11	CPU %	2	10200 Tue Nov  5 13:22:35 2013
+5	Total Output	6492	11220 Tue Nov  5 13:22:36 2013
+6	Total Input	12100	11220 Tue Nov  5 13:22:36 2013
+3	Output	792	11220 Tue Nov  5 13:22:36 2013
+4	Input	2068	11220 Tue Nov  5 13:22:36 2013
+12	fps	33	11220 Tue Nov  5 13:22:36 2013
+13	Clients	1	11220 Tue Nov  5 13:22:36 2013
+10	Ping average	500	11220 Tue Nov  5 13:22:36 2013
+8	Ping min	500	11220 Tue Nov  5 13:22:36 2013
+9	Ping max	500	11220 Tue Nov  5 13:22:36 2013
+11	CPU %	1	11220 Tue Nov  5 13:22:36 2013
+15	A new client connected from 	16777343	12090 Tue Nov  5 13:22:36 2013
+7	MSG_HELLO message received from	1	12090 Tue Nov  5 13:22:36 2013
+7	MSG_HELLO sent to	1	12090 Tue Nov  5 13:22:36 2013
+5	Total Output	8440	12240 Tue Nov  5 13:22:37 2013
+6	Total Input	14256	12240 Tue Nov  5 13:22:37 2013
+3	Output	1948	12240 Tue Nov  5 13:22:37 2013
+4	Input	2156	12240 Tue Nov  5 13:22:37 2013
+12	fps	33	12240 Tue Nov  5 13:22:37 2013
+13	Clients	2	12240 Tue Nov  5 13:22:37 2013
+10	Ping average	125	12240 Tue Nov  5 13:22:37 2013
+8	Ping min	16	12240 Tue Nov  5 13:22:37 2013
+9	Ping max	234	12240 Tue Nov  5 13:22:37 2013
+11	CPU %	1	12240 Tue Nov  5 13:22:37 2013
+5	Total Output	10024	13260 Tue Nov  5 13:22:38 2013
+6	Total Input	16368	13260 Tue Nov  5 13:22:38 2013
+3	Output	1584	13260 Tue Nov  5 13:22:38 2013
+4	Input	2112	13260 Tue Nov  5 13:22:38 2013
+12	fps	33	13260 Tue Nov  5 13:22:38 2013
+13	Clients	2	13260 Tue Nov  5 13:22:38 2013
+10	Ping average	21	13260 Tue Nov  5 13:22:38 2013
+8	Ping min	11	13260 Tue Nov  5 13:22:38 2013
+9	Ping max	31	13260 Tue Nov  5 13:22:38 2013
+11	CPU %	1	13260 Tue Nov  5 13:22:38 2013
+5	Total Output	11432	14280 Tue Nov  5 13:22:39 2013
+6	Total Input	18524	14280 Tue Nov  5 13:22:39 2013
+3	Output	1408	14280 Tue Nov  5 13:22:39 2013
+4	Input	2156	14280 Tue Nov  5 13:22:39 2013
+12	fps	32	14280 Tue Nov  5 13:22:39 2013
+13	Clients	2	14280 Tue Nov  5 13:22:39 2013
+10	Ping average	13	14280 Tue Nov  5 13:22:39 2013
+8	Ping min	13	14280 Tue Nov  5 13:22:39 2013
+9	Ping max	14	14280 Tue Nov  5 13:22:39 2013
+11	CPU %	2	14280 Tue Nov  5 13:22:39 2013
+5	Total Output	15064	15300 Tue Nov  5 13:22:40 2013
+6	Total Input	20592	15300 Tue Nov  5 13:22:40 2013
+3	Output	3632	15300 Tue Nov  5 13:22:40 2013
+4	Input	2068	15300 Tue Nov  5 13:22:40 2013
+12	fps	33	15300 Tue Nov  5 13:22:40 2013
+13	Clients	2	15300 Tue Nov  5 13:22:40 2013
+10	Ping average	12	15300 Tue Nov  5 13:22:40 2013
+8	Ping min	10	15300 Tue Nov  5 13:22:40 2013
+9	Ping max	15	15300 Tue Nov  5 13:22:40 2013
+11	CPU %	1	15300 Tue Nov  5 13:22:40 2013
+5	Total Output	16472	16320 Tue Nov  5 13:22:41 2013
+6	Total Input	22704	16320 Tue Nov  5 13:22:41 2013
+3	Output	1408	16320 Tue Nov  5 13:22:41 2013
+4	Input	2112	16320 Tue Nov  5 13:22:41 2013
+12	fps	33	16320 Tue Nov  5 13:22:41 2013
+13	Clients	2	16320 Tue Nov  5 13:22:41 2013
+10	Ping average	12	16320 Tue Nov  5 13:22:41 2013
+8	Ping min	9	16320 Tue Nov  5 13:22:41 2013
+9	Ping max	15	16320 Tue Nov  5 13:22:41 2013
+11	CPU %	1	16320 Tue Nov  5 13:22:41 2013
+5	Total Output	18056	17340 Tue Nov  5 13:22:42 2013
+6	Total Input	24816	17340 Tue Nov  5 13:22:42 2013
+3	Output	1584	17340 Tue Nov  5 13:22:42 2013
+4	Input	2112	17340 Tue Nov  5 13:22:42 2013
+12	fps	33	17340 Tue Nov  5 13:22:42 2013
+13	Clients	2	17340 Tue Nov  5 13:22:42 2013
+10	Ping average	13	17340 Tue Nov  5 13:22:42 2013
+8	Ping min	13	17340 Tue Nov  5 13:22:42 2013
+9	Ping max	13	17340 Tue Nov  5 13:22:42 2013
+11	CPU %	1	17340 Tue Nov  5 13:22:42 2013
+5	Total Output	21512	18360 Tue Nov  5 13:22:43 2013
+6	Total Input	26928	18360 Tue Nov  5 13:22:43 2013
+3	Output	3456	18360 Tue Nov  5 13:22:43 2013
+4	Input	2112	18360 Tue Nov  5 13:22:43 2013
+12	fps	33	18360 Tue Nov  5 13:22:43 2013
+13	Clients	2	18360 Tue Nov  5 13:22:43 2013
+10	Ping average	11	18360 Tue Nov  5 13:22:43 2013
+8	Ping min	9	18360 Tue Nov  5 13:22:43 2013
+9	Ping max	14	18360 Tue Nov  5 13:22:43 2013
+11	CPU %	2	18360 Tue Nov  5 13:22:43 2013
+5	Total Output	23096	19380 Tue Nov  5 13:22:44 2013
+6	Total Input	28996	19380 Tue Nov  5 13:22:44 2013
+3	Output	1584	19380 Tue Nov  5 13:22:44 2013
+4	Input	2068	19380 Tue Nov  5 13:22:44 2013
+12	fps	33	19380 Tue Nov  5 13:22:44 2013
+13	Clients	2	19380 Tue Nov  5 13:22:44 2013
+10	Ping average	12	19380 Tue Nov  5 13:22:44 2013
+8	Ping min	9	19380 Tue Nov  5 13:22:44 2013
+9	Ping max	15	19380 Tue Nov  5 13:22:44 2013
+11	CPU %	1	19380 Tue Nov  5 13:22:44 2013
+5	Total Output	24504	20400 Tue Nov  5 13:22:45 2013
+6	Total Input	31108	20400 Tue Nov  5 13:22:45 2013
+3	Output	1408	20400 Tue Nov  5 13:22:45 2013
+4	Input	2112	20400 Tue Nov  5 13:22:45 2013
+12	fps	33	20400 Tue Nov  5 13:22:45 2013
+13	Clients	2	20400 Tue Nov  5 13:22:45 2013
+10	Ping average	13	20400 Tue Nov  5 13:22:45 2013
+8	Ping min	13	20400 Tue Nov  5 13:22:45 2013
+9	Ping max	14	20400 Tue Nov  5 13:22:45 2013
+11	CPU %	1	20400 Tue Nov  5 13:22:45 2013
+5	Total Output	28136	21420 Tue Nov  5 13:22:46 2013
+6	Total Input	33308	21420 Tue Nov  5 13:22:46 2013
+3	Output	3632	21420 Tue Nov  5 13:22:46 2013
+4	Input	2200	21420 Tue Nov  5 13:22:46 2013
+12	fps	33	21420 Tue Nov  5 13:22:46 2013
+13	Clients	2	21420 Tue Nov  5 13:22:46 2013
+10	Ping average	12	21420 Tue Nov  5 13:22:46 2013
+8	Ping min	10	21420 Tue Nov  5 13:22:46 2013
+9	Ping max	14	21420 Tue Nov  5 13:22:46 2013
+11	CPU %	2	21420 Tue Nov  5 13:22:46 2013
+5	Total Output	29544	22440 Tue Nov  5 13:22:47 2013
+6	Total Input	35464	22440 Tue Nov  5 13:22:47 2013
+3	Output	1408	22440 Tue Nov  5 13:22:47 2013
+4	Input	2156	22440 Tue Nov  5 13:22:47 2013
+12	fps	32	22440 Tue Nov  5 13:22:47 2013
+13	Clients	2	22440 Tue Nov  5 13:22:47 2013
+10	Ping average	10	22440 Tue Nov  5 13:22:47 2013
+8	Ping min	10	22440 Tue Nov  5 13:22:47 2013
+9	Ping max	11	22440 Tue Nov  5 13:22:47 2013
+11	CPU %	1	22440 Tue Nov  5 13:22:47 2013
+5	Total Output	31128	23460 Tue Nov  5 13:22:48 2013
+6	Total Input	37532	23460 Tue Nov  5 13:22:48 2013
+3	Output	1584	23460 Tue Nov  5 13:22:48 2013
+4	Input	2068	23460 Tue Nov  5 13:22:48 2013
+12	fps	33	23460 Tue Nov  5 13:22:48 2013
+13	Clients	2	23460 Tue Nov  5 13:22:48 2013
+10	Ping average	11	23460 Tue Nov  5 13:22:48 2013
+8	Ping min	9	23460 Tue Nov  5 13:22:48 2013
+9	Ping max	14	23460 Tue Nov  5 13:22:48 2013
+11	CPU %	1	23460 Tue Nov  5 13:22:48 2013
+5	Total Output	34584	24480 Tue Nov  5 13:22:49 2013
+6	Total Input	39644	24480 Tue Nov  5 13:22:49 2013
+3	Output	3456	24480 Tue Nov  5 13:22:49 2013
+4	Input	2112	24480 Tue Nov  5 13:22:49 2013
+12	fps	33	24480 Tue Nov  5 13:22:49 2013
+13	Clients	2	24480 Tue Nov  5 13:22:49 2013
+10	Ping average	9	24480 Tue Nov  5 13:22:49 2013
+8	Ping min	9	24480 Tue Nov  5 13:22:49 2013
+9	Ping max	10	24480 Tue Nov  5 13:22:49 2013
+11	CPU %	2	24480 Tue Nov  5 13:22:49 2013
+5	Total Output	36168	25500 Tue Nov  5 13:22:50 2013
+6	Total Input	41712	25500 Tue Nov  5 13:22:50 2013
+3	Output	1584	25500 Tue Nov  5 13:22:50 2013
+4	Input	2068	25500 Tue Nov  5 13:22:50 2013
+12	fps	33	25500 Tue Nov  5 13:22:50 2013
+13	Clients	2	25500 Tue Nov  5 13:22:50 2013
+10	Ping average	10	25500 Tue Nov  5 13:22:50 2013
+8	Ping min	10	25500 Tue Nov  5 13:22:50 2013
+9	Ping max	11	25500 Tue Nov  5 13:22:50 2013
+11	CPU %	1	25500 Tue Nov  5 13:22:50 2013
+5	Total Output	37576	26520 Tue Nov  5 13:22:51 2013
+6	Total Input	43868	26520 Tue Nov  5 13:22:51 2013
+3	Output	1408	26520 Tue Nov  5 13:22:51 2013
+4	Input	2156	26520 Tue Nov  5 13:22:51 2013
+12	fps	32	26520 Tue Nov  5 13:22:51 2013
+13	Clients	2	26520 Tue Nov  5 13:22:51 2013
+10	Ping average	10	26520 Tue Nov  5 13:22:51 2013
+8	Ping min	10	26520 Tue Nov  5 13:22:51 2013
+9	Ping max	10	26520 Tue Nov  5 13:22:51 2013
+11	CPU %	1	26520 Tue Nov  5 13:22:51 2013
+5	Total Output	41208	27540 Tue Nov  5 13:22:52 2013
+6	Total Input	45936	27540 Tue Nov  5 13:22:52 2013
+3	Output	3632	27540 Tue Nov  5 13:22:52 2013
+4	Input	2068	27540 Tue Nov  5 13:22:52 2013
+12	fps	33	27540 Tue Nov  5 13:22:52 2013
+13	Clients	2	27540 Tue Nov  5 13:22:52 2013
+10	Ping average	11	27540 Tue Nov  5 13:22:52 2013
+8	Ping min	10	27540 Tue Nov  5 13:22:52 2013
+9	Ping max	12	27540 Tue Nov  5 13:22:52 2013
+11	CPU %	1	27540 Tue Nov  5 13:22:52 2013
+5	Total Output	42616	28560 Tue Nov  5 13:22:53 2013
+6	Total Input	48004	28560 Tue Nov  5 13:22:53 2013
+3	Output	1408	28560 Tue Nov  5 13:22:53 2013
+4	Input	2068	28560 Tue Nov  5 13:22:53 2013
+12	fps	33	28560 Tue Nov  5 13:22:53 2013
+13	Clients	2	28560 Tue Nov  5 13:22:53 2013
+10	Ping average	12	28560 Tue Nov  5 13:22:53 2013
+8	Ping min	9	28560 Tue Nov  5 13:22:53 2013
+9	Ping max	15	28560 Tue Nov  5 13:22:53 2013
+11	CPU %	2	28560 Tue Nov  5 13:22:53 2013
+5	Total Output	44200	29580 Tue Nov  5 13:22:54 2013
+6	Total Input	50116	29580 Tue Nov  5 13:22:54 2013
+3	Output	1584	29580 Tue Nov  5 13:22:54 2013
+4	Input	2112	29580 Tue Nov  5 13:22:54 2013
+12	fps	33	29580 Tue Nov  5 13:22:54 2013
+13	Clients	2	29580 Tue Nov  5 13:22:54 2013
+10	Ping average	12	29580 Tue Nov  5 13:22:54 2013
+8	Ping min	12	29580 Tue Nov  5 13:22:54 2013
+9	Ping max	13	29580 Tue Nov  5 13:22:54 2013
+11	CPU %	1	29580 Tue Nov  5 13:22:54 2013
+5	Total Output	47656	30600 Tue Nov  5 13:22:55 2013
+6	Total Input	52228	30600 Tue Nov  5 13:22:55 2013
+3	Output	3456	30600 Tue Nov  5 13:22:55 2013
+4	Input	2112	30600 Tue Nov  5 13:22:55 2013
+12	fps	33	30600 Tue Nov  5 13:22:55 2013
+13	Clients	2	30600 Tue Nov  5 13:22:55 2013
+10	Ping average	11	30600 Tue Nov  5 13:22:55 2013
+8	Ping min	10	30600 Tue Nov  5 13:22:55 2013
+9	Ping max	12	30600 Tue Nov  5 13:22:55 2013
+11	CPU %	1	30600 Tue Nov  5 13:22:55 2013
+5	Total Output	49240	31620 Tue Nov  5 13:22:56 2013
+6	Total Input	54296	31620 Tue Nov  5 13:22:56 2013
+3	Output	1584	31620 Tue Nov  5 13:22:56 2013
+4	Input	2068	31620 Tue Nov  5 13:22:56 2013
+12	fps	33	31620 Tue Nov  5 13:22:56 2013
+13	Clients	2	31620 Tue Nov  5 13:22:56 2013
+10	Ping average	12	31620 Tue Nov  5 13:22:56 2013
+8	Ping min	9	31620 Tue Nov  5 13:22:56 2013
+9	Ping max	15	31620 Tue Nov  5 13:22:56 2013
+11	CPU %	2	31620 Tue Nov  5 13:22:56 2013
+5	Total Output	50648	32640 Tue Nov  5 13:22:57 2013
+6	Total Input	56408	32640 Tue Nov  5 13:22:57 2013
+3	Output	1408	32640 Tue Nov  5 13:22:57 2013
+4	Input	2112	32640 Tue Nov  5 13:22:57 2013
+12	fps	33	32640 Tue Nov  5 13:22:57 2013
+13	Clients	2	32640 Tue Nov  5 13:22:57 2013
+10	Ping average	13	32640 Tue Nov  5 13:22:57 2013
+8	Ping min	11	32640 Tue Nov  5 13:22:57 2013
+9	Ping max	15	32640 Tue Nov  5 13:22:57 2013
+11	CPU %	1	32640 Tue Nov  5 13:22:57 2013
+5	Total Output	54280	33660 Tue Nov  5 13:22:58 2013
+6	Total Input	58520	33660 Tue Nov  5 13:22:58 2013
+3	Output	3632	33660 Tue Nov  5 13:22:58 2013
+4	Input	2112	33660 Tue Nov  5 13:22:58 2013
+12	fps	33	33660 Tue Nov  5 13:22:58 2013
+13	Clients	2	33660 Tue Nov  5 13:22:58 2013
+10	Ping average	10	33660 Tue Nov  5 13:22:58 2013
+8	Ping min	8	33660 Tue Nov  5 13:22:58 2013
+9	Ping max	12	33660 Tue Nov  5 13:22:58 2013
+11	CPU %	2	33660 Tue Nov  5 13:22:58 2013
+5	Total Output	55688	34680 Tue Nov  5 13:22:59 2013
+6	Total Input	60588	34680 Tue Nov  5 13:22:59 2013
+3	Output	1408	34680 Tue Nov  5 13:22:59 2013
+4	Input	2068	34680 Tue Nov  5 13:22:59 2013
+12	fps	33	34680 Tue Nov  5 13:22:59 2013
+13	Clients	2	34680 Tue Nov  5 13:22:59 2013
+10	Ping average	10	34680 Tue Nov  5 13:22:59 2013
+8	Ping min	9	34680 Tue Nov  5 13:22:59 2013
+9	Ping max	12	34680 Tue Nov  5 13:22:59 2013
+11	CPU %	0	34680 Tue Nov  5 13:22:59 2013
+5	Total Output	57272	35700 Tue Nov  5 13:23:00 2013
+6	Total Input	62700	35700 Tue Nov  5 13:23:00 2013
+3	Output	1584	35700 Tue Nov  5 13:23:00 2013
+4	Input	2112	35700 Tue Nov  5 13:23:00 2013
+12	fps	33	35700 Tue Nov  5 13:23:00 2013
+13	Clients	2	35700 Tue Nov  5 13:23:00 2013
+10	Ping average	10	35700 Tue Nov  5 13:23:00 2013
+8	Ping min	8	35700 Tue Nov  5 13:23:00 2013
+9	Ping max	12	35700 Tue Nov  5 13:23:00 2013
+11	CPU %	2	35700 Tue Nov  5 13:23:00 2013
+5	Total Output	60728	36720 Tue Nov  5 13:23:01 2013
+6	Total Input	64768	36720 Tue Nov  5 13:23:01 2013
+3	Output	3456	36720 Tue Nov  5 13:23:01 2013
+4	Input	2068	36720 Tue Nov  5 13:23:01 2013
+12	fps	33	36720 Tue Nov  5 13:23:01 2013
+13	Clients	2	36720 Tue Nov  5 13:23:01 2013
+10	Ping average	11	36720 Tue Nov  5 13:23:01 2013
+8	Ping min	8	36720 Tue Nov  5 13:23:01 2013
+9	Ping max	14	36720 Tue Nov  5 13:23:01 2013
+11	CPU %	1	36720 Tue Nov  5 13:23:01 2013
+5	Total Output	62312	37740 Tue Nov  5 13:23:02 2013
+6	Total Input	66836	37740 Tue Nov  5 13:23:02 2013
+3	Output	1584	37740 Tue Nov  5 13:23:02 2013
+4	Input	2068	37740 Tue Nov  5 13:23:02 2013
+12	fps	33	37740 Tue Nov  5 13:23:02 2013
+13	Clients	2	37740 Tue Nov  5 13:23:02 2013
+10	Ping average	9	37740 Tue Nov  5 13:23:02 2013
+8	Ping min	8	37740 Tue Nov  5 13:23:02 2013
+9	Ping max	10	37740 Tue Nov  5 13:23:02 2013
+11	CPU %	1	37740 Tue Nov  5 13:23:02 2013
+5	Total Output	63720	38760 Tue Nov  5 13:23:03 2013
+6	Total Input	69080	38760 Tue Nov  5 13:23:03 2013
+3	Output	1408	38760 Tue Nov  5 13:23:03 2013
+4	Input	2244	38760 Tue Nov  5 13:23:03 2013
+12	fps	33	38760 Tue Nov  5 13:23:03 2013
+13	Clients	2	38760 Tue Nov  5 13:23:03 2013
+10	Ping average	11	38760 Tue Nov  5 13:23:03 2013
+8	Ping min	11	38760 Tue Nov  5 13:23:03 2013
+9	Ping max	12	38760 Tue Nov  5 13:23:03 2013
+11	CPU %	2	38760 Tue Nov  5 13:23:03 2013
+5	Total Output	67352	39780 Tue Nov  5 13:23:04 2013
+6	Total Input	71280	39780 Tue Nov  5 13:23:04 2013
+3	Output	3632	39780 Tue Nov  5 13:23:04 2013
+4	Input	2200	39780 Tue Nov  5 13:23:04 2013
+12	fps	33	39780 Tue Nov  5 13:23:04 2013
+13	Clients	2	39780 Tue Nov  5 13:23:04 2013
+10	Ping average	10	39780 Tue Nov  5 13:23:04 2013
+8	Ping min	9	39780 Tue Nov  5 13:23:04 2013
+9	Ping max	12	39780 Tue Nov  5 13:23:04 2013
+11	CPU %	1	39780 Tue Nov  5 13:23:04 2013
+5	Total Output	68760	40800 Tue Nov  5 13:23:05 2013
+6	Total Input	73348	40800 Tue Nov  5 13:23:05 2013
+3	Output	1408	40800 Tue Nov  5 13:23:05 2013
+4	Input	2068	40800 Tue Nov  5 13:23:05 2013
+12	fps	33	40800 Tue Nov  5 13:23:05 2013
+13	Clients	2	40800 Tue Nov  5 13:23:05 2013
+10	Ping average	11	40800 Tue Nov  5 13:23:05 2013
+8	Ping min	10	40800 Tue Nov  5 13:23:05 2013
+9	Ping max	13	40800 Tue Nov  5 13:23:05 2013
+11	CPU %	1	40800 Tue Nov  5 13:23:05 2013
+5	Total Output	70344	41820 Tue Nov  5 13:23:06 2013
+6	Total Input	75416	41820 Tue Nov  5 13:23:06 2013
+3	Output	1584	41820 Tue Nov  5 13:23:06 2013
+4	Input	2068	41820 Tue Nov  5 13:23:06 2013
+12	fps	33	41820 Tue Nov  5 13:23:06 2013
+13	Clients	2	41820 Tue Nov  5 13:23:06 2013
+10	Ping average	10	41820 Tue Nov  5 13:23:06 2013
+8	Ping min	10	41820 Tue Nov  5 13:23:06 2013
+9	Ping max	10	41820 Tue Nov  5 13:23:06 2013
+11	CPU %	2	41820 Tue Nov  5 13:23:06 2013
+5	Total Output	73800	42840 Tue Nov  5 13:23:07 2013
+6	Total Input	77528	42840 Tue Nov  5 13:23:07 2013
+3	Output	3456	42840 Tue Nov  5 13:23:07 2013
+4	Input	2112	42840 Tue Nov  5 13:23:07 2013
+12	fps	33	42840 Tue Nov  5 13:23:07 2013
+13	Clients	2	42840 Tue Nov  5 13:23:07 2013
+10	Ping average	10	42840 Tue Nov  5 13:23:07 2013
+8	Ping min	10	42840 Tue Nov  5 13:23:07 2013
+9	Ping max	10	42840 Tue Nov  5 13:23:07 2013
+11	CPU %	1	42840 Tue Nov  5 13:23:07 2013
+5	Total Output	75384	43860 Tue Nov  5 13:23:08 2013
+6	Total Input	79596	43860 Tue Nov  5 13:23:08 2013
+3	Output	1584	43860 Tue Nov  5 13:23:08 2013
+4	Input	2068	43860 Tue Nov  5 13:23:08 2013
+12	fps	33	43860 Tue Nov  5 13:23:08 2013
+13	Clients	2	43860 Tue Nov  5 13:23:08 2013
+10	Ping average	10	43860 Tue Nov  5 13:23:08 2013
+8	Ping min	9	43860 Tue Nov  5 13:23:08 2013
+9	Ping max	11	43860 Tue Nov  5 13:23:08 2013
+11	CPU %	1	43860 Tue Nov  5 13:23:08 2013
+5	Total Output	76792	44880 Tue Nov  5 13:23:09 2013
+6	Total Input	81708	44880 Tue Nov  5 13:23:09 2013
+3	Output	1408	44880 Tue Nov  5 13:23:09 2013
+4	Input	2112	44880 Tue Nov  5 13:23:09 2013
+12	fps	33	44880 Tue Nov  5 13:23:09 2013
+13	Clients	2	44880 Tue Nov  5 13:23:09 2013
+10	Ping average	12	44880 Tue Nov  5 13:23:09 2013
+8	Ping min	11	44880 Tue Nov  5 13:23:09 2013
+9	Ping max	13	44880 Tue Nov  5 13:23:09 2013
+11	CPU %	2	44880 Tue Nov  5 13:23:09 2013
+5	Total Output	80424	45900 Tue Nov  5 13:23:10 2013
+6	Total Input	83776	45900 Tue Nov  5 13:23:10 2013
+3	Output	3632	45900 Tue Nov  5 13:23:10 2013
+4	Input	2068	45900 Tue Nov  5 13:23:10 2013
+12	fps	33	45900 Tue Nov  5 13:23:10 2013
+13	Clients	2	45900 Tue Nov  5 13:23:10 2013
+10	Ping average	10	45900 Tue Nov  5 13:23:10 2013
+8	Ping min	8	45900 Tue Nov  5 13:23:10 2013
+9	Ping max	13	45900 Tue Nov  5 13:23:10 2013
+11	CPU %	0	45900 Tue Nov  5 13:23:10 2013
+5	Total Output	81832	46920 Tue Nov  5 13:23:11 2013
+6	Total Input	85888	46920 Tue Nov  5 13:23:11 2013
+3	Output	1408	46920 Tue Nov  5 13:23:11 2013
+4	Input	2112	46920 Tue Nov  5 13:23:11 2013
+12	fps	33	46920 Tue Nov  5 13:23:11 2013
+13	Clients	2	46920 Tue Nov  5 13:23:11 2013
+10	Ping average	12	46920 Tue Nov  5 13:23:11 2013
+8	Ping min	10	46920 Tue Nov  5 13:23:11 2013
+9	Ping max	14	46920 Tue Nov  5 13:23:11 2013
+11	CPU %	1	46920 Tue Nov  5 13:23:11 2013
+5	Total Output	83416	47940 Tue Nov  5 13:23:13 2013
+6	Total Input	88000	47940 Tue Nov  5 13:23:13 2013
+3	Output	1584	47940 Tue Nov  5 13:23:13 2013
+4	Input	2112	47940 Tue Nov  5 13:23:13 2013
+12	fps	33	47940 Tue Nov  5 13:23:13 2013
+13	Clients	2	47940 Tue Nov  5 13:23:13 2013
+10	Ping average	14	47940 Tue Nov  5 13:23:13 2013
+8	Ping min	13	47940 Tue Nov  5 13:23:13 2013
+9	Ping max	15	47940 Tue Nov  5 13:23:13 2013
+11	CPU %	2	47940 Tue Nov  5 13:23:13 2013
+5	Total Output	86872	48960 Tue Nov  5 13:23:14 2013
+6	Total Input	90068	48960 Tue Nov  5 13:23:14 2013
+3	Output	3456	48960 Tue Nov  5 13:23:14 2013
+4	Input	2068	48960 Tue Nov  5 13:23:14 2013
+12	fps	33	48960 Tue Nov  5 13:23:14 2013
+13	Clients	2	48960 Tue Nov  5 13:23:14 2013
+10	Ping average	13	48960 Tue Nov  5 13:23:14 2013
+8	Ping min	13	48960 Tue Nov  5 13:23:14 2013
+9	Ping max	13	48960 Tue Nov  5 13:23:14 2013
+11	CPU %	1	48960 Tue Nov  5 13:23:14 2013
+5	Total Output	88456	49980 Tue Nov  5 13:23:15 2013
+6	Total Input	92180	49980 Tue Nov  5 13:23:15 2013
+3	Output	1584	49980 Tue Nov  5 13:23:15 2013
+4	Input	2112	49980 Tue Nov  5 13:23:15 2013
+12	fps	33	49980 Tue Nov  5 13:23:15 2013
+13	Clients	2	49980 Tue Nov  5 13:23:15 2013
+10	Ping average	14	49980 Tue Nov  5 13:23:15 2013
+8	Ping min	13	49980 Tue Nov  5 13:23:15 2013
+9	Ping max	15	49980 Tue Nov  5 13:23:15 2013
+11	CPU %	1	49980 Tue Nov  5 13:23:15 2013
+14	A client disconnected 	0	50550 Tue Nov  5 13:23:15 2013
+5	Total Output	89600	51000 Tue Nov  5 13:23:16 2013
+6	Total Input	94292	51000 Tue Nov  5 13:23:16 2013
+3	Output	1144	51000 Tue Nov  5 13:23:16 2013
+4	Input	2112	51000 Tue Nov  5 13:23:16 2013
+12	fps	33	51000 Tue Nov  5 13:23:16 2013
+13	Clients	1	51000 Tue Nov  5 13:23:16 2013
+10	Ping average	500	51000 Tue Nov  5 13:23:16 2013
+8	Ping min	500	51000 Tue Nov  5 13:23:16 2013
+9	Ping max	500	51000 Tue Nov  5 13:23:16 2013
+11	CPU %	2	51000 Tue Nov  5 13:23:16 2013
+5	Total Output	91416	52020 Tue Nov  5 13:23:17 2013
+6	Total Input	96404	52020 Tue Nov  5 13:23:17 2013
+3	Output	1816	52020 Tue Nov  5 13:23:17 2013
+4	Input	2112	52020 Tue Nov  5 13:23:17 2013
+12	fps	33	52020 Tue Nov  5 13:23:17 2013
+13	Clients	1	52020 Tue Nov  5 13:23:17 2013
+10	Ping average	500	52020 Tue Nov  5 13:23:17 2013
+8	Ping min	500	52020 Tue Nov  5 13:23:17 2013
+9	Ping max	500	52020 Tue Nov  5 13:23:17 2013
+11	CPU %	1	52020 Tue Nov  5 13:23:17 2013
+15	A new client connected from 	16777343	52530 Tue Nov  5 13:23:17 2013
+7	MSG_HELLO message received from	1	52530 Tue Nov  5 13:23:17 2013
+7	MSG_HELLO sent to	1	52530 Tue Nov  5 13:23:17 2013
+5	Total Output	92604	53040 Tue Nov  5 13:23:18 2013
+6	Total Input	98516	53040 Tue Nov  5 13:23:18 2013
+3	Output	1188	53040 Tue Nov  5 13:23:18 2013
+4	Input	2112	53040 Tue Nov  5 13:23:18 2013
+12	fps	33	53040 Tue Nov  5 13:23:18 2013
+13	Clients	2	53040 Tue Nov  5 13:23:18 2013
+10	Ping average	60	53040 Tue Nov  5 13:23:18 2013
+8	Ping min	12	53040 Tue Nov  5 13:23:18 2013
+9	Ping max	108	53040 Tue Nov  5 13:23:18 2013
+11	CPU %	1	53040 Tue Nov  5 13:23:18 2013
+5	Total Output	96236	54060 Tue Nov  5 13:23:19 2013
+6	Total Input	100628	54060 Tue Nov  5 13:23:19 2013
+3	Output	3632	54060 Tue Nov  5 13:23:19 2013
+4	Input	2112	54060 Tue Nov  5 13:23:19 2013
+12	fps	33	54060 Tue Nov  5 13:23:19 2013
+13	Clients	2	54060 Tue Nov  5 13:23:19 2013
+10	Ping average	17	54060 Tue Nov  5 13:23:19 2013
+8	Ping min	14	54060 Tue Nov  5 13:23:19 2013
+9	Ping max	21	54060 Tue Nov  5 13:23:19 2013
+11	CPU %	1	54060 Tue Nov  5 13:23:19 2013
+5	Total Output	97644	55080 Tue Nov  5 13:23:20 2013
+6	Total Input	102696	55080 Tue Nov  5 13:23:20 2013
+3	Output	1408	55080 Tue Nov  5 13:23:20 2013
+4	Input	2068	55080 Tue Nov  5 13:23:20 2013
+12	fps	33	55080 Tue Nov  5 13:23:20 2013
+13	Clients	2	55080 Tue Nov  5 13:23:20 2013
+10	Ping average	16	55080 Tue Nov  5 13:23:20 2013
+8	Ping min	16	55080 Tue Nov  5 13:23:20 2013
+9	Ping max	17	55080 Tue Nov  5 13:23:20 2013
+11	CPU %	2	55080 Tue Nov  5 13:23:20 2013
+5	Total Output	99228	56100 Tue Nov  5 13:23:21 2013
+6	Total Input	104808	56100 Tue Nov  5 13:23:21 2013
+3	Output	1584	56100 Tue Nov  5 13:23:21 2013
+4	Input	2112	56100 Tue Nov  5 13:23:21 2013
+12	fps	33	56100 Tue Nov  5 13:23:21 2013
+13	Clients	2	56100 Tue Nov  5 13:23:21 2013
+10	Ping average	14	56100 Tue Nov  5 13:23:21 2013
+8	Ping min	11	56100 Tue Nov  5 13:23:21 2013
+9	Ping max	17	56100 Tue Nov  5 13:23:21 2013
+11	CPU %	1	56100 Tue Nov  5 13:23:21 2013
+5	Total Output	102684	57120 Tue Nov  5 13:23:22 2013
+6	Total Input	106876	57120 Tue Nov  5 13:23:22 2013
+3	Output	3456	57120 Tue Nov  5 13:23:22 2013
+4	Input	2068	57120 Tue Nov  5 13:23:22 2013
+12	fps	33	57120 Tue Nov  5 13:23:22 2013
+13	Clients	2	57120 Tue Nov  5 13:23:22 2013
+10	Ping average	16	57120 Tue Nov  5 13:23:22 2013
+8	Ping min	15	57120 Tue Nov  5 13:23:22 2013
+9	Ping max	17	57120 Tue Nov  5 13:23:22 2013
+11	CPU %	2	57120 Tue Nov  5 13:23:22 2013
+5	Total Output	104268	58140 Tue Nov  5 13:23:23 2013
+6	Total Input	108944	58140 Tue Nov  5 13:23:23 2013
+3	Output	1584	58140 Tue Nov  5 13:23:23 2013
+4	Input	2068	58140 Tue Nov  5 13:23:23 2013
+12	fps	33	58140 Tue Nov  5 13:23:23 2013
+13	Clients	2	58140 Tue Nov  5 13:23:23 2013
+10	Ping average	13	58140 Tue Nov  5 13:23:23 2013
+8	Ping min	12	58140 Tue Nov  5 13:23:23 2013
+9	Ping max	15	58140 Tue Nov  5 13:23:23 2013
+11	CPU %	1	58140 Tue Nov  5 13:23:23 2013
+5	Total Output	105676	59160 Tue Nov  5 13:23:24 2013
+6	Total Input	111012	59160 Tue Nov  5 13:23:24 2013
+3	Output	1408	59160 Tue Nov  5 13:23:24 2013
+4	Input	2068	59160 Tue Nov  5 13:23:24 2013
+12	fps	33	59160 Tue Nov  5 13:23:24 2013
+13	Clients	2	59160 Tue Nov  5 13:23:24 2013
+10	Ping average	10	59160 Tue Nov  5 13:23:24 2013
+8	Ping min	10	59160 Tue Nov  5 13:23:24 2013
+9	Ping max	11	59160 Tue Nov  5 13:23:24 2013
+11	CPU %	0	59160 Tue Nov  5 13:23:24 2013
+5	Total Output	109308	60180 Tue Nov  5 13:23:25 2013
+6	Total Input	112992	60180 Tue Nov  5 13:23:25 2013
+3	Output	3632	60180 Tue Nov  5 13:23:25 2013
+4	Input	1980	60180 Tue Nov  5 13:23:25 2013
+12	fps	33	60180 Tue Nov  5 13:23:25 2013
+13	Clients	2	60180 Tue Nov  5 13:23:25 2013
+10	Ping average	15	60180 Tue Nov  5 13:23:25 2013
+8	Ping min	13	60180 Tue Nov  5 13:23:25 2013
+9	Ping max	18	60180 Tue Nov  5 13:23:25 2013
+11	CPU %	2	60180 Tue Nov  5 13:23:25 2013
+14	A client disconnected 	1	60210 Tue Nov  5 13:23:25 2013
+5	Total Output	110012	61200 Tue Nov  5 13:23:26 2013
+6	Total Input	113124	61200 Tue Nov  5 13:23:26 2013
+3	Output	704	61200 Tue Nov  5 13:23:26 2013
+4	Input	132	61200 Tue Nov  5 13:23:26 2013
+12	fps	33	61200 Tue Nov  5 13:23:26 2013
+13	Clients	1	61200 Tue Nov  5 13:23:26 2013
+10	Ping average	500	61200 Tue Nov  5 13:23:26 2013
+8	Ping min	500	61200 Tue Nov  5 13:23:26 2013
+9	Ping max	500	61200 Tue Nov  5 13:23:26 2013
+11	CPU %	1	61200 Tue Nov  5 13:23:26 2013
+5	Total Output	110804	62220 Tue Nov  5 13:23:27 2013
+6	Total Input	113124	62220 Tue Nov  5 13:23:27 2013
+3	Output	792	62220 Tue Nov  5 13:23:27 2013
+4	Input	0	62220 Tue Nov  5 13:23:27 2013
+12	fps	33	62220 Tue Nov  5 13:23:27 2013
+13	Clients	1	62220 Tue Nov  5 13:23:27 2013
+10	Ping average	500	62220 Tue Nov  5 13:23:27 2013
+8	Ping min	500	62220 Tue Nov  5 13:23:27 2013
+9	Ping max	500	62220 Tue Nov  5 13:23:27 2013
+11	CPU %	1	62220 Tue Nov  5 13:23:27 2013
+5	Total Output	112532	63240 Tue Nov  5 13:23:28 2013
+6	Total Input	113124	63240 Tue Nov  5 13:23:28 2013
+3	Output	1728	63240 Tue Nov  5 13:23:28 2013
+4	Input	0	63240 Tue Nov  5 13:23:28 2013
+12	fps	33	63240 Tue Nov  5 13:23:28 2013
+13	Clients	1	63240 Tue Nov  5 13:23:28 2013
+10	Ping average	500	63240 Tue Nov  5 13:23:28 2013
+8	Ping min	500	63240 Tue Nov  5 13:23:28 2013
+9	Ping max	500	63240 Tue Nov  5 13:23:28 2013
+11	CPU %	1	63240 Tue Nov  5 13:23:28 2013
+5	Total Output	113324	64260 Tue Nov  5 13:23:29 2013
+6	Total Input	113124	64260 Tue Nov  5 13:23:29 2013
+3	Output	792	64260 Tue Nov  5 13:23:29 2013
+4	Input	0	64260 Tue Nov  5 13:23:29 2013
+12	fps	33	64260 Tue Nov  5 13:23:29 2013
+13	Clients	1	64260 Tue Nov  5 13:23:29 2013
+10	Ping average	500	64260 Tue Nov  5 13:23:29 2013
+8	Ping min	500	64260 Tue Nov  5 13:23:29 2013
+9	Ping max	500	64260 Tue Nov  5 13:23:29 2013
+11	CPU %	0	64260 Tue Nov  5 13:23:29 2013
+5	Total Output	114028	65280 Tue Nov  5 13:23:30 2013
+6	Total Input	113124	65280 Tue Nov  5 13:23:30 2013
+3	Output	704	65280 Tue Nov  5 13:23:30 2013
+4	Input	0	65280 Tue Nov  5 13:23:30 2013
+12	fps	33	65280 Tue Nov  5 13:23:30 2013
+13	Clients	1	65280 Tue Nov  5 13:23:30 2013
+10	Ping average	500	65280 Tue Nov  5 13:23:30 2013
+8	Ping min	500	65280 Tue Nov  5 13:23:30 2013
+9	Ping max	500	65280 Tue Nov  5 13:23:30 2013
+11	CPU %	1	65280 Tue Nov  5 13:23:30 2013
+15	A new client connected from 	16885952	65490 Tue Nov  5 13:23:30 2013
+7	MSG_HELLO message received from	0	65490 Tue Nov  5 13:23:30 2013
+7	MSG_HELLO sent to	0	65490 Tue Nov  5 13:23:30 2013
+5	Total Output	117616	66300 Tue Nov  5 13:23:31 2013
+6	Total Input	114752	66300 Tue Nov  5 13:23:31 2013
+3	Output	3588	66300 Tue Nov  5 13:23:31 2013
+4	Input	1628	66300 Tue Nov  5 13:23:31 2013
+12	fps	33	66300 Tue Nov  5 13:23:31 2013
+13	Clients	2	66300 Tue Nov  5 13:23:31 2013
+10	Ping average	29	66300 Tue Nov  5 13:23:31 2013
+8	Ping min	7	66300 Tue Nov  5 13:23:31 2013
+9	Ping max	52	66300 Tue Nov  5 13:23:31 2013
+11	CPU %	1	66300 Tue Nov  5 13:23:31 2013
+5	Total Output	119024	67320 Tue Nov  5 13:23:32 2013
+6	Total Input	116864	67320 Tue Nov  5 13:23:32 2013
+3	Output	1408	67320 Tue Nov  5 13:23:32 2013
+4	Input	2112	67320 Tue Nov  5 13:23:32 2013
+12	fps	33	67320 Tue Nov  5 13:23:32 2013
+13	Clients	2	67320 Tue Nov  5 13:23:32 2013
+10	Ping average	12	67320 Tue Nov  5 13:23:32 2013
+8	Ping min	7	67320 Tue Nov  5 13:23:32 2013
+9	Ping max	17	67320 Tue Nov  5 13:23:32 2013
+11	CPU %	2	67320 Tue Nov  5 13:23:32 2013
+5	Total Output	120608	68340 Tue Nov  5 13:23:33 2013
+6	Total Input	118932	68340 Tue Nov  5 13:23:33 2013
+3	Output	1584	68340 Tue Nov  5 13:23:33 2013
+4	Input	2068	68340 Tue Nov  5 13:23:33 2013
+12	fps	33	68340 Tue Nov  5 13:23:33 2013
+13	Clients	2	68340 Tue Nov  5 13:23:33 2013
+10	Ping average	11	68340 Tue Nov  5 13:23:33 2013
+8	Ping min	7	68340 Tue Nov  5 13:23:33 2013
+9	Ping max	15	68340 Tue Nov  5 13:23:33 2013
+11	CPU %	1	68340 Tue Nov  5 13:23:33 2013
+5	Total Output	124064	69360 Tue Nov  5 13:23:34 2013
+6	Total Input	121044	69360 Tue Nov  5 13:23:34 2013
+3	Output	3456	69360 Tue Nov  5 13:23:34 2013
+4	Input	2112	69360 Tue Nov  5 13:23:34 2013
+12	fps	33	69360 Tue Nov  5 13:23:34 2013
+13	Clients	2	69360 Tue Nov  5 13:23:34 2013
+10	Ping average	11	69360 Tue Nov  5 13:23:34 2013
+8	Ping min	11	69360 Tue Nov  5 13:23:34 2013
+9	Ping max	12	69360 Tue Nov  5 13:23:34 2013
+11	CPU %	1	69360 Tue Nov  5 13:23:34 2013
+5	Total Output	125648	70380 Tue Nov  5 13:23:35 2013
+6	Total Input	123552	70380 Tue Nov  5 13:23:35 2013
+3	Output	1584	70380 Tue Nov  5 13:23:35 2013
+4	Input	2508	70380 Tue Nov  5 13:23:35 2013
+12	fps	26	70380 Tue Nov  5 13:23:35 2013
+13	Clients	2	70380 Tue Nov  5 13:23:35 2013
+10	Ping average	9	70380 Tue Nov  5 13:23:35 2013
+8	Ping min	8	70380 Tue Nov  5 13:23:35 2013
+9	Ping max	10	70380 Tue Nov  5 13:23:35 2013
+11	CPU %	2	70380 Tue Nov  5 13:23:35 2013
+5	Total Output	127144	71400 Tue Nov  5 13:23:40 2013
+6	Total Input	132792	71400 Tue Nov  5 13:23:40 2013
+3	Output	1496	71400 Tue Nov  5 13:23:40 2013
+4	Input	9240	71400 Tue Nov  5 13:23:40 2013
+12	fps	0	71400 Tue Nov  5 13:23:40 2013
+13	Clients	2	71400 Tue Nov  5 13:23:40 2013
+10	Ping average	10	71400 Tue Nov  5 13:23:40 2013
+8	Ping min	10	71400 Tue Nov  5 13:23:40 2013
+9	Ping max	11	71400 Tue Nov  5 13:23:40 2013
+11	CPU %	1	71400 Tue Nov  5 13:23:40 2013
+15	A new client connected from 	16777343	72240 Tue Nov  5 13:23:45 2013
+7	MSG_HELLO message received from	2	72240 Tue Nov  5 13:23:45 2013
+7	MSG_NO_SPACE sent to	2	72240 Tue Nov  5 13:23:45 2013
+5	Total Output	131524	72420 Tue Nov  5 13:23:45 2013
+6	Total Input	143792	72420 Tue Nov  5 13:23:45 2013
+3	Output	4380	72420 Tue Nov  5 13:23:45 2013
+4	Input	11000	72420 Tue Nov  5 13:23:45 2013
+12	fps	6	72420 Tue Nov  5 13:23:45 2013
+13	Clients	2	72420 Tue Nov  5 13:23:45 2013
+10	Ping average	13	72420 Tue Nov  5 13:23:45 2013
+8	Ping min	12	72420 Tue Nov  5 13:23:45 2013
+9	Ping max	14	72420 Tue Nov  5 13:23:45 2013
+11	CPU %	81	72420 Tue Nov  5 13:23:45 2013
+5	Total Output	132932	73440 Tue Nov  5 13:23:46 2013
+6	Total Input	145860	73440 Tue Nov  5 13:23:46 2013
+3	Output	1408	73440 Tue Nov  5 13:23:46 2013
+4	Input	2068	73440 Tue Nov  5 13:23:46 2013
+12	fps	33	73440 Tue Nov  5 13:23:46 2013
+13	Clients	2	73440 Tue Nov  5 13:23:46 2013
+10	Ping average	13	73440 Tue Nov  5 13:23:46 2013
+8	Ping min	12	73440 Tue Nov  5 13:23:46 2013
+9	Ping max	14	73440 Tue Nov  5 13:23:46 2013
+11	CPU %	1	73440 Tue Nov  5 13:23:46 2013
+5	Total Output	134516	74460 Tue Nov  5 13:23:47 2013
+6	Total Input	148016	74460 Tue Nov  5 13:23:47 2013
+3	Output	1584	74460 Tue Nov  5 13:23:47 2013
+4	Input	2156	74460 Tue Nov  5 13:23:47 2013
+12	fps	33	74460 Tue Nov  5 13:23:47 2013
+13	Clients	2	74460 Tue Nov  5 13:23:47 2013
+10	Ping average	13	74460 Tue Nov  5 13:23:47 2013
+8	Ping min	12	74460 Tue Nov  5 13:23:47 2013
+9	Ping max	15	74460 Tue Nov  5 13:23:47 2013
+11	CPU %	2	74460 Tue Nov  5 13:23:47 2013
+5	Total Output	137972	75480 Tue Nov  5 13:23:48 2013
+6	Total Input	150084	75480 Tue Nov  5 13:23:48 2013
+3	Output	3456	75480 Tue Nov  5 13:23:48 2013
+4	Input	2068	75480 Tue Nov  5 13:23:48 2013
+12	fps	33	75480 Tue Nov  5 13:23:48 2013
+13	Clients	2	75480 Tue Nov  5 13:23:48 2013
+10	Ping average	13	75480 Tue Nov  5 13:23:48 2013
+8	Ping min	12	75480 Tue Nov  5 13:23:48 2013
+9	Ping max	15	75480 Tue Nov  5 13:23:48 2013
+11	CPU %	2	75480 Tue Nov  5 13:23:48 2013
+5	Total Output	139556	76500 Tue Nov  5 13:23:49 2013
+6	Total Input	152284	76500 Tue Nov  5 13:23:49 2013
+3	Output	1584	76500 Tue Nov  5 13:23:49 2013
+4	Input	2200	76500 Tue Nov  5 13:23:49 2013
+12	fps	33	76500 Tue Nov  5 13:23:49 2013
+13	Clients	2	76500 Tue Nov  5 13:23:49 2013
+10	Ping average	12	76500 Tue Nov  5 13:23:49 2013
+8	Ping min	12	76500 Tue Nov  5 13:23:49 2013
+9	Ping max	12	76500 Tue Nov  5 13:23:49 2013
+11	CPU %	2	76500 Tue Nov  5 13:23:49 2013
+5	Total Output	140964	77520 Tue Nov  5 13:23:50 2013
+6	Total Input	154484	77520 Tue Nov  5 13:23:50 2013
+3	Output	1408	77520 Tue Nov  5 13:23:50 2013
+4	Input	2200	77520 Tue Nov  5 13:23:50 2013
+12	fps	33	77520 Tue Nov  5 13:23:50 2013
+13	Clients	2	77520 Tue Nov  5 13:23:50 2013
+10	Ping average	13	77520 Tue Nov  5 13:23:50 2013
+8	Ping min	12	77520 Tue Nov  5 13:23:50 2013
+9	Ping max	15	77520 Tue Nov  5 13:23:50 2013
+11	CPU %	2	77520 Tue Nov  5 13:23:50 2013
+14	A client disconnected 	0	78240 Tue Nov  5 13:23:51 2013
+5	Total Output	144420	78540 Tue Nov  5 13:23:51 2013
+6	Total Input	158092	78540 Tue Nov  5 13:23:51 2013
+3	Output	3456	78540 Tue Nov  5 13:23:51 2013
+4	Input	3608	78540 Tue Nov  5 13:23:51 2013
+12	fps	33	78540 Tue Nov  5 13:23:51 2013
+13	Clients	1	78540 Tue Nov  5 13:23:51 2013
+10	Ping average	500	78540 Tue Nov  5 13:23:51 2013
+8	Ping min	500	78540 Tue Nov  5 13:23:51 2013
+9	Ping max	500	78540 Tue Nov  5 13:23:51 2013
+11	CPU %	2	78540 Tue Nov  5 13:23:51 2013
+5	Total Output	145124	79560 Tue Nov  5 13:23:52 2013
+6	Total Input	160292	79560 Tue Nov  5 13:23:52 2013
+3	Output	704	79560 Tue Nov  5 13:23:52 2013
+4	Input	2200	79560 Tue Nov  5 13:23:52 2013
+12	fps	33	79560 Tue Nov  5 13:23:52 2013
+13	Clients	1	79560 Tue Nov  5 13:23:52 2013
+10	Ping average	500	79560 Tue Nov  5 13:23:52 2013
+8	Ping min	500	79560 Tue Nov  5 13:23:52 2013
+9	Ping max	500	79560 Tue Nov  5 13:23:52 2013
+11	CPU %	2	79560 Tue Nov  5 13:23:52 2013
+5	Total Output	145916	80580 Tue Nov  5 13:23:53 2013
+6	Total Input	162580	80580 Tue Nov  5 13:23:53 2013
+3	Output	792	80580 Tue Nov  5 13:23:53 2013
+4	Input	2288	80580 Tue Nov  5 13:23:53 2013
+12	fps	33	80580 Tue Nov  5 13:23:53 2013
+13	Clients	1	80580 Tue Nov  5 13:23:53 2013
+10	Ping average	500	80580 Tue Nov  5 13:23:53 2013
+8	Ping min	500	80580 Tue Nov  5 13:23:53 2013
+9	Ping max	500	80580 Tue Nov  5 13:23:53 2013
+11	CPU %	2	80580 Tue Nov  5 13:23:53 2013
+15	A new client connected from 	16777343	80640 Tue Nov  5 13:23:53 2013
+7	MSG_HELLO message received from	1	80640 Tue Nov  5 13:23:53 2013
+7	MSG_HELLO sent to	1	80640 Tue Nov  5 13:23:53 2013
+5	Total Output	149504	81600 Tue Nov  5 13:23:54 2013
+6	Total Input	165088	81600 Tue Nov  5 13:23:54 2013
+3	Output	3588	81600 Tue Nov  5 13:23:54 2013
+4	Input	2508	81600 Tue Nov  5 13:23:54 2013
+12	fps	33	81600 Tue Nov  5 13:23:54 2013
+13	Clients	2	81600 Tue Nov  5 13:23:54 2013
+10	Ping average	23	81600 Tue Nov  5 13:23:54 2013
+8	Ping min	11	81600 Tue Nov  5 13:23:54 2013
+9	Ping max	36	81600 Tue Nov  5 13:23:54 2013
+11	CPU %	1	81600 Tue Nov  5 13:23:54 2013
+5	Total Output	151088	82620 Tue Nov  5 13:23:55 2013
+6	Total Input	167904	82620 Tue Nov  5 13:23:55 2013
+3	Output	1584	82620 Tue Nov  5 13:23:55 2013
+4	Input	2816	82620 Tue Nov  5 13:23:55 2013
+12	fps	33	82620 Tue Nov  5 13:23:55 2013
+13	Clients	2	82620 Tue Nov  5 13:23:55 2013
+10	Ping average	15	82620 Tue Nov  5 13:23:55 2013
+8	Ping min	15	82620 Tue Nov  5 13:23:55 2013
+9	Ping max	16	82620 Tue Nov  5 13:23:55 2013
+11	CPU %	2	82620 Tue Nov  5 13:23:55 2013
+5	Total Output	152496	83640 Tue Nov  5 13:23:56 2013
+6	Total Input	170280	83640 Tue Nov  5 13:23:56 2013
+3	Output	1408	83640 Tue Nov  5 13:23:56 2013
+4	Input	2376	83640 Tue Nov  5 13:23:56 2013
+12	fps	33	83640 Tue Nov  5 13:23:56 2013
+13	Clients	2	83640 Tue Nov  5 13:23:56 2013
+10	Ping average	14	83640 Tue Nov  5 13:23:56 2013
+8	Ping min	14	83640 Tue Nov  5 13:23:56 2013
+9	Ping max	15	83640 Tue Nov  5 13:23:56 2013
+11	CPU %	3	83640 Tue Nov  5 13:23:56 2013
+5	Total Output	156128	84660 Tue Nov  5 13:23:57 2013
+6	Total Input	172568	84660 Tue Nov  5 13:23:57 2013
+3	Output	3632	84660 Tue Nov  5 13:23:57 2013
+4	Input	2288	84660 Tue Nov  5 13:23:57 2013
+12	fps	33	84660 Tue Nov  5 13:23:57 2013
+13	Clients	2	84660 Tue Nov  5 13:23:57 2013
+10	Ping average	12	84660 Tue Nov  5 13:23:57 2013
+8	Ping min	10	84660 Tue Nov  5 13:23:57 2013
+9	Ping max	15	84660 Tue Nov  5 13:23:57 2013
+11	CPU %	4	84660 Tue Nov  5 13:23:57 2013
+5	Total Output	157536	85680 Tue Nov  5 13:23:58 2013
+6	Total Input	175956	85680 Tue Nov  5 13:23:58 2013
+3	Output	1408	85680 Tue Nov  5 13:23:58 2013
+4	Input	3388	85680 Tue Nov  5 13:23:58 2013
+12	fps	33	85680 Tue Nov  5 13:23:58 2013
+13	Clients	2	85680 Tue Nov  5 13:23:58 2013
+10	Ping average	12	85680 Tue Nov  5 13:23:58 2013
+8	Ping min	10	85680 Tue Nov  5 13:23:58 2013
+9	Ping max	14	85680 Tue Nov  5 13:23:58 2013
+11	CPU %	1	85680 Tue Nov  5 13:23:58 2013
+5	Total Output	159120	86700 Tue Nov  5 13:23:59 2013
+6	Total Input	179388	86700 Tue Nov  5 13:23:59 2013
+3	Output	1584	86700 Tue Nov  5 13:23:59 2013
+4	Input	3432	86700 Tue Nov  5 13:23:59 2013
+12	fps	33	86700 Tue Nov  5 13:23:59 2013
+13	Clients	2	86700 Tue Nov  5 13:23:59 2013
+10	Ping average	10	86700 Tue Nov  5 13:23:59 2013
+8	Ping min	8	86700 Tue Nov  5 13:23:59 2013
+9	Ping max	12	86700 Tue Nov  5 13:23:59 2013
+11	CPU %	3	86700 Tue Nov  5 13:23:59 2013
+5	Total Output	162576	87720 Tue Nov  5 13:24:00 2013
+6	Total Input	184668	87720 Tue Nov  5 13:24:00 2013
+3	Output	3456	87720 Tue Nov  5 13:24:00 2013
+4	Input	5280	87720 Tue Nov  5 13:24:00 2013
+12	fps	33	87720 Tue Nov  5 13:24:00 2013
+13	Clients	2	87720 Tue Nov  5 13:24:00 2013
+10	Ping average	11	87720 Tue Nov  5 13:24:00 2013
+8	Ping min	11	87720 Tue Nov  5 13:24:00 2013
+9	Ping max	11	87720 Tue Nov  5 13:24:00 2013
+11	CPU %	2	87720 Tue Nov  5 13:24:00 2013
+5	Total Output	164160	88740 Tue Nov  5 13:24:01 2013
+6	Total Input	187704	88740 Tue Nov  5 13:24:01 2013
+3	Output	1584	88740 Tue Nov  5 13:24:01 2013
+4	Input	3036	88740 Tue Nov  5 13:24:01 2013
+12	fps	33	88740 Tue Nov  5 13:24:01 2013
+13	Clients	2	88740 Tue Nov  5 13:24:01 2013
+10	Ping average	10	88740 Tue Nov  5 13:24:01 2013
+8	Ping min	9	88740 Tue Nov  5 13:24:01 2013
+9	Ping max	11	88740 Tue Nov  5 13:24:01 2013
+11	CPU %	3	88740 Tue Nov  5 13:24:01 2013
+5	Total Output	165568	89760 Tue Nov  5 13:24:02 2013
+6	Total Input	190256	89760 Tue Nov  5 13:24:02 2013
+3	Output	1408	89760 Tue Nov  5 13:24:02 2013
+4	Input	2552	89760 Tue Nov  5 13:24:02 2013
+12	fps	33	89760 Tue Nov  5 13:24:02 2013
+13	Clients	2	89760 Tue Nov  5 13:24:02 2013
+10	Ping average	10	89760 Tue Nov  5 13:24:02 2013
+8	Ping min	10	89760 Tue Nov  5 13:24:02 2013
+9	Ping max	11	89760 Tue Nov  5 13:24:02 2013
+11	CPU %	0	89760 Tue Nov  5 13:24:02 2013
+5	Total Output	169200	90780 Tue Nov  5 13:24:03 2013
+6	Total Input	194304	90780 Tue Nov  5 13:24:03 2013
+3	Output	3632	90780 Tue Nov  5 13:24:03 2013
+4	Input	4048	90780 Tue Nov  5 13:24:03 2013
+12	fps	33	90780 Tue Nov  5 13:24:03 2013
+13	Clients	2	90780 Tue Nov  5 13:24:03 2013
+10	Ping average	12	90780 Tue Nov  5 13:24:03 2013
+8	Ping min	10	90780 Tue Nov  5 13:24:03 2013
+9	Ping max	15	90780 Tue Nov  5 13:24:03 2013
+11	CPU %	3	90780 Tue Nov  5 13:24:03 2013
+5	Total Output	170608	91800 Tue Nov  5 13:24:04 2013
+6	Total Input	197516	91800 Tue Nov  5 13:24:04 2013
+3	Output	1408	91800 Tue Nov  5 13:24:04 2013
+4	Input	3212	91800 Tue Nov  5 13:24:04 2013
+12	fps	33	91800 Tue Nov  5 13:24:04 2013
+13	Clients	2	91800 Tue Nov  5 13:24:04 2013
+10	Ping average	13	91800 Tue Nov  5 13:24:04 2013
+8	Ping min	10	91800 Tue Nov  5 13:24:04 2013
+9	Ping max	16	91800 Tue Nov  5 13:24:04 2013
+11	CPU %	1	91800 Tue Nov  5 13:24:04 2013
+5	Total Output	172192	92820 Tue Nov  5 13:24:06 2013
+6	Total Input	200376	92820 Tue Nov  5 13:24:06 2013
+3	Output	1584	92820 Tue Nov  5 13:24:06 2013
+4	Input	2860	92820 Tue Nov  5 13:24:06 2013
+12	fps	33	92820 Tue Nov  5 13:24:06 2013
+13	Clients	2	92820 Tue Nov  5 13:24:06 2013
+10	Ping average	10	92820 Tue Nov  5 13:24:06 2013
+8	Ping min	9	92820 Tue Nov  5 13:24:06 2013
+9	Ping max	12	92820 Tue Nov  5 13:24:06 2013
+11	CPU %	2	92820 Tue Nov  5 13:24:06 2013
+5	Total Output	175648	93840 Tue Nov  5 13:24:07 2013
+6	Total Input	204072	93840 Tue Nov  5 13:24:07 2013
+3	Output	3456	93840 Tue Nov  5 13:24:07 2013
+4	Input	3696	93840 Tue Nov  5 13:24:07 2013
+12	fps	33	93840 Tue Nov  5 13:24:07 2013
+13	Clients	2	93840 Tue Nov  5 13:24:07 2013
+10	Ping average	11	93840 Tue Nov  5 13:24:07 2013
+8	Ping min	8	93840 Tue Nov  5 13:24:07 2013
+9	Ping max	14	93840 Tue Nov  5 13:24:07 2013
+11	CPU %	3	93840 Tue Nov  5 13:24:07 2013
+5	Total Output	177232	94860 Tue Nov  5 13:24:08 2013
+6	Total Input	207812	94860 Tue Nov  5 13:24:08 2013
+3	Output	1584	94860 Tue Nov  5 13:24:08 2013
+4	Input	3740	94860 Tue Nov  5 13:24:08 2013
+12	fps	33	94860 Tue Nov  5 13:24:08 2013
+13	Clients	2	94860 Tue Nov  5 13:24:08 2013
+10	Ping average	10	94860 Tue Nov  5 13:24:08 2013
+8	Ping min	8	94860 Tue Nov  5 13:24:08 2013
+9	Ping max	12	94860 Tue Nov  5 13:24:08 2013
+11	CPU %	2	94860 Tue Nov  5 13:24:08 2013
+5	Total Output	178640	95880 Tue Nov  5 13:24:09 2013
+6	Total Input	210232	95880 Tue Nov  5 13:24:09 2013
+3	Output	1408	95880 Tue Nov  5 13:24:09 2013
+4	Input	2420	95880 Tue Nov  5 13:24:09 2013
+12	fps	33	95880 Tue Nov  5 13:24:09 2013
+13	Clients	2	95880 Tue Nov  5 13:24:09 2013
+10	Ping average	12	95880 Tue Nov  5 13:24:09 2013
+8	Ping min	10	95880 Tue Nov  5 13:24:09 2013
+9	Ping max	14	95880 Tue Nov  5 13:24:09 2013
+11	CPU %	2	95880 Tue Nov  5 13:24:09 2013
+5	Total Output	182272	96900 Tue Nov  5 13:24:10 2013
+6	Total Input	214280	96900 Tue Nov  5 13:24:10 2013
+3	Output	3632	96900 Tue Nov  5 13:24:10 2013
+4	Input	4048	96900 Tue Nov  5 13:24:10 2013
+12	fps	33	96900 Tue Nov  5 13:24:10 2013
+13	Clients	2	96900 Tue Nov  5 13:24:10 2013
+10	Ping average	11	96900 Tue Nov  5 13:24:10 2013
+8	Ping min	8	96900 Tue Nov  5 13:24:10 2013
+9	Ping max	14	96900 Tue Nov  5 13:24:10 2013
+11	CPU %	2	96900 Tue Nov  5 13:24:10 2013
+5	Total Output	183680	97920 Tue Nov  5 13:24:11 2013
+6	Total Input	217712	97920 Tue Nov  5 13:24:11 2013
+3	Output	1408	97920 Tue Nov  5 13:24:11 2013
+4	Input	3432	97920 Tue Nov  5 13:24:11 2013
+12	fps	33	97920 Tue Nov  5 13:24:11 2013
+13	Clients	2	97920 Tue Nov  5 13:24:11 2013
+10	Ping average	11	97920 Tue Nov  5 13:24:11 2013
+8	Ping min	11	97920 Tue Nov  5 13:24:11 2013
+9	Ping max	12	97920 Tue Nov  5 13:24:11 2013
+11	CPU %	4	97920 Tue Nov  5 13:24:11 2013
+5	Total Output	185264	98940 Tue Nov  5 13:24:12 2013
+6	Total Input	221804	98940 Tue Nov  5 13:24:12 2013
+3	Output	1584	98940 Tue Nov  5 13:24:12 2013
+4	Input	4092	98940 Tue Nov  5 13:24:12 2013
+12	fps	33	98940 Tue Nov  5 13:24:12 2013
+13	Clients	2	98940 Tue Nov  5 13:24:12 2013
+10	Ping average	10	98940 Tue Nov  5 13:24:12 2013
+8	Ping min	8	98940 Tue Nov  5 13:24:12 2013
+9	Ping max	13	98940 Tue Nov  5 13:24:12 2013
+11	CPU %	2	98940 Tue Nov  5 13:24:12 2013
+5	Total Output	188720	99960 Tue Nov  5 13:24:13 2013
+6	Total Input	226204	99960 Tue Nov  5 13:24:13 2013
+3	Output	3456	99960 Tue Nov  5 13:24:13 2013
+4	Input	4400	99960 Tue Nov  5 13:24:13 2013
+12	fps	33	99960 Tue Nov  5 13:24:13 2013
+13	Clients	2	99960 Tue Nov  5 13:24:13 2013
+10	Ping average	9	99960 Tue Nov  5 13:24:13 2013
+8	Ping min	8	99960 Tue Nov  5 13:24:13 2013
+9	Ping max	11	99960 Tue Nov  5 13:24:13 2013
+11	CPU %	2	99960 Tue Nov  5 13:24:13 2013
+5	Total Output	190304	100980 Tue Nov  5 13:24:14 2013
+6	Total Input	228580	100980 Tue Nov  5 13:24:14 2013
+3	Output	1584	100980 Tue Nov  5 13:24:14 2013
+4	Input	2376	100980 Tue Nov  5 13:24:14 2013
+12	fps	33	100980 Tue Nov  5 13:24:14 2013
+13	Clients	2	100980 Tue Nov  5 13:24:14 2013
+10	Ping average	10	100980 Tue Nov  5 13:24:14 2013
+8	Ping min	9	100980 Tue Nov  5 13:24:14 2013
+9	Ping max	12	100980 Tue Nov  5 13:24:14 2013
+11	CPU %	2	100980 Tue Nov  5 13:24:14 2013
+5	Total Output	191712	102000 Tue Nov  5 13:24:15 2013
+6	Total Input	231484	102000 Tue Nov  5 13:24:15 2013
+3	Output	1408	102000 Tue Nov  5 13:24:15 2013
+4	Input	2904	102000 Tue Nov  5 13:24:15 2013
+12	fps	33	102000 Tue Nov  5 13:24:15 2013
+13	Clients	2	102000 Tue Nov  5 13:24:15 2013
+10	Ping average	10	102000 Tue Nov  5 13:24:15 2013
+8	Ping min	8	102000 Tue Nov  5 13:24:15 2013
+9	Ping max	12	102000 Tue Nov  5 13:24:15 2013
+11	CPU %	2	102000 Tue Nov  5 13:24:15 2013
+5	Total Output	195344	103020 Tue Nov  5 13:24:16 2013
+6	Total Input	234696	103020 Tue Nov  5 13:24:16 2013
+3	Output	3632	103020 Tue Nov  5 13:24:16 2013
+4	Input	3212	103020 Tue Nov  5 13:24:16 2013
+12	fps	33	103020 Tue Nov  5 13:24:16 2013
+13	Clients	2	103020 Tue Nov  5 13:24:16 2013
+10	Ping average	11	103020 Tue Nov  5 13:24:16 2013
+8	Ping min	9	103020 Tue Nov  5 13:24:16 2013
+9	Ping max	14	103020 Tue Nov  5 13:24:16 2013
+11	CPU %	2	103020 Tue Nov  5 13:24:16 2013
+5	Total Output	196752	104040 Tue Nov  5 13:24:17 2013
+6	Total Input	238832	104040 Tue Nov  5 13:24:17 2013
+3	Output	1408	104040 Tue Nov  5 13:24:17 2013
+4	Input	4136	104040 Tue Nov  5 13:24:17 2013
+12	fps	33	104040 Tue Nov  5 13:24:17 2013
+13	Clients	2	104040 Tue Nov  5 13:24:17 2013
+10	Ping average	11	104040 Tue Nov  5 13:24:17 2013
+8	Ping min	11	104040 Tue Nov  5 13:24:17 2013
+9	Ping max	12	104040 Tue Nov  5 13:24:17 2013
+11	CPU %	2	104040 Tue Nov  5 13:24:17 2013
+5	Total Output	200384	105060 Tue Nov  5 13:24:18 2013
+6	Total Input	242704	105060 Tue Nov  5 13:24:18 2013
+3	Output	3632	105060 Tue Nov  5 13:24:18 2013
+4	Input	3872	105060 Tue Nov  5 13:24:18 2013
+12	fps	33	105060 Tue Nov  5 13:24:18 2013
+13	Clients	2	105060 Tue Nov  5 13:24:18 2013
+10	Ping average	10	105060 Tue Nov  5 13:24:18 2013
+8	Ping min	10	105060 Tue Nov  5 13:24:18 2013
+9	Ping max	10	105060 Tue Nov  5 13:24:18 2013
+11	CPU %	2	105060 Tue Nov  5 13:24:18 2013
+5	Total Output	201792	106080 Tue Nov  5 13:24:19 2013
+6	Total Input	244948	106080 Tue Nov  5 13:24:19 2013
+3	Output	1408	106080 Tue Nov  5 13:24:19 2013
+4	Input	2244	106080 Tue Nov  5 13:24:19 2013
+12	fps	33	106080 Tue Nov  5 13:24:19 2013
+13	Clients	2	106080 Tue Nov  5 13:24:19 2013
+10	Ping average	11	106080 Tue Nov  5 13:24:19 2013
+8	Ping min	10	106080 Tue Nov  5 13:24:19 2013
+9	Ping max	12	106080 Tue Nov  5 13:24:19 2013
+11	CPU %	3	106080 Tue Nov  5 13:24:19 2013
+5	Total Output	203376	107100 Tue Nov  5 13:24:20 2013
+6	Total Input	247148	107100 Tue Nov  5 13:24:20 2013
+3	Output	1584	107100 Tue Nov  5 13:24:20 2013
+4	Input	2200	107100 Tue Nov  5 13:24:20 2013
+12	fps	33	107100 Tue Nov  5 13:24:20 2013
+13	Clients	2	107100 Tue Nov  5 13:24:20 2013
+10	Ping average	11	107100 Tue Nov  5 13:24:20 2013
+8	Ping min	9	107100 Tue Nov  5 13:24:20 2013
+9	Ping max	13	107100 Tue Nov  5 13:24:20 2013
+11	CPU %	2	107100 Tue Nov  5 13:24:20 2013
+5	Total Output	206832	108120 Tue Nov  5 13:24:21 2013
+6	Total Input	250932	108120 Tue Nov  5 13:24:21 2013
+3	Output	3456	108120 Tue Nov  5 13:24:21 2013
+4	Input	3784	108120 Tue Nov  5 13:24:21 2013
+12	fps	33	108120 Tue Nov  5 13:24:21 2013
+13	Clients	2	108120 Tue Nov  5 13:24:21 2013
+10	Ping average	13	108120 Tue Nov  5 13:24:21 2013
+8	Ping min	10	108120 Tue Nov  5 13:24:21 2013
+9	Ping max	16	108120 Tue Nov  5 13:24:21 2013
+11	CPU %	1	108120 Tue Nov  5 13:24:21 2013
+5	Total Output	208416	109140 Tue Nov  5 13:24:22 2013
+6	Total Input	253440	109140 Tue Nov  5 13:24:22 2013
+3	Output	1584	109140 Tue Nov  5 13:24:22 2013
+4	Input	2508	109140 Tue Nov  5 13:24:22 2013
+12	fps	33	109140 Tue Nov  5 13:24:22 2013
+13	Clients	2	109140 Tue Nov  5 13:24:22 2013
+10	Ping average	11	109140 Tue Nov  5 13:24:22 2013
+8	Ping min	10	109140 Tue Nov  5 13:24:22 2013
+9	Ping max	12	109140 Tue Nov  5 13:24:22 2013
+11	CPU %	2	109140 Tue Nov  5 13:24:22 2013
+5	Total Output	209824	110160 Tue Nov  5 13:24:23 2013
+6	Total Input	257752	110160 Tue Nov  5 13:24:23 2013
+3	Output	1408	110160 Tue Nov  5 13:24:23 2013
+4	Input	4312	110160 Tue Nov  5 13:24:23 2013
+12	fps	33	110160 Tue Nov  5 13:24:23 2013
+13	Clients	2	110160 Tue Nov  5 13:24:23 2013
+10	Ping average	11	110160 Tue Nov  5 13:24:23 2013
+8	Ping min	11	110160 Tue Nov  5 13:24:23 2013
+9	Ping max	12	110160 Tue Nov  5 13:24:23 2013
+11	CPU %	3	110160 Tue Nov  5 13:24:23 2013
+5	Total Output	213456	111180 Tue Nov  5 13:24:24 2013
+6	Total Input	260524	111180 Tue Nov  5 13:24:24 2013
+3	Output	3632	111180 Tue Nov  5 13:24:24 2013
+4	Input	2772	111180 Tue Nov  5 13:24:24 2013
+12	fps	33	111180 Tue Nov  5 13:24:24 2013
+13	Clients	2	111180 Tue Nov  5 13:24:24 2013
+10	Ping average	13	111180 Tue Nov  5 13:24:24 2013
+8	Ping min	11	111180 Tue Nov  5 13:24:24 2013
+9	Ping max	15	111180 Tue Nov  5 13:24:24 2013
+11	CPU %	2	111180 Tue Nov  5 13:24:24 2013
+5	Total Output	214864	112200 Tue Nov  5 13:24:25 2013
+6	Total Input	264308	112200 Tue Nov  5 13:24:25 2013
+3	Output	1408	112200 Tue Nov  5 13:24:25 2013
+4	Input	3784	112200 Tue Nov  5 13:24:25 2013
+12	fps	33	112200 Tue Nov  5 13:24:25 2013
+13	Clients	2	112200 Tue Nov  5 13:24:25 2013
+10	Ping average	12	112200 Tue Nov  5 13:24:25 2013
+8	Ping min	11	112200 Tue Nov  5 13:24:25 2013
+9	Ping max	13	112200 Tue Nov  5 13:24:25 2013
+11	CPU %	1	112200 Tue Nov  5 13:24:25 2013
+5	Total Output	216448	113220 Tue Nov  5 13:24:26 2013
+6	Total Input	267916	113220 Tue Nov  5 13:24:26 2013
+3	Output	1584	113220 Tue Nov  5 13:24:26 2013
+4	Input	3608	113220 Tue Nov  5 13:24:26 2013
+12	fps	33	113220 Tue Nov  5 13:24:26 2013
+13	Clients	2	113220 Tue Nov  5 13:24:26 2013
+10	Ping average	11	113220 Tue Nov  5 13:24:26 2013
+8	Ping min	10	113220 Tue Nov  5 13:24:26 2013
+9	Ping max	12	113220 Tue Nov  5 13:24:26 2013
+11	CPU %	3	113220 Tue Nov  5 13:24:26 2013
+5	Total Output	219904	114240 Tue Nov  5 13:24:27 2013
+6	Total Input	271788	114240 Tue Nov  5 13:24:27 2013
+3	Output	3456	114240 Tue Nov  5 13:24:27 2013
+4	Input	3872	114240 Tue Nov  5 13:24:27 2013
+12	fps	33	114240 Tue Nov  5 13:24:27 2013
+13	Clients	2	114240 Tue Nov  5 13:24:27 2013
+10	Ping average	32	114240 Tue Nov  5 13:24:27 2013
+8	Ping min	10	114240 Tue Nov  5 13:24:27 2013
+9	Ping max	55	114240 Tue Nov  5 13:24:27 2013
+11	CPU %	2	114240 Tue Nov  5 13:24:27 2013
+5	Total Output	221488	115260 Tue Nov  5 13:24:28 2013
+6	Total Input	274912	115260 Tue Nov  5 13:24:28 2013
+3	Output	1584	115260 Tue Nov  5 13:24:28 2013
+4	Input	3124	115260 Tue Nov  5 13:24:28 2013
+12	fps	33	115260 Tue Nov  5 13:24:28 2013
+13	Clients	2	115260 Tue Nov  5 13:24:28 2013
+10	Ping average	49	115260 Tue Nov  5 13:24:28 2013
+8	Ping min	12	115260 Tue Nov  5 13:24:28 2013
+9	Ping max	86	115260 Tue Nov  5 13:24:28 2013
+11	CPU %	1	115260 Tue Nov  5 13:24:28 2013
+5	Total Output	222896	116280 Tue Nov  5 13:24:29 2013
+6	Total Input	277156	116280 Tue Nov  5 13:24:29 2013
+3	Output	1408	116280 Tue Nov  5 13:24:29 2013
+4	Input	2244	116280 Tue Nov  5 13:24:29 2013
+12	fps	33	116280 Tue Nov  5 13:24:29 2013
+13	Clients	2	116280 Tue Nov  5 13:24:29 2013
+10	Ping average	56	116280 Tue Nov  5 13:24:29 2013
+8	Ping min	10	116280 Tue Nov  5 13:24:29 2013
+9	Ping max	102	116280 Tue Nov  5 13:24:29 2013
+11	CPU %	2	116280 Tue Nov  5 13:24:29 2013
+5	Total Output	226528	117300 Tue Nov  5 13:24:30 2013
+6	Total Input	280060	117300 Tue Nov  5 13:24:30 2013
+3	Output	3632	117300 Tue Nov  5 13:24:30 2013
+4	Input	2904	117300 Tue Nov  5 13:24:30 2013
+12	fps	33	117300 Tue Nov  5 13:24:30 2013
+13	Clients	2	117300 Tue Nov  5 13:24:30 2013
+10	Ping average	52	117300 Tue Nov  5 13:24:30 2013
+8	Ping min	9	117300 Tue Nov  5 13:24:30 2013
+9	Ping max	96	117300 Tue Nov  5 13:24:30 2013
+11	CPU %	1	117300 Tue Nov  5 13:24:30 2013
+5	Total Output	227936	118320 Tue Nov  5 13:24:31 2013
+6	Total Input	283316	118320 Tue Nov  5 13:24:31 2013
+3	Output	1408	118320 Tue Nov  5 13:24:31 2013
+4	Input	3256	118320 Tue Nov  5 13:24:31 2013
+12	fps	33	118320 Tue Nov  5 13:24:31 2013
+13	Clients	2	118320 Tue Nov  5 13:24:31 2013
+10	Ping average	17	118320 Tue Nov  5 13:24:31 2013
+8	Ping min	11	118320 Tue Nov  5 13:24:31 2013
+9	Ping max	23	118320 Tue Nov  5 13:24:31 2013
+11	CPU %	3	118320 Tue Nov  5 13:24:31 2013
+5	Total Output	229520	119340 Tue Nov  5 13:24:32 2013
+6	Total Input	285692	119340 Tue Nov  5 13:24:32 2013
+3	Output	1584	119340 Tue Nov  5 13:24:32 2013
+4	Input	2376	119340 Tue Nov  5 13:24:32 2013
+12	fps	33	119340 Tue Nov  5 13:24:32 2013
+13	Clients	2	119340 Tue Nov  5 13:24:32 2013
+10	Ping average	11	119340 Tue Nov  5 13:24:32 2013
+8	Ping min	11	119340 Tue Nov  5 13:24:32 2013
+9	Ping max	12	119340 Tue Nov  5 13:24:32 2013
+11	CPU %	2	119340 Tue Nov  5 13:24:32 2013
+5	Total Output	232976	120360 Tue Nov  5 13:24:33 2013
+6	Total Input	288376	120360 Tue Nov  5 13:24:33 2013
+3	Output	3456	120360 Tue Nov  5 13:24:33 2013
+4	Input	2684	120360 Tue Nov  5 13:24:33 2013
+12	fps	33	120360 Tue Nov  5 13:24:33 2013
+13	Clients	2	120360 Tue Nov  5 13:24:33 2013
+10	Ping average	11	120360 Tue Nov  5 13:24:33 2013
+8	Ping min	9	120360 Tue Nov  5 13:24:33 2013
+9	Ping max	14	120360 Tue Nov  5 13:24:33 2013
+11	CPU %	2	120360 Tue Nov  5 13:24:33 2013
+5	Total Output	234560	121380 Tue Nov  5 13:24:34 2013
+6	Total Input	290444	121380 Tue Nov  5 13:24:34 2013
+3	Output	1584	121380 Tue Nov  5 13:24:34 2013
+4	Input	2068	121380 Tue Nov  5 13:24:34 2013
+12	fps	33	121380 Tue Nov  5 13:24:34 2013
+13	Clients	2	121380 Tue Nov  5 13:24:34 2013
+10	Ping average	10	121380 Tue Nov  5 13:24:34 2013
+8	Ping min	9	121380 Tue Nov  5 13:24:34 2013
+9	Ping max	12	121380 Tue Nov  5 13:24:34 2013
+11	CPU %	1	121380 Tue Nov  5 13:24:34 2013
+5	Total Output	235968	122400 Tue Nov  5 13:24:35 2013
+6	Total Input	292556	122400 Tue Nov  5 13:24:35 2013
+3	Output	1408	122400 Tue Nov  5 13:24:35 2013
+4	Input	2112	122400 Tue Nov  5 13:24:35 2013
+12	fps	33	122400 Tue Nov  5 13:24:35 2013
+13	Clients	2	122400 Tue Nov  5 13:24:35 2013
+10	Ping average	9	122400 Tue Nov  5 13:24:35 2013
+8	Ping min	7	122400 Tue Nov  5 13:24:35 2013
+9	Ping max	11	122400 Tue Nov  5 13:24:35 2013
+11	CPU %	2	122400 Tue Nov  5 13:24:35 2013
+5	Total Output	239600	123420 Tue Nov  5 13:24:36 2013
+6	Total Input	296208	123420 Tue Nov  5 13:24:36 2013
+3	Output	3632	123420 Tue Nov  5 13:24:36 2013
+4	Input	3652	123420 Tue Nov  5 13:24:36 2013
+12	fps	32	123420 Tue Nov  5 13:24:36 2013
+13	Clients	2	123420 Tue Nov  5 13:24:36 2013
+10	Ping average	9	123420 Tue Nov  5 13:24:36 2013
+8	Ping min	9	123420 Tue Nov  5 13:24:36 2013
+9	Ping max	10	123420 Tue Nov  5 13:24:36 2013
+11	CPU %	3	123420 Tue Nov  5 13:24:36 2013
+5	Total Output	241008	124440 Tue Nov  5 13:24:37 2013
+6	Total Input	298760	124440 Tue Nov  5 13:24:37 2013
+3	Output	1408	124440 Tue Nov  5 13:24:37 2013
+4	Input	2552	124440 Tue Nov  5 13:24:37 2013
+12	fps	33	124440 Tue Nov  5 13:24:37 2013
+13	Clients	2	124440 Tue Nov  5 13:24:37 2013
+10	Ping average	10	124440 Tue Nov  5 13:24:37 2013
+8	Ping min	10	124440 Tue Nov  5 13:24:37 2013
+9	Ping max	11	124440 Tue Nov  5 13:24:37 2013
+11	CPU %	1	124440 Tue Nov  5 13:24:37 2013
+5	Total Output	242592	125460 Tue Nov  5 13:24:38 2013
+6	Total Input	300916	125460 Tue Nov  5 13:24:38 2013
+3	Output	1584	125460 Tue Nov  5 13:24:38 2013
+4	Input	2156	125460 Tue Nov  5 13:24:38 2013
+12	fps	33	125460 Tue Nov  5 13:24:38 2013
+13	Clients	2	125460 Tue Nov  5 13:24:38 2013
+10	Ping average	10	125460 Tue Nov  5 13:24:38 2013
+8	Ping min	10	125460 Tue Nov  5 13:24:38 2013
+9	Ping max	11	125460 Tue Nov  5 13:24:38 2013
+11	CPU %	2	125460 Tue Nov  5 13:24:38 2013
+5	Total Output	246048	126480 Tue Nov  5 13:24:39 2013
+6	Total Input	303072	126480 Tue Nov  5 13:24:39 2013
+3	Output	3456	126480 Tue Nov  5 13:24:39 2013
+4	Input	2156	126480 Tue Nov  5 13:24:39 2013
+12	fps	33	126480 Tue Nov  5 13:24:39 2013
+13	Clients	2	126480 Tue Nov  5 13:24:39 2013
+10	Ping average	13	126480 Tue Nov  5 13:24:39 2013
+8	Ping min	13	126480 Tue Nov  5 13:24:39 2013
+9	Ping max	14	126480 Tue Nov  5 13:24:39 2013
+11	CPU %	2	126480 Tue Nov  5 13:24:39 2013
+5	Total Output	247632	127500 Tue Nov  5 13:24:40 2013
+6	Total Input	305140	127500 Tue Nov  5 13:24:40 2013
+3	Output	1584	127500 Tue Nov  5 13:24:40 2013
+4	Input	2068	127500 Tue Nov  5 13:24:40 2013
+12	fps	33	127500 Tue Nov  5 13:24:40 2013
+13	Clients	2	127500 Tue Nov  5 13:24:40 2013
+10	Ping average	12	127500 Tue Nov  5 13:24:40 2013
+8	Ping min	12	127500 Tue Nov  5 13:24:40 2013
+9	Ping max	12	127500 Tue Nov  5 13:24:40 2013
+11	CPU %	2	127500 Tue Nov  5 13:24:40 2013
+5	Total Output	249040	128520 Tue Nov  5 13:24:41 2013
+6	Total Input	307296	128520 Tue Nov  5 13:24:41 2013
+3	Output	1408	128520 Tue Nov  5 13:24:41 2013
+4	Input	2156	128520 Tue Nov  5 13:24:41 2013
+12	fps	33	128520 Tue Nov  5 13:24:41 2013
+13	Clients	2	128520 Tue Nov  5 13:24:41 2013
+10	Ping average	11	128520 Tue Nov  5 13:24:41 2013
+8	Ping min	10	128520 Tue Nov  5 13:24:41 2013
+9	Ping max	12	128520 Tue Nov  5 13:24:41 2013
+11	CPU %	2	128520 Tue Nov  5 13:24:41 2013
+5	Total Output	252672	129540 Tue Nov  5 13:24:42 2013
+6	Total Input	309408	129540 Tue Nov  5 13:24:42 2013
+3	Output	3632	129540 Tue Nov  5 13:24:42 2013
+4	Input	2112	129540 Tue Nov  5 13:24:42 2013
+12	fps	33	129540 Tue Nov  5 13:24:42 2013
+13	Clients	2	129540 Tue Nov  5 13:24:42 2013
+10	Ping average	9	129540 Tue Nov  5 13:24:42 2013
+8	Ping min	8	129540 Tue Nov  5 13:24:42 2013
+9	Ping max	11	129540 Tue Nov  5 13:24:42 2013
+11	CPU %	2	129540 Tue Nov  5 13:24:42 2013
+5	Total Output	254080	130560 Tue Nov  5 13:24:43 2013
+6	Total Input	311608	130560 Tue Nov  5 13:24:43 2013
+3	Output	1408	130560 Tue Nov  5 13:24:43 2013
+4	Input	2200	130560 Tue Nov  5 13:24:43 2013
+12	fps	33	130560 Tue Nov  5 13:24:43 2013
+13	Clients	2	130560 Tue Nov  5 13:24:43 2013
+10	Ping average	13	130560 Tue Nov  5 13:24:43 2013
+8	Ping min	12	130560 Tue Nov  5 13:24:43 2013
+9	Ping max	14	130560 Tue Nov  5 13:24:43 2013
+11	CPU %	1	130560 Tue Nov  5 13:24:43 2013
+5	Total Output	255664	131580 Tue Nov  5 13:24:44 2013
+6	Total Input	313808	131580 Tue Nov  5 13:24:44 2013
+3	Output	1584	131580 Tue Nov  5 13:24:44 2013
+4	Input	2200	131580 Tue Nov  5 13:24:44 2013
+12	fps	33	131580 Tue Nov  5 13:24:44 2013
+13	Clients	2	131580 Tue Nov  5 13:24:44 2013
+10	Ping average	12	131580 Tue Nov  5 13:24:44 2013
+8	Ping min	10	131580 Tue Nov  5 13:24:44 2013
+9	Ping max	14	131580 Tue Nov  5 13:24:44 2013
+11	CPU %	1	131580 Tue Nov  5 13:24:44 2013
+5	Total Output	259120	132600 Tue Nov  5 13:24:45 2013
+6	Total Input	315920	132600 Tue Nov  5 13:24:45 2013
+3	Output	3456	132600 Tue Nov  5 13:24:45 2013
+4	Input	2112	132600 Tue Nov  5 13:24:45 2013
+12	fps	33	132600 Tue Nov  5 13:24:45 2013
+13	Clients	2	132600 Tue Nov  5 13:24:45 2013
+10	Ping average	13	132600 Tue Nov  5 13:24:45 2013
+8	Ping min	10	132600 Tue Nov  5 13:24:45 2013
+9	Ping max	17	132600 Tue Nov  5 13:24:45 2013
+11	CPU %	3	132600 Tue Nov  5 13:24:45 2013
+5	Total Output	260704	133620 Tue Nov  5 13:24:46 2013
+6	Total Input	318032	133620 Tue Nov  5 13:24:46 2013
+3	Output	1584	133620 Tue Nov  5 13:24:46 2013
+4	Input	2112	133620 Tue Nov  5 13:24:46 2013
+12	fps	33	133620 Tue Nov  5 13:24:46 2013
+13	Clients	2	133620 Tue Nov  5 13:24:46 2013
+10	Ping average	11	133620 Tue Nov  5 13:24:46 2013
+8	Ping min	10	133620 Tue Nov  5 13:24:46 2013
+9	Ping max	13	133620 Tue Nov  5 13:24:46 2013
+11	CPU %	1	133620 Tue Nov  5 13:24:46 2013
+5	Total Output	262112	134640 Tue Nov  5 13:24:48 2013
+6	Total Input	320144	134640 Tue Nov  5 13:24:48 2013
+3	Output	1408	134640 Tue Nov  5 13:24:48 2013
+4	Input	2112	134640 Tue Nov  5 13:24:48 2013
+12	fps	33	134640 Tue Nov  5 13:24:48 2013
+13	Clients	2	134640 Tue Nov  5 13:24:48 2013
+10	Ping average	10	134640 Tue Nov  5 13:24:48 2013
+8	Ping min	10	134640 Tue Nov  5 13:24:48 2013
+9	Ping max	11	134640 Tue Nov  5 13:24:48 2013
+11	CPU %	2	134640 Tue Nov  5 13:24:48 2013
+5	Total Output	265744	135660 Tue Nov  5 13:24:49 2013
+6	Total Input	323884	135660 Tue Nov  5 13:24:49 2013
+3	Output	3632	135660 Tue Nov  5 13:24:49 2013
+4	Input	3740	135660 Tue Nov  5 13:24:49 2013
+12	fps	33	135660 Tue Nov  5 13:24:49 2013
+13	Clients	2	135660 Tue Nov  5 13:24:49 2013
+10	Ping average	10	135660 Tue Nov  5 13:24:49 2013
+8	Ping min	9	135660 Tue Nov  5 13:24:49 2013
+9	Ping max	11	135660 Tue Nov  5 13:24:49 2013
+11	CPU %	2	135660 Tue Nov  5 13:24:49 2013
+5	Total Output	267152	136680 Tue Nov  5 13:24:50 2013
+6	Total Input	326876	136680 Tue Nov  5 13:24:50 2013
+3	Output	1408	136680 Tue Nov  5 13:24:50 2013
+4	Input	2992	136680 Tue Nov  5 13:24:50 2013
+12	fps	33	136680 Tue Nov  5 13:24:50 2013
+13	Clients	2	136680 Tue Nov  5 13:24:50 2013
+10	Ping average	11	136680 Tue Nov  5 13:24:50 2013
+8	Ping min	11	136680 Tue Nov  5 13:24:50 2013
+9	Ping max	11	136680 Tue Nov  5 13:24:50 2013
+11	CPU %	2	136680 Tue Nov  5 13:24:50 2013
+5	Total Output	268736	137700 Tue Nov  5 13:24:51 2013
+6	Total Input	329428	137700 Tue Nov  5 13:24:51 2013
+3	Output	1584	137700 Tue Nov  5 13:24:51 2013
+4	Input	2552	137700 Tue Nov  5 13:24:51 2013
+12	fps	33	137700 Tue Nov  5 13:24:51 2013
+13	Clients	2	137700 Tue Nov  5 13:24:51 2013
+10	Ping average	11	137700 Tue Nov  5 13:24:51 2013
+8	Ping min	11	137700 Tue Nov  5 13:24:51 2013
+9	Ping max	12	137700 Tue Nov  5 13:24:51 2013
+11	CPU %	2	137700 Tue Nov  5 13:24:51 2013
+5	Total Output	272192	138720 Tue Nov  5 13:24:52 2013
+6	Total Input	332200	138720 Tue Nov  5 13:24:52 2013
+3	Output	3456	138720 Tue Nov  5 13:24:52 2013
+4	Input	2772	138720 Tue Nov  5 13:24:52 2013
+12	fps	33	138720 Tue Nov  5 13:24:52 2013
+13	Clients	2	138720 Tue Nov  5 13:24:52 2013
+10	Ping average	12	138720 Tue Nov  5 13:24:52 2013
+8	Ping min	11	138720 Tue Nov  5 13:24:52 2013
+9	Ping max	13	138720 Tue Nov  5 13:24:52 2013
+11	CPU %	2	138720 Tue Nov  5 13:24:52 2013
+5	Total Output	273776	139740 Tue Nov  5 13:24:53 2013
+6	Total Input	334576	139740 Tue Nov  5 13:24:53 2013
+3	Output	1584	139740 Tue Nov  5 13:24:53 2013
+4	Input	2376	139740 Tue Nov  5 13:24:53 2013
+12	fps	33	139740 Tue Nov  5 13:24:53 2013
+13	Clients	2	139740 Tue Nov  5 13:24:53 2013
+10	Ping average	10	139740 Tue Nov  5 13:24:53 2013
+8	Ping min	10	139740 Tue Nov  5 13:24:53 2013
+9	Ping max	11	139740 Tue Nov  5 13:24:53 2013
+11	CPU %	2	139740 Tue Nov  5 13:24:53 2013
+5	Total Output	275184	140760 Tue Nov  5 13:24:54 2013
+6	Total Input	336820	140760 Tue Nov  5 13:24:54 2013
+3	Output	1408	140760 Tue Nov  5 13:24:54 2013
+4	Input	2244	140760 Tue Nov  5 13:24:54 2013
+12	fps	33	140760 Tue Nov  5 13:24:54 2013
+13	Clients	2	140760 Tue Nov  5 13:24:54 2013
+10	Ping average	11	140760 Tue Nov  5 13:24:54 2013
+8	Ping min	11	140760 Tue Nov  5 13:24:54 2013
+9	Ping max	12	140760 Tue Nov  5 13:24:54 2013
+11	CPU %	1	140760 Tue Nov  5 13:24:54 2013
+5	Total Output	278816	141780 Tue Nov  5 13:24:55 2013
+6	Total Input	340516	141780 Tue Nov  5 13:24:55 2013
+3	Output	3632	141780 Tue Nov  5 13:24:55 2013
+4	Input	3696	141780 Tue Nov  5 13:24:55 2013
+12	fps	33	141780 Tue Nov  5 13:24:55 2013
+13	Clients	2	141780 Tue Nov  5 13:24:55 2013
+10	Ping average	11	141780 Tue Nov  5 13:24:55 2013
+8	Ping min	10	141780 Tue Nov  5 13:24:55 2013
+9	Ping max	13	141780 Tue Nov  5 13:24:55 2013
+11	CPU %	2	141780 Tue Nov  5 13:24:55 2013
+5	Total Output	280224	142800 Tue Nov  5 13:24:56 2013
+6	Total Input	344080	142800 Tue Nov  5 13:24:56 2013
+3	Output	1408	142800 Tue Nov  5 13:24:56 2013
+4	Input	3564	142800 Tue Nov  5 13:24:56 2013
+12	fps	33	142800 Tue Nov  5 13:24:56 2013
+13	Clients	2	142800 Tue Nov  5 13:24:56 2013
+10	Ping average	12	142800 Tue Nov  5 13:24:56 2013
+8	Ping min	12	142800 Tue Nov  5 13:24:56 2013
+9	Ping max	13	142800 Tue Nov  5 13:24:56 2013
+11	CPU %	3	142800 Tue Nov  5 13:24:56 2013
+5	Total Output	281808	143820 Tue Nov  5 13:24:57 2013
+6	Total Input	346808	143820 Tue Nov  5 13:24:57 2013
+3	Output	1584	143820 Tue Nov  5 13:24:57 2013
+4	Input	2728	143820 Tue Nov  5 13:24:57 2013
+12	fps	33	143820 Tue Nov  5 13:24:57 2013
+13	Clients	2	143820 Tue Nov  5 13:24:57 2013
+10	Ping average	11	143820 Tue Nov  5 13:24:57 2013
+8	Ping min	11	143820 Tue Nov  5 13:24:57 2013
+9	Ping max	11	143820 Tue Nov  5 13:24:57 2013
+11	CPU %	1	143820 Tue Nov  5 13:24:57 2013
+5	Total Output	285264	144840 Tue Nov  5 13:24:58 2013
+6	Total Input	348920	144840 Tue Nov  5 13:24:58 2013
+3	Output	3456	144840 Tue Nov  5 13:24:58 2013
+4	Input	2112	144840 Tue Nov  5 13:24:58 2013
+12	fps	33	144840 Tue Nov  5 13:24:58 2013
+13	Clients	2	144840 Tue Nov  5 13:24:58 2013
+10	Ping average	11	144840 Tue Nov  5 13:24:58 2013
+8	Ping min	11	144840 Tue Nov  5 13:24:58 2013
+9	Ping max	12	144840 Tue Nov  5 13:24:58 2013
+11	CPU %	2	144840 Tue Nov  5 13:24:58 2013
+5	Total Output	286848	145860 Tue Nov  5 13:24:59 2013
+6	Total Input	351120	145860 Tue Nov  5 13:24:59 2013
+3	Output	1584	145860 Tue Nov  5 13:24:59 2013
+4	Input	2200	145860 Tue Nov  5 13:24:59 2013
+12	fps	33	145860 Tue Nov  5 13:24:59 2013
+13	Clients	2	145860 Tue Nov  5 13:24:59 2013
+10	Ping average	11	145860 Tue Nov  5 13:24:59 2013
+8	Ping min	10	145860 Tue Nov  5 13:24:59 2013
+9	Ping max	12	145860 Tue Nov  5 13:24:59 2013
+11	CPU %	2	145860 Tue Nov  5 13:24:59 2013
+5	Total Output	288256	146880 Tue Nov  5 13:25:00 2013
+6	Total Input	353232	146880 Tue Nov  5 13:25:00 2013
+3	Output	1408	146880 Tue Nov  5 13:25:00 2013
+4	Input	2112	146880 Tue Nov  5 13:25:00 2013
+12	fps	33	146880 Tue Nov  5 13:25:00 2013
+13	Clients	2	146880 Tue Nov  5 13:25:00 2013
+10	Ping average	10	146880 Tue Nov  5 13:25:00 2013
+8	Ping min	10	146880 Tue Nov  5 13:25:00 2013
+9	Ping max	11	146880 Tue Nov  5 13:25:00 2013
+11	CPU %	1	146880 Tue Nov  5 13:25:00 2013
+5	Total Output	291888	147900 Tue Nov  5 13:25:01 2013
+6	Total Input	355344	147900 Tue Nov  5 13:25:01 2013
+3	Output	3632	147900 Tue Nov  5 13:25:01 2013
+4	Input	2112	147900 Tue Nov  5 13:25:01 2013
+12	fps	33	147900 Tue Nov  5 13:25:01 2013
+13	Clients	2	147900 Tue Nov  5 13:25:01 2013
+10	Ping average	10	147900 Tue Nov  5 13:25:01 2013
+8	Ping min	8	147900 Tue Nov  5 13:25:01 2013
+9	Ping max	12	147900 Tue Nov  5 13:25:01 2013
+11	CPU %	2	147900 Tue Nov  5 13:25:01 2013
+5	Total Output	293296	148920 Tue Nov  5 13:25:02 2013
+6	Total Input	357456	148920 Tue Nov  5 13:25:02 2013
+3	Output	1408	148920 Tue Nov  5 13:25:02 2013
+4	Input	2112	148920 Tue Nov  5 13:25:02 2013
+12	fps	33	148920 Tue Nov  5 13:25:02 2013
+13	Clients	2	148920 Tue Nov  5 13:25:02 2013
+10	Ping average	11	148920 Tue Nov  5 13:25:02 2013
+8	Ping min	10	148920 Tue Nov  5 13:25:02 2013
+9	Ping max	12	148920 Tue Nov  5 13:25:02 2013
+11	CPU %	2	148920 Tue Nov  5 13:25:02 2013
+5	Total Output	294880	149940 Tue Nov  5 13:25:03 2013
+6	Total Input	359656	149940 Tue Nov  5 13:25:03 2013
+3	Output	1584	149940 Tue Nov  5 13:25:03 2013
+4	Input	2200	149940 Tue Nov  5 13:25:03 2013
+12	fps	33	149940 Tue Nov  5 13:25:03 2013
+13	Clients	2	149940 Tue Nov  5 13:25:03 2013
+10	Ping average	9	149940 Tue Nov  5 13:25:03 2013
+8	Ping min	8	149940 Tue Nov  5 13:25:03 2013
+9	Ping max	10	149940 Tue Nov  5 13:25:03 2013
+11	CPU %	2	149940 Tue Nov  5 13:25:03 2013
+5	Total Output	298336	150960 Tue Nov  5 13:25:04 2013
+6	Total Input	361944	150960 Tue Nov  5 13:25:04 2013
+3	Output	3456	150960 Tue Nov  5 13:25:04 2013
+4	Input	2288	150960 Tue Nov  5 13:25:04 2013
+12	fps	33	150960 Tue Nov  5 13:25:04 2013
+13	Clients	2	150960 Tue Nov  5 13:25:04 2013
+10	Ping average	10	150960 Tue Nov  5 13:25:04 2013
+8	Ping min	8	150960 Tue Nov  5 13:25:04 2013
+9	Ping max	13	150960 Tue Nov  5 13:25:04 2013
+11	CPU %	1	150960 Tue Nov  5 13:25:04 2013
+5	Total Output	299920	151980 Tue Nov  5 13:25:05 2013
+6	Total Input	364892	151980 Tue Nov  5 13:25:05 2013
+3	Output	1584	151980 Tue Nov  5 13:25:05 2013
+4	Input	2948	151980 Tue Nov  5 13:25:05 2013
+12	fps	33	151980 Tue Nov  5 13:25:05 2013
+13	Clients	2	151980 Tue Nov  5 13:25:05 2013
+10	Ping average	11	151980 Tue Nov  5 13:25:05 2013
+8	Ping min	10	151980 Tue Nov  5 13:25:05 2013
+9	Ping max	13	151980 Tue Nov  5 13:25:05 2013
+11	CPU %	2	151980 Tue Nov  5 13:25:05 2013
+5	Total Output	301328	153000 Tue Nov  5 13:25:06 2013
+6	Total Input	369204	153000 Tue Nov  5 13:25:06 2013
+3	Output	1408	153000 Tue Nov  5 13:25:06 2013
+4	Input	4312	153000 Tue Nov  5 13:25:06 2013
+12	fps	33	153000 Tue Nov  5 13:25:06 2013
+13	Clients	2	153000 Tue Nov  5 13:25:06 2013
+10	Ping average	10	153000 Tue Nov  5 13:25:06 2013
+8	Ping min	9	153000 Tue Nov  5 13:25:06 2013
+9	Ping max	11	153000 Tue Nov  5 13:25:06 2013
+11	CPU %	2	153000 Tue Nov  5 13:25:06 2013
+5	Total Output	304960	154020 Tue Nov  5 13:25:07 2013
+6	Total Input	373560	154020 Tue Nov  5 13:25:07 2013
+3	Output	3632	154020 Tue Nov  5 13:25:07 2013
+4	Input	4356	154020 Tue Nov  5 13:25:07 2013
+12	fps	33	154020 Tue Nov  5 13:25:07 2013
+13	Clients	2	154020 Tue Nov  5 13:25:07 2013
+10	Ping average	10	154020 Tue Nov  5 13:25:07 2013
+8	Ping min	9	154020 Tue Nov  5 13:25:07 2013
+9	Ping max	12	154020 Tue Nov  5 13:25:07 2013
+11	CPU %	3	154020 Tue Nov  5 13:25:07 2013
+5	Total Output	306368	155040 Tue Nov  5 13:25:08 2013
+6	Total Input	377256	155040 Tue Nov  5 13:25:08 2013
+3	Output	1408	155040 Tue Nov  5 13:25:08 2013
+4	Input	3696	155040 Tue Nov  5 13:25:08 2013
+12	fps	33	155040 Tue Nov  5 13:25:08 2013
+13	Clients	2	155040 Tue Nov  5 13:25:08 2013
+10	Ping average	11	155040 Tue Nov  5 13:25:08 2013
+8	Ping min	9	155040 Tue Nov  5 13:25:08 2013
+9	Ping max	14	155040 Tue Nov  5 13:25:08 2013
+11	CPU %	2	155040 Tue Nov  5 13:25:08 2013
+5	Total Output	309824	156060 Tue Nov  5 13:25:09 2013
+6	Total Input	381348	156060 Tue Nov  5 13:25:09 2013
+3	Output	3456	156060 Tue Nov  5 13:25:09 2013
+4	Input	4092	156060 Tue Nov  5 13:25:09 2013
+12	fps	33	156060 Tue Nov  5 13:25:09 2013
+13	Clients	2	156060 Tue Nov  5 13:25:09 2013
+10	Ping average	12	156060 Tue Nov  5 13:25:09 2013
+8	Ping min	12	156060 Tue Nov  5 13:25:09 2013
+9	Ping max	13	156060 Tue Nov  5 13:25:09 2013
+11	CPU %	3	156060 Tue Nov  5 13:25:09 2013
+5	Total Output	311408	157080 Tue Nov  5 13:25:10 2013
+6	Total Input	386276	157080 Tue Nov  5 13:25:10 2013
+3	Output	1584	157080 Tue Nov  5 13:25:10 2013
+4	Input	4928	157080 Tue Nov  5 13:25:10 2013
+12	fps	33	157080 Tue Nov  5 13:25:10 2013
+13	Clients	2	157080 Tue Nov  5 13:25:10 2013
+10	Ping average	10	157080 Tue Nov  5 13:25:10 2013
+8	Ping min	10	157080 Tue Nov  5 13:25:10 2013
+9	Ping max	11	157080 Tue Nov  5 13:25:10 2013
+11	CPU %	3	157080 Tue Nov  5 13:25:10 2013
+5	Total Output	312816	158100 Tue Nov  5 13:25:11 2013
+6	Total Input	388608	158100 Tue Nov  5 13:25:11 2013
+3	Output	1408	158100 Tue Nov  5 13:25:11 2013
+4	Input	2332	158100 Tue Nov  5 13:25:11 2013
+12	fps	33	158100 Tue Nov  5 13:25:11 2013
+13	Clients	2	158100 Tue Nov  5 13:25:11 2013
+10	Ping average	12	158100 Tue Nov  5 13:25:11 2013
+8	Ping min	11	158100 Tue Nov  5 13:25:11 2013
+9	Ping max	13	158100 Tue Nov  5 13:25:11 2013
+11	CPU %	1	158100 Tue Nov  5 13:25:11 2013
+5	Total Output	316448	159120 Tue Nov  5 13:25:12 2013
+6	Total Input	393228	159120 Tue Nov  5 13:25:12 2013
+3	Output	3632	159120 Tue Nov  5 13:25:12 2013
+4	Input	4620	159120 Tue Nov  5 13:25:12 2013
+12	fps	33	159120 Tue Nov  5 13:25:12 2013
+13	Clients	2	159120 Tue Nov  5 13:25:12 2013
+10	Ping average	10	159120 Tue Nov  5 13:25:12 2013
+8	Ping min	9	159120 Tue Nov  5 13:25:12 2013
+9	Ping max	12	159120 Tue Nov  5 13:25:12 2013
+11	CPU %	3	159120 Tue Nov  5 13:25:12 2013
+5	Total Output	317856	160140 Tue Nov  5 13:25:13 2013
+6	Total Input	396616	160140 Tue Nov  5 13:25:13 2013
+3	Output	1408	160140 Tue Nov  5 13:25:13 2013
+4	Input	3388	160140 Tue Nov  5 13:25:13 2013
+12	fps	33	160140 Tue Nov  5 13:25:13 2013
+13	Clients	2	160140 Tue Nov  5 13:25:13 2013
+10	Ping average	11	160140 Tue Nov  5 13:25:13 2013
+8	Ping min	11	160140 Tue Nov  5 13:25:13 2013
+9	Ping max	11	160140 Tue Nov  5 13:25:13 2013
+11	CPU %	2	160140 Tue Nov  5 13:25:13 2013
+5	Total Output	319440	161160 Tue Nov  5 13:25:14 2013
+6	Total Input	399344	161160 Tue Nov  5 13:25:14 2013
+3	Output	1584	161160 Tue Nov  5 13:25:14 2013
+4	Input	2728	161160 Tue Nov  5 13:25:14 2013
+12	fps	33	161160 Tue Nov  5 13:25:14 2013
+13	Clients	2	161160 Tue Nov  5 13:25:14 2013
+10	Ping average	13	161160 Tue Nov  5 13:25:14 2013
+8	Ping min	11	161160 Tue Nov  5 13:25:14 2013
+9	Ping max	15	161160 Tue Nov  5 13:25:14 2013
+11	CPU %	2	161160 Tue Nov  5 13:25:14 2013
+5	Total Output	323424	162180 Tue Nov  5 13:25:29 2013
+6	Total Input	430848	162180 Tue Nov  5 13:25:29 2013
+3	Output	3984	162180 Tue Nov  5 13:25:29 2013
+4	Input	31504	162180 Tue Nov  5 13:25:29 2013
+12	fps	2	162180 Tue Nov  5 13:25:29 2013
+13	Clients	2	162180 Tue Nov  5 13:25:29 2013
+10	Ping average	12	162180 Tue Nov  5 13:25:29 2013
+8	Ping min	12	162180 Tue Nov  5 13:25:29 2013
+9	Ping max	13	162180 Tue Nov  5 13:25:29 2013
+11	CPU %	0	162180 Tue Nov  5 13:25:29 2013
+5	Total Output	325272	163200 Tue Nov  5 13:25:30 2013
+6	Total Input	432872	163200 Tue Nov  5 13:25:30 2013
+3	Output	1848	163200 Tue Nov  5 13:25:30 2013
+4	Input	2024	163200 Tue Nov  5 13:25:30 2013
+12	fps	33	163200 Tue Nov  5 13:25:30 2013
+13	Clients	2	163200 Tue Nov  5 13:25:30 2013
+10	Ping average	12	163200 Tue Nov  5 13:25:30 2013
+8	Ping min	10	163200 Tue Nov  5 13:25:30 2013
+9	Ping max	14	163200 Tue Nov  5 13:25:30 2013
+11	CPU %	2	163200 Tue Nov  5 13:25:30 2013
+5	Total Output	326680	164220 Tue Nov  5 13:25:31 2013
+6	Total Input	435028	164220 Tue Nov  5 13:25:31 2013
+3	Output	1408	164220 Tue Nov  5 13:25:31 2013
+4	Input	2156	164220 Tue Nov  5 13:25:31 2013
+12	fps	33	164220 Tue Nov  5 13:25:31 2013
+13	Clients	2	164220 Tue Nov  5 13:25:31 2013
+10	Ping average	13	164220 Tue Nov  5 13:25:31 2013
+8	Ping min	10	164220 Tue Nov  5 13:25:31 2013
+9	Ping max	16	164220 Tue Nov  5 13:25:31 2013
+11	CPU %	3	164220 Tue Nov  5 13:25:31 2013
+5	Total Output	330312	165240 Tue Nov  5 13:25:32 2013
+6	Total Input	437184	165240 Tue Nov  5 13:25:32 2013
+3	Output	3632	165240 Tue Nov  5 13:25:32 2013
+4	Input	2156	165240 Tue Nov  5 13:25:32 2013
+12	fps	33	165240 Tue Nov  5 13:25:32 2013
+13	Clients	2	165240 Tue Nov  5 13:25:32 2013
+10	Ping average	13	165240 Tue Nov  5 13:25:32 2013
+8	Ping min	12	165240 Tue Nov  5 13:25:32 2013
+9	Ping max	14	165240 Tue Nov  5 13:25:32 2013
+11	CPU %	2	165240 Tue Nov  5 13:25:32 2013
+5	Total Output	331720	166260 Tue Nov  5 13:25:33 2013
+6	Total Input	441056	166260 Tue Nov  5 13:25:33 2013
+3	Output	1408	166260 Tue Nov  5 13:25:33 2013
+4	Input	3872	166260 Tue Nov  5 13:25:33 2013
+12	fps	33	166260 Tue Nov  5 13:25:33 2013
+13	Clients	2	166260 Tue Nov  5 13:25:33 2013
+10	Ping average	9	166260 Tue Nov  5 13:25:33 2013
+8	Ping min	9	166260 Tue Nov  5 13:25:33 2013
+9	Ping max	10	166260 Tue Nov  5 13:25:33 2013
+11	CPU %	1	166260 Tue Nov  5 13:25:33 2013
+5	Total Output	333304	167280 Tue Nov  5 13:25:34 2013
+6	Total Input	444092	167280 Tue Nov  5 13:25:34 2013
+3	Output	1584	167280 Tue Nov  5 13:25:34 2013
+4	Input	3036	167280 Tue Nov  5 13:25:34 2013
+12	fps	33	167280 Tue Nov  5 13:25:34 2013
+13	Clients	2	167280 Tue Nov  5 13:25:34 2013
+10	Ping average	11	167280 Tue Nov  5 13:25:34 2013
+8	Ping min	9	167280 Tue Nov  5 13:25:34 2013
+9	Ping max	13	167280 Tue Nov  5 13:25:34 2013
+11	CPU %	3	167280 Tue Nov  5 13:25:34 2013
+5	Total Output	336760	168300 Tue Nov  5 13:25:35 2013
+6	Total Input	450076	168300 Tue Nov  5 13:25:35 2013
+3	Output	3456	168300 Tue Nov  5 13:25:35 2013
+4	Input	5984	168300 Tue Nov  5 13:25:35 2013
+12	fps	33	168300 Tue Nov  5 13:25:35 2013
+13	Clients	2	168300 Tue Nov  5 13:25:35 2013
+10	Ping average	9	168300 Tue Nov  5 13:25:35 2013
+8	Ping min	8	168300 Tue Nov  5 13:25:35 2013
+9	Ping max	10	168300 Tue Nov  5 13:25:35 2013
+11	CPU %	2	168300 Tue Nov  5 13:25:35 2013
+5	Total Output	338344	169320 Tue Nov  5 13:25:36 2013
+6	Total Input	453816	169320 Tue Nov  5 13:25:36 2013
+3	Output	1584	169320 Tue Nov  5 13:25:36 2013
+4	Input	3740	169320 Tue Nov  5 13:25:36 2013
+12	fps	33	169320 Tue Nov  5 13:25:36 2013
+13	Clients	2	169320 Tue Nov  5 13:25:36 2013
+10	Ping average	10	169320 Tue Nov  5 13:25:36 2013
+8	Ping min	10	169320 Tue Nov  5 13:25:36 2013
+9	Ping max	11	169320 Tue Nov  5 13:25:36 2013
+11	CPU %	3	169320 Tue Nov  5 13:25:36 2013
+5	Total Output	339752	170340 Tue Nov  5 13:25:37 2013
+6	Total Input	456192	170340 Tue Nov  5 13:25:37 2013
+3	Output	1408	170340 Tue Nov  5 13:25:37 2013
+4	Input	2376	170340 Tue Nov  5 13:25:37 2013
+12	fps	33	170340 Tue Nov  5 13:25:37 2013
+13	Clients	2	170340 Tue Nov  5 13:25:37 2013
+10	Ping average	10	170340 Tue Nov  5 13:25:37 2013
+8	Ping min	10	170340 Tue Nov  5 13:25:37 2013
+9	Ping max	11	170340 Tue Nov  5 13:25:37 2013
+11	CPU %	2	170340 Tue Nov  5 13:25:37 2013
+5	Total Output	343208	171360 Tue Nov  5 13:25:38 2013
+6	Total Input	462572	171360 Tue Nov  5 13:25:38 2013
+3	Output	3456	171360 Tue Nov  5 13:25:38 2013
+4	Input	6380	171360 Tue Nov  5 13:25:38 2013
+12	fps	33	171360 Tue Nov  5 13:25:38 2013
+13	Clients	2	171360 Tue Nov  5 13:25:38 2013
+10	Ping average	10	171360 Tue Nov  5 13:25:38 2013
+8	Ping min	9	171360 Tue Nov  5 13:25:38 2013
+9	Ping max	11	171360 Tue Nov  5 13:25:38 2013
+11	CPU %	3	171360 Tue Nov  5 13:25:38 2013
+5	Total Output	344792	172380 Tue Nov  5 13:25:39 2013
+6	Total Input	466268	172380 Tue Nov  5 13:25:39 2013
+3	Output	1584	172380 Tue Nov  5 13:25:39 2013
+4	Input	3696	172380 Tue Nov  5 13:25:39 2013
+12	fps	33	172380 Tue Nov  5 13:25:39 2013
+13	Clients	2	172380 Tue Nov  5 13:25:39 2013
+10	Ping average	10	172380 Tue Nov  5 13:25:39 2013
+8	Ping min	9	172380 Tue Nov  5 13:25:39 2013
+9	Ping max	11	172380 Tue Nov  5 13:25:39 2013
+11	CPU %	1	172380 Tue Nov  5 13:25:39 2013
+5	Total Output	346200	173400 Tue Nov  5 13:25:40 2013
+6	Total Input	468512	173400 Tue Nov  5 13:25:40 2013
+3	Output	1408	173400 Tue Nov  5 13:25:40 2013
+4	Input	2244	173400 Tue Nov  5 13:25:40 2013
+12	fps	33	173400 Tue Nov  5 13:25:40 2013
+13	Clients	2	173400 Tue Nov  5 13:25:40 2013
+10	Ping average	11	173400 Tue Nov  5 13:25:40 2013
+8	Ping min	10	173400 Tue Nov  5 13:25:40 2013
+9	Ping max	13	173400 Tue Nov  5 13:25:40 2013
+11	CPU %	2	173400 Tue Nov  5 13:25:40 2013
+5	Total Output	349832	174420 Tue Nov  5 13:25:41 2013
+6	Total Input	472296	174420 Tue Nov  5 13:25:41 2013
+3	Output	3632	174420 Tue Nov  5 13:25:41 2013
+4	Input	3784	174420 Tue Nov  5 13:25:41 2013
+12	fps	33	174420 Tue Nov  5 13:25:41 2013
+13	Clients	2	174420 Tue Nov  5 13:25:41 2013
+10	Ping average	12	174420 Tue Nov  5 13:25:41 2013
+8	Ping min	12	174420 Tue Nov  5 13:25:41 2013
+9	Ping max	13	174420 Tue Nov  5 13:25:41 2013
+11	CPU %	2	174420 Tue Nov  5 13:25:41 2013
+5	Total Output	351240	175440 Tue Nov  5 13:25:42 2013
+6	Total Input	476520	175440 Tue Nov  5 13:25:42 2013
+3	Output	1408	175440 Tue Nov  5 13:25:42 2013
+4	Input	4224	175440 Tue Nov  5 13:25:42 2013
+12	fps	33	175440 Tue Nov  5 13:25:42 2013
+13	Clients	2	175440 Tue Nov  5 13:25:42 2013
+10	Ping average	10	175440 Tue Nov  5 13:25:42 2013
+8	Ping min	10	175440 Tue Nov  5 13:25:42 2013
+9	Ping max	11	175440 Tue Nov  5 13:25:42 2013
+11	CPU %	2	175440 Tue Nov  5 13:25:42 2013
+5	Total Output	352824	176460 Tue Nov  5 13:25:43 2013
+6	Total Input	481536	176460 Tue Nov  5 13:25:43 2013
+3	Output	1584	176460 Tue Nov  5 13:25:43 2013
+4	Input	5016	176460 Tue Nov  5 13:25:43 2013
+12	fps	33	176460 Tue Nov  5 13:25:43 2013
+13	Clients	2	176460 Tue Nov  5 13:25:43 2013
+10	Ping average	10	176460 Tue Nov  5 13:25:43 2013
+8	Ping min	9	176460 Tue Nov  5 13:25:43 2013
+9	Ping max	11	176460 Tue Nov  5 13:25:43 2013
+11	CPU %	3	176460 Tue Nov  5 13:25:43 2013
+5	Total Output	356280	177480 Tue Nov  5 13:25:45 2013
+6	Total Input	484440	177480 Tue Nov  5 13:25:45 2013
+3	Output	3456	177480 Tue Nov  5 13:25:45 2013
+4	Input	2904	177480 Tue Nov  5 13:25:45 2013
+12	fps	33	177480 Tue Nov  5 13:25:45 2013
+13	Clients	2	177480 Tue Nov  5 13:25:45 2013
+10	Ping average	10	177480 Tue Nov  5 13:25:45 2013
+8	Ping min	10	177480 Tue Nov  5 13:25:45 2013
+9	Ping max	11	177480 Tue Nov  5 13:25:45 2013
+11	CPU %	1	177480 Tue Nov  5 13:25:45 2013
+5	Total Output	357864	178500 Tue Nov  5 13:25:46 2013
+6	Total Input	487036	178500 Tue Nov  5 13:25:46 2013
+3	Output	1584	178500 Tue Nov  5 13:25:46 2013
+4	Input	2596	178500 Tue Nov  5 13:25:46 2013
+12	fps	33	178500 Tue Nov  5 13:25:46 2013
+13	Clients	2	178500 Tue Nov  5 13:25:46 2013
+10	Ping average	11	178500 Tue Nov  5 13:25:46 2013
+8	Ping min	10	178500 Tue Nov  5 13:25:46 2013
+9	Ping max	13	178500 Tue Nov  5 13:25:46 2013
+11	CPU %	2	178500 Tue Nov  5 13:25:46 2013
+5	Total Output	359272	179520 Tue Nov  5 13:25:47 2013
+6	Total Input	491964	179520 Tue Nov  5 13:25:47 2013
+3	Output	1408	179520 Tue Nov  5 13:25:47 2013
+4	Input	4928	179520 Tue Nov  5 13:25:47 2013
+12	fps	33	179520 Tue Nov  5 13:25:47 2013
+13	Clients	2	179520 Tue Nov  5 13:25:47 2013
+10	Ping average	10	179520 Tue Nov  5 13:25:47 2013
+8	Ping min	8	179520 Tue Nov  5 13:25:47 2013
+9	Ping max	13	179520 Tue Nov  5 13:25:47 2013
+11	CPU %	3	179520 Tue Nov  5 13:25:47 2013
+5	Total Output	362904	180540 Tue Nov  5 13:25:48 2013
+6	Total Input	494120	180540 Tue Nov  5 13:25:48 2013
+3	Output	3632	180540 Tue Nov  5 13:25:48 2013
+4	Input	2156	180540 Tue Nov  5 13:25:48 2013
+12	fps	33	180540 Tue Nov  5 13:25:48 2013
+13	Clients	2	180540 Tue Nov  5 13:25:48 2013
+10	Ping average	9	180540 Tue Nov  5 13:25:48 2013
+8	Ping min	9	180540 Tue Nov  5 13:25:48 2013
+9	Ping max	10	180540 Tue Nov  5 13:25:48 2013
+11	CPU %	1	180540 Tue Nov  5 13:25:48 2013
+5	Total Output	364312	181560 Tue Nov  5 13:25:49 2013
+6	Total Input	496848	181560 Tue Nov  5 13:25:49 2013
+3	Output	1408	181560 Tue Nov  5 13:25:49 2013
+4	Input	2728	181560 Tue Nov  5 13:25:49 2013
+12	fps	33	181560 Tue Nov  5 13:25:49 2013
+13	Clients	2	181560 Tue Nov  5 13:25:49 2013
+10	Ping average	9	181560 Tue Nov  5 13:25:49 2013
+8	Ping min	9	181560 Tue Nov  5 13:25:49 2013
+9	Ping max	10	181560 Tue Nov  5 13:25:49 2013
+11	CPU %	3	181560 Tue Nov  5 13:25:49 2013
+5	Total Output	365896	182580 Tue Nov  5 13:25:50 2013
+6	Total Input	500500	182580 Tue Nov  5 13:25:50 2013
+3	Output	1584	182580 Tue Nov  5 13:25:50 2013
+4	Input	3652	182580 Tue Nov  5 13:25:50 2013
+12	fps	33	182580 Tue Nov  5 13:25:50 2013
+13	Clients	2	182580 Tue Nov  5 13:25:50 2013
+10	Ping average	12	182580 Tue Nov  5 13:25:50 2013
+8	Ping min	11	182580 Tue Nov  5 13:25:50 2013
+9	Ping max	13	182580 Tue Nov  5 13:25:50 2013
+11	CPU %	1	182580 Tue Nov  5 13:25:50 2013
+5	Total Output	369352	183600 Tue Nov  5 13:25:51 2013
+6	Total Input	503052	183600 Tue Nov  5 13:25:51 2013
+3	Output	3456	183600 Tue Nov  5 13:25:51 2013
+4	Input	2552	183600 Tue Nov  5 13:25:51 2013
+12	fps	33	183600 Tue Nov  5 13:25:51 2013
+13	Clients	2	183600 Tue Nov  5 13:25:51 2013
+10	Ping average	11	183600 Tue Nov  5 13:25:51 2013
+8	Ping min	9	183600 Tue Nov  5 13:25:51 2013
+9	Ping max	13	183600 Tue Nov  5 13:25:51 2013
+11	CPU %	2	183600 Tue Nov  5 13:25:51 2013
+5	Total Output	370936	184620 Tue Nov  5 13:25:52 2013
+6	Total Input	505780	184620 Tue Nov  5 13:25:52 2013
+3	Output	1584	184620 Tue Nov  5 13:25:52 2013
+4	Input	2728	184620 Tue Nov  5 13:25:52 2013
+12	fps	33	184620 Tue Nov  5 13:25:52 2013
+13	Clients	2	184620 Tue Nov  5 13:25:52 2013
+10	Ping average	9	184620 Tue Nov  5 13:25:52 2013
+8	Ping min	7	184620 Tue Nov  5 13:25:52 2013
+9	Ping max	11	184620 Tue Nov  5 13:25:52 2013
+11	CPU %	2	184620 Tue Nov  5 13:25:52 2013
+5	Total Output	372344	185640 Tue Nov  5 13:25:53 2013
+6	Total Input	509168	185640 Tue Nov  5 13:25:53 2013
+3	Output	1408	185640 Tue Nov  5 13:25:53 2013
+4	Input	3388	185640 Tue Nov  5 13:25:53 2013
+12	fps	33	185640 Tue Nov  5 13:25:53 2013
+13	Clients	2	185640 Tue Nov  5 13:25:53 2013
+10	Ping average	10	185640 Tue Nov  5 13:25:53 2013
+8	Ping min	9	185640 Tue Nov  5 13:25:53 2013
+9	Ping max	11	185640 Tue Nov  5 13:25:53 2013
+11	CPU %	2	185640 Tue Nov  5 13:25:53 2013
+5	Total Output	375976	186660 Tue Nov  5 13:25:54 2013
+6	Total Input	511456	186660 Tue Nov  5 13:25:54 2013
+3	Output	3632	186660 Tue Nov  5 13:25:54 2013
+4	Input	2288	186660 Tue Nov  5 13:25:54 2013
+12	fps	33	186660 Tue Nov  5 13:25:54 2013
+13	Clients	2	186660 Tue Nov  5 13:25:54 2013
+10	Ping average	11	186660 Tue Nov  5 13:25:54 2013
+8	Ping min	9	186660 Tue Nov  5 13:25:54 2013
+9	Ping max	14	186660 Tue Nov  5 13:25:54 2013
+11	CPU %	2	186660 Tue Nov  5 13:25:54 2013
+5	Total Output	377384	187680 Tue Nov  5 13:25:55 2013
+6	Total Input	514184	187680 Tue Nov  5 13:25:55 2013
+3	Output	1408	187680 Tue Nov  5 13:25:55 2013
+4	Input	2728	187680 Tue Nov  5 13:25:55 2013
+12	fps	33	187680 Tue Nov  5 13:25:55 2013
+13	Clients	2	187680 Tue Nov  5 13:25:55 2013
+10	Ping average	12	187680 Tue Nov  5 13:25:55 2013
+8	Ping min	11	187680 Tue Nov  5 13:25:55 2013
+9	Ping max	13	187680 Tue Nov  5 13:25:55 2013
+11	CPU %	2	187680 Tue Nov  5 13:25:55 2013
+5	Total Output	378968	188700 Tue Nov  5 13:25:56 2013
+6	Total Input	516340	188700 Tue Nov  5 13:25:56 2013
+3	Output	1584	188700 Tue Nov  5 13:25:56 2013
+4	Input	2156	188700 Tue Nov  5 13:25:56 2013
+12	fps	33	188700 Tue Nov  5 13:25:56 2013
+13	Clients	2	188700 Tue Nov  5 13:25:56 2013
+10	Ping average	11	188700 Tue Nov  5 13:25:56 2013
+8	Ping min	10	188700 Tue Nov  5 13:25:56 2013
+9	Ping max	13	188700 Tue Nov  5 13:25:56 2013
+11	CPU %	2	188700 Tue Nov  5 13:25:56 2013
+5	Total Output	382424	189720 Tue Nov  5 13:25:57 2013
+6	Total Input	519068	189720 Tue Nov  5 13:25:57 2013
+3	Output	3456	189720 Tue Nov  5 13:25:57 2013
+4	Input	2728	189720 Tue Nov  5 13:25:57 2013
+12	fps	33	189720 Tue Nov  5 13:25:57 2013
+13	Clients	2	189720 Tue Nov  5 13:25:57 2013
+10	Ping average	13	189720 Tue Nov  5 13:25:57 2013
+8	Ping min	10	189720 Tue Nov  5 13:25:57 2013
+9	Ping max	16	189720 Tue Nov  5 13:25:57 2013
+11	CPU %	2	189720 Tue Nov  5 13:25:57 2013
+5	Total Output	384008	190740 Tue Nov  5 13:25:58 2013
+6	Total Input	521620	190740 Tue Nov  5 13:25:58 2013
+3	Output	1584	190740 Tue Nov  5 13:25:58 2013
+4	Input	2552	190740 Tue Nov  5 13:25:58 2013
+12	fps	33	190740 Tue Nov  5 13:25:58 2013
+13	Clients	2	190740 Tue Nov  5 13:25:58 2013
+10	Ping average	11	190740 Tue Nov  5 13:25:58 2013
+8	Ping min	10	190740 Tue Nov  5 13:25:58 2013
+9	Ping max	12	190740 Tue Nov  5 13:25:58 2013
+11	CPU %	2	190740 Tue Nov  5 13:25:58 2013
+5	Total Output	385416	191760 Tue Nov  5 13:25:59 2013
+6	Total Input	524128	191760 Tue Nov  5 13:25:59 2013
+3	Output	1408	191760 Tue Nov  5 13:25:59 2013
+4	Input	2508	191760 Tue Nov  5 13:25:59 2013
+12	fps	33	191760 Tue Nov  5 13:25:59 2013
+13	Clients	2	191760 Tue Nov  5 13:25:59 2013
+10	Ping average	9	191760 Tue Nov  5 13:25:59 2013
+8	Ping min	8	191760 Tue Nov  5 13:25:59 2013
+9	Ping max	11	191760 Tue Nov  5 13:25:59 2013
+11	CPU %	3	191760 Tue Nov  5 13:25:59 2013
+5	Total Output	389048	192780 Tue Nov  5 13:26:00 2013
+6	Total Input	527120	192780 Tue Nov  5 13:26:00 2013
+3	Output	3632	192780 Tue Nov  5 13:26:00 2013
+4	Input	2992	192780 Tue Nov  5 13:26:00 2013
+12	fps	33	192780 Tue Nov  5 13:26:00 2013
+13	Clients	2	192780 Tue Nov  5 13:26:00 2013
+10	Ping average	10	192780 Tue Nov  5 13:26:00 2013
+8	Ping min	10	192780 Tue Nov  5 13:26:00 2013
+9	Ping max	10	192780 Tue Nov  5 13:26:00 2013
+11	CPU %	1	192780 Tue Nov  5 13:26:00 2013
+5	Total Output	390456	193800 Tue Nov  5 13:26:01 2013
+6	Total Input	530024	193800 Tue Nov  5 13:26:01 2013
+3	Output	1408	193800 Tue Nov  5 13:26:01 2013
+4	Input	2904	193800 Tue Nov  5 13:26:01 2013
+12	fps	33	193800 Tue Nov  5 13:26:01 2013
+13	Clients	2	193800 Tue Nov  5 13:26:01 2013
+10	Ping average	10	193800 Tue Nov  5 13:26:01 2013
+8	Ping min	10	193800 Tue Nov  5 13:26:01 2013
+9	Ping max	10	193800 Tue Nov  5 13:26:01 2013
+11	CPU %	2	193800 Tue Nov  5 13:26:01 2013
+5	Total Output	392040	194820 Tue Nov  5 13:26:02 2013
+6	Total Input	532356	194820 Tue Nov  5 13:26:02 2013
+3	Output	1584	194820 Tue Nov  5 13:26:02 2013
+4	Input	2332	194820 Tue Nov  5 13:26:02 2013
+12	fps	33	194820 Tue Nov  5 13:26:02 2013
+13	Clients	2	194820 Tue Nov  5 13:26:02 2013
+10	Ping average	10	194820 Tue Nov  5 13:26:02 2013
+8	Ping min	10	194820 Tue Nov  5 13:26:02 2013
+9	Ping max	11	194820 Tue Nov  5 13:26:02 2013
+11	CPU %	2	194820 Tue Nov  5 13:26:02 2013
+5	Total Output	395496	195840 Tue Nov  5 13:26:03 2013
+6	Total Input	534556	195840 Tue Nov  5 13:26:03 2013
+3	Output	3456	195840 Tue Nov  5 13:26:03 2013
+4	Input	2200	195840 Tue Nov  5 13:26:03 2013
+12	fps	33	195840 Tue Nov  5 13:26:03 2013
+13	Clients	2	195840 Tue Nov  5 13:26:03 2013
+10	Ping average	11	195840 Tue Nov  5 13:26:03 2013
+8	Ping min	9	195840 Tue Nov  5 13:26:03 2013
+9	Ping max	14	195840 Tue Nov  5 13:26:03 2013
+11	CPU %	3	195840 Tue Nov  5 13:26:03 2013
+5	Total Output	397080	196860 Tue Nov  5 13:26:04 2013
+6	Total Input	537240	196860 Tue Nov  5 13:26:04 2013
+3	Output	1584	196860 Tue Nov  5 13:26:04 2013
+4	Input	2684	196860 Tue Nov  5 13:26:04 2013
+12	fps	33	196860 Tue Nov  5 13:26:04 2013
+13	Clients	2	196860 Tue Nov  5 13:26:04 2013
+10	Ping average	11	196860 Tue Nov  5 13:26:04 2013
+8	Ping min	9	196860 Tue Nov  5 13:26:04 2013
+9	Ping max	14	196860 Tue Nov  5 13:26:04 2013
+11	CPU %	1	196860 Tue Nov  5 13:26:04 2013
+5	Total Output	398488	197880 Tue Nov  5 13:26:05 2013
+6	Total Input	540012	197880 Tue Nov  5 13:26:05 2013
+3	Output	1408	197880 Tue Nov  5 13:26:05 2013
+4	Input	2772	197880 Tue Nov  5 13:26:05 2013
+12	fps	33	197880 Tue Nov  5 13:26:05 2013
+13	Clients	2	197880 Tue Nov  5 13:26:05 2013
+10	Ping average	13	197880 Tue Nov  5 13:26:05 2013
+8	Ping min	11	197880 Tue Nov  5 13:26:05 2013
+9	Ping max	16	197880 Tue Nov  5 13:26:05 2013
+11	CPU %	2	197880 Tue Nov  5 13:26:05 2013
+5	Total Output	402120	198900 Tue Nov  5 13:26:06 2013
+6	Total Input	542564	198900 Tue Nov  5 13:26:06 2013
+3	Output	3632	198900 Tue Nov  5 13:26:06 2013
+4	Input	2552	198900 Tue Nov  5 13:26:06 2013
+12	fps	33	198900 Tue Nov  5 13:26:06 2013
+13	Clients	2	198900 Tue Nov  5 13:26:06 2013
+10	Ping average	11	198900 Tue Nov  5 13:26:06 2013
+8	Ping min	10	198900 Tue Nov  5 13:26:06 2013
+9	Ping max	13	198900 Tue Nov  5 13:26:06 2013
+11	CPU %	1	198900 Tue Nov  5 13:26:06 2013
+5	Total Output	403528	199920 Tue Nov  5 13:26:07 2013
+6	Total Input	545028	199920 Tue Nov  5 13:26:07 2013
+3	Output	1408	199920 Tue Nov  5 13:26:07 2013
+4	Input	2464	199920 Tue Nov  5 13:26:07 2013
+12	fps	33	199920 Tue Nov  5 13:26:07 2013
+13	Clients	2	199920 Tue Nov  5 13:26:07 2013
+10	Ping average	11	199920 Tue Nov  5 13:26:07 2013
+8	Ping min	9	199920 Tue Nov  5 13:26:07 2013
+9	Ping max	13	199920 Tue Nov  5 13:26:07 2013
+11	CPU %	3	199920 Tue Nov  5 13:26:07 2013
+5	Total Output	405112	200940 Tue Nov  5 13:26:08 2013
+6	Total Input	547272	200940 Tue Nov  5 13:26:08 2013
+3	Output	1584	200940 Tue Nov  5 13:26:08 2013
+4	Input	2244	200940 Tue Nov  5 13:26:08 2013
+12	fps	33	200940 Tue Nov  5 13:26:08 2013
+13	Clients	2	200940 Tue Nov  5 13:26:08 2013
+10	Ping average	10	200940 Tue Nov  5 13:26:08 2013
+8	Ping min	10	200940 Tue Nov  5 13:26:08 2013
+9	Ping max	11	200940 Tue Nov  5 13:26:08 2013
+11	CPU %	1	200940 Tue Nov  5 13:26:08 2013
+5	Total Output	408568	201960 Tue Nov  5 13:26:09 2013
+6	Total Input	549780	201960 Tue Nov  5 13:26:09 2013
+3	Output	3456	201960 Tue Nov  5 13:26:09 2013
+4	Input	2508	201960 Tue Nov  5 13:26:09 2013
+12	fps	33	201960 Tue Nov  5 13:26:09 2013
+13	Clients	2	201960 Tue Nov  5 13:26:09 2013
+10	Ping average	11	201960 Tue Nov  5 13:26:09 2013
+8	Ping min	9	201960 Tue Nov  5 13:26:09 2013
+9	Ping max	14	201960 Tue Nov  5 13:26:09 2013
+11	CPU %	2	201960 Tue Nov  5 13:26:09 2013
+5	Total Output	410152	202980 Tue Nov  5 13:26:10 2013
+6	Total Input	552860	202980 Tue Nov  5 13:26:10 2013
+3	Output	1584	202980 Tue Nov  5 13:26:10 2013
+4	Input	3080	202980 Tue Nov  5 13:26:10 2013
+12	fps	33	202980 Tue Nov  5 13:26:10 2013
+13	Clients	2	202980 Tue Nov  5 13:26:10 2013
+10	Ping average	11	202980 Tue Nov  5 13:26:10 2013
+8	Ping min	11	202980 Tue Nov  5 13:26:10 2013
+9	Ping max	12	202980 Tue Nov  5 13:26:10 2013
+11	CPU %	3	202980 Tue Nov  5 13:26:10 2013
+5	Total Output	411560	204000 Tue Nov  5 13:26:11 2013
+6	Total Input	555808	204000 Tue Nov  5 13:26:11 2013
+3	Output	1408	204000 Tue Nov  5 13:26:11 2013
+4	Input	2948	204000 Tue Nov  5 13:26:11 2013
+12	fps	33	204000 Tue Nov  5 13:26:11 2013
+13	Clients	2	204000 Tue Nov  5 13:26:11 2013
+10	Ping average	10	204000 Tue Nov  5 13:26:11 2013
+8	Ping min	9	204000 Tue Nov  5 13:26:11 2013
+9	Ping max	12	204000 Tue Nov  5 13:26:11 2013
+11	CPU %	1	204000 Tue Nov  5 13:26:11 2013
+5	Total Output	415192	205020 Tue Nov  5 13:26:12 2013
+6	Total Input	558404	205020 Tue Nov  5 13:26:12 2013
+3	Output	3632	205020 Tue Nov  5 13:26:12 2013
+4	Input	2596	205020 Tue Nov  5 13:26:12 2013
+12	fps	33	205020 Tue Nov  5 13:26:12 2013
+13	Clients	2	205020 Tue Nov  5 13:26:12 2013
+10	Ping average	9	205020 Tue Nov  5 13:26:12 2013
+8	Ping min	8	205020 Tue Nov  5 13:26:12 2013
+9	Ping max	10	205020 Tue Nov  5 13:26:12 2013
+11	CPU %	3	205020 Tue Nov  5 13:26:12 2013
+5	Total Output	416600	206040 Tue Nov  5 13:26:13 2013
+6	Total Input	560956	206040 Tue Nov  5 13:26:13 2013
+3	Output	1408	206040 Tue Nov  5 13:26:13 2013
+4	Input	2552	206040 Tue Nov  5 13:26:13 2013
+12	fps	33	206040 Tue Nov  5 13:26:13 2013
+13	Clients	2	206040 Tue Nov  5 13:26:13 2013
+10	Ping average	10	206040 Tue Nov  5 13:26:13 2013
+8	Ping min	10	206040 Tue Nov  5 13:26:13 2013
+9	Ping max	11	206040 Tue Nov  5 13:26:13 2013
+11	CPU %	2	206040 Tue Nov  5 13:26:13 2013
+5	Total Output	420232	207060 Tue Nov  5 13:26:14 2013
+6	Total Input	563288	207060 Tue Nov  5 13:26:14 2013
+3	Output	3632	207060 Tue Nov  5 13:26:14 2013
+4	Input	2332	207060 Tue Nov  5 13:26:14 2013
+12	fps	33	207060 Tue Nov  5 13:26:14 2013
+13	Clients	2	207060 Tue Nov  5 13:26:14 2013
+10	Ping average	12	207060 Tue Nov  5 13:26:14 2013
+8	Ping min	12	207060 Tue Nov  5 13:26:14 2013
+9	Ping max	12	207060 Tue Nov  5 13:26:14 2013
+11	CPU %	2	207060 Tue Nov  5 13:26:14 2013
+5	Total Output	421640	208080 Tue Nov  5 13:26:15 2013
+6	Total Input	565928	208080 Tue Nov  5 13:26:15 2013
+3	Output	1408	208080 Tue Nov  5 13:26:15 2013
+4	Input	2640	208080 Tue Nov  5 13:26:15 2013
+12	fps	33	208080 Tue Nov  5 13:26:15 2013
+13	Clients	2	208080 Tue Nov  5 13:26:15 2013
+10	Ping average	11	208080 Tue Nov  5 13:26:15 2013
+8	Ping min	10	208080 Tue Nov  5 13:26:15 2013
+9	Ping max	12	208080 Tue Nov  5 13:26:15 2013
+11	CPU %	1	208080 Tue Nov  5 13:26:15 2013
+5	Total Output	423224	209100 Tue Nov  5 13:26:16 2013
+6	Total Input	568348	209100 Tue Nov  5 13:26:16 2013
+3	Output	1584	209100 Tue Nov  5 13:26:16 2013
+4	Input	2420	209100 Tue Nov  5 13:26:16 2013
+12	fps	33	209100 Tue Nov  5 13:26:16 2013
+13	Clients	2	209100 Tue Nov  5 13:26:16 2013
+10	Ping average	11	209100 Tue Nov  5 13:26:16 2013
+8	Ping min	9	209100 Tue Nov  5 13:26:16 2013
+9	Ping max	14	209100 Tue Nov  5 13:26:16 2013
+11	CPU %	2	209100 Tue Nov  5 13:26:16 2013
+5	Total Output	426680	210120 Tue Nov  5 13:26:17 2013
+6	Total Input	570900	210120 Tue Nov  5 13:26:17 2013
+3	Output	3456	210120 Tue Nov  5 13:26:17 2013
+4	Input	2552	210120 Tue Nov  5 13:26:17 2013
+12	fps	33	210120 Tue Nov  5 13:26:17 2013
+13	Clients	2	210120 Tue Nov  5 13:26:17 2013
+10	Ping average	10	210120 Tue Nov  5 13:26:17 2013
+8	Ping min	8	210120 Tue Nov  5 13:26:17 2013
+9	Ping max	13	210120 Tue Nov  5 13:26:17 2013
+11	CPU %	2	210120 Tue Nov  5 13:26:17 2013
+5	Total Output	428264	211140 Tue Nov  5 13:26:18 2013
+6	Total Input	573188	211140 Tue Nov  5 13:26:18 2013
+3	Output	1584	211140 Tue Nov  5 13:26:18 2013
+4	Input	2288	211140 Tue Nov  5 13:26:18 2013
+12	fps	33	211140 Tue Nov  5 13:26:18 2013
+13	Clients	2	211140 Tue Nov  5 13:26:18 2013
+10	Ping average	12	211140 Tue Nov  5 13:26:18 2013
+8	Ping min	9	211140 Tue Nov  5 13:26:18 2013
+9	Ping max	15	211140 Tue Nov  5 13:26:18 2013
+11	CPU %	2	211140 Tue Nov  5 13:26:18 2013
+5	Total Output	429672	212160 Tue Nov  5 13:26:19 2013
+6	Total Input	575256	212160 Tue Nov  5 13:26:19 2013
+3	Output	1408	212160 Tue Nov  5 13:26:19 2013
+4	Input	2068	212160 Tue Nov  5 13:26:19 2013
+12	fps	33	212160 Tue Nov  5 13:26:19 2013
+13	Clients	2	212160 Tue Nov  5 13:26:19 2013
+10	Ping average	10	212160 Tue Nov  5 13:26:19 2013
+8	Ping min	9	212160 Tue Nov  5 13:26:19 2013
+9	Ping max	11	212160 Tue Nov  5 13:26:19 2013
+11	CPU %	2	212160 Tue Nov  5 13:26:19 2013
+5	Total Output	433304	213180 Tue Nov  5 13:26:20 2013
+6	Total Input	577852	213180 Tue Nov  5 13:26:20 2013
+3	Output	3632	213180 Tue Nov  5 13:26:20 2013
+4	Input	2596	213180 Tue Nov  5 13:26:20 2013
+12	fps	33	213180 Tue Nov  5 13:26:20 2013
+13	Clients	2	213180 Tue Nov  5 13:26:20 2013
+10	Ping average	11	213180 Tue Nov  5 13:26:20 2013
+8	Ping min	10	213180 Tue Nov  5 13:26:20 2013
+9	Ping max	13	213180 Tue Nov  5 13:26:20 2013
+11	CPU %	2	213180 Tue Nov  5 13:26:20 2013
+5	Total Output	434712	214200 Tue Nov  5 13:26:21 2013
+6	Total Input	580272	214200 Tue Nov  5 13:26:21 2013
+3	Output	1408	214200 Tue Nov  5 13:26:21 2013
+4	Input	2420	214200 Tue Nov  5 13:26:21 2013
+12	fps	33	214200 Tue Nov  5 13:26:21 2013
+13	Clients	2	214200 Tue Nov  5 13:26:21 2013
+10	Ping average	10	214200 Tue Nov  5 13:26:21 2013
+8	Ping min	10	214200 Tue Nov  5 13:26:21 2013
+9	Ping max	11	214200 Tue Nov  5 13:26:21 2013
+11	CPU %	2	214200 Tue Nov  5 13:26:21 2013
+5	Total Output	436296	215220 Tue Nov  5 13:26:22 2013
+6	Total Input	582736	215220 Tue Nov  5 13:26:22 2013
+3	Output	1584	215220 Tue Nov  5 13:26:22 2013
+4	Input	2464	215220 Tue Nov  5 13:26:22 2013
+12	fps	33	215220 Tue Nov  5 13:26:22 2013
+13	Clients	2	215220 Tue Nov  5 13:26:22 2013
+10	Ping average	10	215220 Tue Nov  5 13:26:22 2013
+8	Ping min	10	215220 Tue Nov  5 13:26:22 2013
+9	Ping max	11	215220 Tue Nov  5 13:26:22 2013
+11	CPU %	2	215220 Tue Nov  5 13:26:22 2013
+5	Total Output	439752	216240 Tue Nov  5 13:26:23 2013
+6	Total Input	585508	216240 Tue Nov  5 13:26:23 2013
+3	Output	3456	216240 Tue Nov  5 13:26:23 2013
+4	Input	2772	216240 Tue Nov  5 13:26:23 2013
+12	fps	33	216240 Tue Nov  5 13:26:23 2013
+13	Clients	2	216240 Tue Nov  5 13:26:23 2013
+10	Ping average	10	216240 Tue Nov  5 13:26:23 2013
+8	Ping min	9	216240 Tue Nov  5 13:26:23 2013
+9	Ping max	11	216240 Tue Nov  5 13:26:23 2013
+11	CPU %	2	216240 Tue Nov  5 13:26:23 2013
+5	Total Output	441160	217260 Tue Nov  5 13:26:24 2013
+6	Total Input	587752	217260 Tue Nov  5 13:26:24 2013
+3	Output	1408	217260 Tue Nov  5 13:26:24 2013
+4	Input	2244	217260 Tue Nov  5 13:26:24 2013
+12	fps	33	217260 Tue Nov  5 13:26:24 2013
+13	Clients	2	217260 Tue Nov  5 13:26:24 2013
+10	Ping average	11	217260 Tue Nov  5 13:26:24 2013
+8	Ping min	9	217260 Tue Nov  5 13:26:24 2013
+9	Ping max	13	217260 Tue Nov  5 13:26:24 2013
+11	CPU %	2	217260 Tue Nov  5 13:26:24 2013
+5	Total Output	442744	218280 Tue Nov  5 13:26:25 2013
+6	Total Input	591052	218280 Tue Nov  5 13:26:25 2013
+3	Output	1584	218280 Tue Nov  5 13:26:25 2013
+4	Input	3300	218280 Tue Nov  5 13:26:25 2013
+12	fps	33	218280 Tue Nov  5 13:26:25 2013
+13	Clients	2	218280 Tue Nov  5 13:26:25 2013
+10	Ping average	11	218280 Tue Nov  5 13:26:25 2013
+8	Ping min	9	218280 Tue Nov  5 13:26:25 2013
+9	Ping max	14	218280 Tue Nov  5 13:26:25 2013
+11	CPU %	3	218280 Tue Nov  5 13:26:25 2013
+5	Total Output	446200	219300 Tue Nov  5 13:26:26 2013
+6	Total Input	594264	219300 Tue Nov  5 13:26:26 2013
+3	Output	3456	219300 Tue Nov  5 13:26:26 2013
+4	Input	3212	219300 Tue Nov  5 13:26:26 2013
+12	fps	33	219300 Tue Nov  5 13:26:26 2013
+13	Clients	2	219300 Tue Nov  5 13:26:26 2013
+10	Ping average	31	219300 Tue Nov  5 13:26:26 2013
+8	Ping min	10	219300 Tue Nov  5 13:26:26 2013
+9	Ping max	52	219300 Tue Nov  5 13:26:26 2013
+11	CPU %	3	219300 Tue Nov  5 13:26:26 2013
+5	Total Output	447784	220320 Tue Nov  5 13:26:28 2013
+6	Total Input	597256	220320 Tue Nov  5 13:26:28 2013
+3	Output	1584	220320 Tue Nov  5 13:26:28 2013
+4	Input	2992	220320 Tue Nov  5 13:26:28 2013
+12	fps	33	220320 Tue Nov  5 13:26:28 2013
+13	Clients	2	220320 Tue Nov  5 13:26:28 2013
+10	Ping average	45	220320 Tue Nov  5 13:26:28 2013
+8	Ping min	12	220320 Tue Nov  5 13:26:28 2013
+9	Ping max	78	220320 Tue Nov  5 13:26:28 2013
+11	CPU %	2	220320 Tue Nov  5 13:26:28 2013
+5	Total Output	449192	221340 Tue Nov  5 13:26:29 2013
+6	Total Input	600424	221340 Tue Nov  5 13:26:29 2013
+3	Output	1408	221340 Tue Nov  5 13:26:29 2013
+4	Input	3168	221340 Tue Nov  5 13:26:29 2013
+12	fps	33	221340 Tue Nov  5 13:26:29 2013
+13	Clients	2	221340 Tue Nov  5 13:26:29 2013
+10	Ping average	50	221340 Tue Nov  5 13:26:29 2013
+8	Ping min	12	221340 Tue Nov  5 13:26:29 2013
+9	Ping max	89	221340 Tue Nov  5 13:26:29 2013
+11	CPU %	2	221340 Tue Nov  5 13:26:29 2013
+5	Total Output	452824	222360 Tue Nov  5 13:26:30 2013
+6	Total Input	603768	222360 Tue Nov  5 13:26:30 2013
+3	Output	3632	222360 Tue Nov  5 13:26:30 2013
+4	Input	3344	222360 Tue Nov  5 13:26:30 2013
+12	fps	33	222360 Tue Nov  5 13:26:30 2013
+13	Clients	2	222360 Tue Nov  5 13:26:30 2013
+10	Ping average	51	222360 Tue Nov  5 13:26:30 2013
+8	Ping min	11	222360 Tue Nov  5 13:26:30 2013
+9	Ping max	91	222360 Tue Nov  5 13:26:30 2013
+11	CPU %	2	222360 Tue Nov  5 13:26:30 2013
+5	Total Output	454232	223380 Tue Nov  5 13:26:31 2013
+6	Total Input	606408	223380 Tue Nov  5 13:26:31 2013
+3	Output	1408	223380 Tue Nov  5 13:26:31 2013
+4	Input	2640	223380 Tue Nov  5 13:26:31 2013
+12	fps	33	223380 Tue Nov  5 13:26:31 2013
+13	Clients	2	223380 Tue Nov  5 13:26:31 2013
+10	Ping average	24	223380 Tue Nov  5 13:26:31 2013
+8	Ping min	11	223380 Tue Nov  5 13:26:31 2013
+9	Ping max	37	223380 Tue Nov  5 13:26:31 2013
+11	CPU %	2	223380 Tue Nov  5 13:26:31 2013
+5	Total Output	455816	224400 Tue Nov  5 13:26:32 2013
+6	Total Input	608520	224400 Tue Nov  5 13:26:32 2013
+3	Output	1584	224400 Tue Nov  5 13:26:32 2013
+4	Input	2112	224400 Tue Nov  5 13:26:32 2013
+12	fps	33	224400 Tue Nov  5 13:26:32 2013
+13	Clients	2	224400 Tue Nov  5 13:26:32 2013
+10	Ping average	15	224400 Tue Nov  5 13:26:32 2013
+8	Ping min	12	224400 Tue Nov  5 13:26:32 2013
+9	Ping max	18	224400 Tue Nov  5 13:26:32 2013
+11	CPU %	1	224400 Tue Nov  5 13:26:32 2013
+5	Total Output	459272	225420 Tue Nov  5 13:26:33 2013
+6	Total Input	610940	225420 Tue Nov  5 13:26:33 2013
+3	Output	3456	225420 Tue Nov  5 13:26:33 2013
+4	Input	2420	225420 Tue Nov  5 13:26:33 2013
+12	fps	33	225420 Tue Nov  5 13:26:33 2013
+13	Clients	2	225420 Tue Nov  5 13:26:33 2013
+10	Ping average	13	225420 Tue Nov  5 13:26:33 2013
+8	Ping min	10	225420 Tue Nov  5 13:26:33 2013
+9	Ping max	16	225420 Tue Nov  5 13:26:33 2013
+11	CPU %	2	225420 Tue Nov  5 13:26:33 2013
+5	Total Output	460856	226440 Tue Nov  5 13:26:34 2013
+6	Total Input	613184	226440 Tue Nov  5 13:26:34 2013
+3	Output	1584	226440 Tue Nov  5 13:26:34 2013
+4	Input	2244	226440 Tue Nov  5 13:26:34 2013
+12	fps	33	226440 Tue Nov  5 13:26:34 2013
+13	Clients	2	226440 Tue Nov  5 13:26:34 2013
+10	Ping average	12	226440 Tue Nov  5 13:26:34 2013
+8	Ping min	11	226440 Tue Nov  5 13:26:34 2013
+9	Ping max	14	226440 Tue Nov  5 13:26:34 2013
+11	CPU %	2	226440 Tue Nov  5 13:26:34 2013
+5	Total Output	462264	227460 Tue Nov  5 13:26:35 2013
+6	Total Input	615296	227460 Tue Nov  5 13:26:35 2013
+3	Output	1408	227460 Tue Nov  5 13:26:35 2013
+4	Input	2112	227460 Tue Nov  5 13:26:35 2013
+12	fps	33	227460 Tue Nov  5 13:26:35 2013
+13	Clients	2	227460 Tue Nov  5 13:26:35 2013
+10	Ping average	10	227460 Tue Nov  5 13:26:35 2013
+8	Ping min	10	227460 Tue Nov  5 13:26:35 2013
+9	Ping max	11	227460 Tue Nov  5 13:26:35 2013
+11	CPU %	2	227460 Tue Nov  5 13:26:35 2013
+5	Total Output	465896	228480 Tue Nov  5 13:26:36 2013
+6	Total Input	617452	228480 Tue Nov  5 13:26:36 2013
+3	Output	3632	228480 Tue Nov  5 13:26:36 2013
+4	Input	2156	228480 Tue Nov  5 13:26:36 2013
+12	fps	33	228480 Tue Nov  5 13:26:36 2013
+13	Clients	2	228480 Tue Nov  5 13:26:36 2013
+10	Ping average	12	228480 Tue Nov  5 13:26:36 2013
+8	Ping min	12	228480 Tue Nov  5 13:26:36 2013
+9	Ping max	13	228480 Tue Nov  5 13:26:36 2013
+11	CPU %	2	228480 Tue Nov  5 13:26:36 2013
+5	Total Output	467304	229500 Tue Nov  5 13:26:37 2013
+6	Total Input	620796	229500 Tue Nov  5 13:26:37 2013
+3	Output	1408	229500 Tue Nov  5 13:26:37 2013
+4	Input	3344	229500 Tue Nov  5 13:26:37 2013
+12	fps	33	229500 Tue Nov  5 13:26:37 2013
+13	Clients	2	229500 Tue Nov  5 13:26:37 2013
+10	Ping average	12	229500 Tue Nov  5 13:26:37 2013
+8	Ping min	11	229500 Tue Nov  5 13:26:37 2013
+9	Ping max	13	229500 Tue Nov  5 13:26:37 2013
+11	CPU %	2	229500 Tue Nov  5 13:26:37 2013
+5	Total Output	468888	230520 Tue Nov  5 13:26:38 2013
+6	Total Input	623128	230520 Tue Nov  5 13:26:38 2013
+3	Output	1584	230520 Tue Nov  5 13:26:38 2013
+4	Input	2332	230520 Tue Nov  5 13:26:38 2013
+12	fps	33	230520 Tue Nov  5 13:26:38 2013
+13	Clients	2	230520 Tue Nov  5 13:26:38 2013
+10	Ping average	10	230520 Tue Nov  5 13:26:38 2013
+8	Ping min	9	230520 Tue Nov  5 13:26:38 2013
+9	Ping max	12	230520 Tue Nov  5 13:26:38 2013
+11	CPU %	3	230520 Tue Nov  5 13:26:38 2013
+5	Total Output	472344	231540 Tue Nov  5 13:26:39 2013
+6	Total Input	625548	231540 Tue Nov  5 13:26:39 2013
+3	Output	3456	231540 Tue Nov  5 13:26:39 2013
+4	Input	2420	231540 Tue Nov  5 13:26:39 2013
+12	fps	33	231540 Tue Nov  5 13:26:39 2013
+13	Clients	2	231540 Tue Nov  5 13:26:39 2013
+10	Ping average	11	231540 Tue Nov  5 13:26:39 2013
+8	Ping min	8	231540 Tue Nov  5 13:26:39 2013
+9	Ping max	15	231540 Tue Nov  5 13:26:39 2013
+11	CPU %	1	231540 Tue Nov  5 13:26:39 2013
+5	Total Output	473928	232560 Tue Nov  5 13:26:40 2013
+6	Total Input	627660	232560 Tue Nov  5 13:26:40 2013
+3	Output	1584	232560 Tue Nov  5 13:26:40 2013
+4	Input	2112	232560 Tue Nov  5 13:26:40 2013
+12	fps	33	232560 Tue Nov  5 13:26:40 2013
+13	Clients	2	232560 Tue Nov  5 13:26:40 2013
+10	Ping average	13	232560 Tue Nov  5 13:26:40 2013
+8	Ping min	13	232560 Tue Nov  5 13:26:40 2013
+9	Ping max	14	232560 Tue Nov  5 13:26:40 2013
+11	CPU %	2	232560 Tue Nov  5 13:26:40 2013
+5	Total Output	475336	233580 Tue Nov  5 13:26:41 2013
+6	Total Input	632016	233580 Tue Nov  5 13:26:41 2013
+3	Output	1408	233580 Tue Nov  5 13:26:41 2013
+4	Input	4356	233580 Tue Nov  5 13:26:41 2013
+12	fps	33	233580 Tue Nov  5 13:26:41 2013
+13	Clients	2	233580 Tue Nov  5 13:26:41 2013
+10	Ping average	8	233580 Tue Nov  5 13:26:41 2013
+8	Ping min	7	233580 Tue Nov  5 13:26:41 2013
+9	Ping max	9	233580 Tue Nov  5 13:26:41 2013
+11	CPU %	2	233580 Tue Nov  5 13:26:41 2013
+5	Total Output	478968	234600 Tue Nov  5 13:26:42 2013
+6	Total Input	635140	234600 Tue Nov  5 13:26:42 2013
+3	Output	3632	234600 Tue Nov  5 13:26:42 2013
+4	Input	3124	234600 Tue Nov  5 13:26:42 2013
+12	fps	33	234600 Tue Nov  5 13:26:42 2013
+13	Clients	2	234600 Tue Nov  5 13:26:42 2013
+10	Ping average	11	234600 Tue Nov  5 13:26:42 2013
+8	Ping min	10	234600 Tue Nov  5 13:26:42 2013
+9	Ping max	13	234600 Tue Nov  5 13:26:42 2013
+11	CPU %	2	234600 Tue Nov  5 13:26:42 2013
+5	Total Output	480376	235620 Tue Nov  5 13:26:43 2013
+6	Total Input	637824	235620 Tue Nov  5 13:26:43 2013
+3	Output	1408	235620 Tue Nov  5 13:26:43 2013
+4	Input	2684	235620 Tue Nov  5 13:26:43 2013
+12	fps	33	235620 Tue Nov  5 13:26:43 2013
+13	Clients	2	235620 Tue Nov  5 13:26:43 2013
+10	Ping average	11	235620 Tue Nov  5 13:26:43 2013
+8	Ping min	10	235620 Tue Nov  5 13:26:43 2013
+9	Ping max	13	235620 Tue Nov  5 13:26:43 2013
+11	CPU %	2	235620 Tue Nov  5 13:26:43 2013
+5	Total Output	481960	236640 Tue Nov  5 13:26:44 2013
+6	Total Input	640508	236640 Tue Nov  5 13:26:44 2013
+3	Output	1584	236640 Tue Nov  5 13:26:44 2013
+4	Input	2684	236640 Tue Nov  5 13:26:44 2013
+12	fps	33	236640 Tue Nov  5 13:26:44 2013
+13	Clients	2	236640 Tue Nov  5 13:26:44 2013
+10	Ping average	12	236640 Tue Nov  5 13:26:44 2013
+8	Ping min	11	236640 Tue Nov  5 13:26:44 2013
+9	Ping max	13	236640 Tue Nov  5 13:26:44 2013
+11	CPU %	2	236640 Tue Nov  5 13:26:44 2013
+5	Total Output	485416	237660 Tue Nov  5 13:26:45 2013
+6	Total Input	642664	237660 Tue Nov  5 13:26:45 2013
+3	Output	3456	237660 Tue Nov  5 13:26:45 2013
+4	Input	2156	237660 Tue Nov  5 13:26:45 2013
+12	fps	33	237660 Tue Nov  5 13:26:45 2013
+13	Clients	2	237660 Tue Nov  5 13:26:45 2013
+10	Ping average	11	237660 Tue Nov  5 13:26:45 2013
+8	Ping min	8	237660 Tue Nov  5 13:26:45 2013
+9	Ping max	15	237660 Tue Nov  5 13:26:45 2013
+11	CPU %	3	237660 Tue Nov  5 13:26:45 2013
+5	Total Output	487000	238680 Tue Nov  5 13:26:46 2013
+6	Total Input	644908	238680 Tue Nov  5 13:26:46 2013
+3	Output	1584	238680 Tue Nov  5 13:26:46 2013
+4	Input	2244	238680 Tue Nov  5 13:26:46 2013
+12	fps	33	238680 Tue Nov  5 13:26:46 2013
+13	Clients	2	238680 Tue Nov  5 13:26:46 2013
+10	Ping average	14	238680 Tue Nov  5 13:26:46 2013
+8	Ping min	13	238680 Tue Nov  5 13:26:46 2013
+9	Ping max	15	238680 Tue Nov  5 13:26:46 2013
+11	CPU %	1	238680 Tue Nov  5 13:26:46 2013
+5	Total Output	488408	239700 Tue Nov  5 13:26:47 2013
+6	Total Input	647152	239700 Tue Nov  5 13:26:47 2013
+3	Output	1408	239700 Tue Nov  5 13:26:47 2013
+4	Input	2244	239700 Tue Nov  5 13:26:47 2013
+12	fps	33	239700 Tue Nov  5 13:26:47 2013
+13	Clients	2	239700 Tue Nov  5 13:26:47 2013
+10	Ping average	13	239700 Tue Nov  5 13:26:47 2013
+8	Ping min	13	239700 Tue Nov  5 13:26:47 2013
+9	Ping max	13	239700 Tue Nov  5 13:26:47 2013
+11	CPU %	3	239700 Tue Nov  5 13:26:47 2013
+5	Total Output	492040	240720 Tue Nov  5 13:26:48 2013
+6	Total Input	649308	240720 Tue Nov  5 13:26:48 2013
+3	Output	3632	240720 Tue Nov  5 13:26:48 2013
+4	Input	2156	240720 Tue Nov  5 13:26:48 2013
+12	fps	33	240720 Tue Nov  5 13:26:48 2013
+13	Clients	2	240720 Tue Nov  5 13:26:48 2013
+10	Ping average	13	240720 Tue Nov  5 13:26:48 2013
+8	Ping min	12	240720 Tue Nov  5 13:26:48 2013
+9	Ping max	15	240720 Tue Nov  5 13:26:48 2013
+11	CPU %	3	240720 Tue Nov  5 13:26:48 2013
+5	Total Output	493448	241740 Tue Nov  5 13:26:49 2013
+6	Total Input	651508	241740 Tue Nov  5 13:26:49 2013
+3	Output	1408	241740 Tue Nov  5 13:26:49 2013
+4	Input	2200	241740 Tue Nov  5 13:26:49 2013
+12	fps	33	241740 Tue Nov  5 13:26:49 2013
+13	Clients	2	241740 Tue Nov  5 13:26:49 2013
+10	Ping average	11	241740 Tue Nov  5 13:26:49 2013
+8	Ping min	11	241740 Tue Nov  5 13:26:49 2013
+9	Ping max	12	241740 Tue Nov  5 13:26:49 2013
+11	CPU %	1	241740 Tue Nov  5 13:26:49 2013
+5	Total Output	495032	242760 Tue Nov  5 13:26:50 2013
+6	Total Input	653752	242760 Tue Nov  5 13:26:50 2013
+3	Output	1584	242760 Tue Nov  5 13:26:50 2013
+4	Input	2244	242760 Tue Nov  5 13:26:50 2013
+12	fps	33	242760 Tue Nov  5 13:26:50 2013
+13	Clients	2	242760 Tue Nov  5 13:26:50 2013
+10	Ping average	12	242760 Tue Nov  5 13:26:50 2013
+8	Ping min	12	242760 Tue Nov  5 13:26:50 2013
+9	Ping max	13	242760 Tue Nov  5 13:26:50 2013
+11	CPU %	3	242760 Tue Nov  5 13:26:50 2013
+5	Total Output	498488	243780 Tue Nov  5 13:26:51 2013
+6	Total Input	656920	243780 Tue Nov  5 13:26:51 2013
+3	Output	3456	243780 Tue Nov  5 13:26:51 2013
+4	Input	3168	243780 Tue Nov  5 13:26:51 2013
+12	fps	33	243780 Tue Nov  5 13:26:51 2013
+13	Clients	2	243780 Tue Nov  5 13:26:51 2013
+10	Ping average	12	243780 Tue Nov  5 13:26:51 2013
+8	Ping min	11	243780 Tue Nov  5 13:26:51 2013
+9	Ping max	13	243780 Tue Nov  5 13:26:51 2013
+11	CPU %	2	243780 Tue Nov  5 13:26:51 2013
+5	Total Output	500072	244800 Tue Nov  5 13:26:52 2013
+6	Total Input	659208	244800 Tue Nov  5 13:26:52 2013
+3	Output	1584	244800 Tue Nov  5 13:26:52 2013
+4	Input	2288	244800 Tue Nov  5 13:26:52 2013
+12	fps	33	244800 Tue Nov  5 13:26:52 2013
+13	Clients	2	244800 Tue Nov  5 13:26:52 2013
+10	Ping average	12	244800 Tue Nov  5 13:26:52 2013
+8	Ping min	11	244800 Tue Nov  5 13:26:52 2013
+9	Ping max	14	244800 Tue Nov  5 13:26:52 2013
+11	CPU %	2	244800 Tue Nov  5 13:26:52 2013
+5	Total Output	501480	245820 Tue Nov  5 13:26:53 2013
+6	Total Input	662684	245820 Tue Nov  5 13:26:53 2013
+3	Output	1408	245820 Tue Nov  5 13:26:53 2013
+4	Input	3476	245820 Tue Nov  5 13:26:53 2013
+12	fps	33	245820 Tue Nov  5 13:26:53 2013
+13	Clients	2	245820 Tue Nov  5 13:26:53 2013
+10	Ping average	13	245820 Tue Nov  5 13:26:53 2013
+8	Ping min	12	245820 Tue Nov  5 13:26:53 2013
+9	Ping max	15	245820 Tue Nov  5 13:26:53 2013
+11	CPU %	2	245820 Tue Nov  5 13:26:53 2013
+5	Total Output	505112	246840 Tue Nov  5 13:26:54 2013
+6	Total Input	665500	246840 Tue Nov  5 13:26:54 2013
+3	Output	3632	246840 Tue Nov  5 13:26:54 2013
+4	Input	2816	246840 Tue Nov  5 13:26:54 2013
+12	fps	33	246840 Tue Nov  5 13:26:54 2013
+13	Clients	2	246840 Tue Nov  5 13:26:54 2013
+10	Ping average	12	246840 Tue Nov  5 13:26:54 2013
+8	Ping min	11	246840 Tue Nov  5 13:26:54 2013
+9	Ping max	14	246840 Tue Nov  5 13:26:54 2013
+11	CPU %	2	246840 Tue Nov  5 13:26:54 2013
+5	Total Output	506520	247860 Tue Nov  5 13:26:55 2013
+6	Total Input	669504	247860 Tue Nov  5 13:26:55 2013
+3	Output	1408	247860 Tue Nov  5 13:26:55 2013
+4	Input	4004	247860 Tue Nov  5 13:26:55 2013
+12	fps	33	247860 Tue Nov  5 13:26:55 2013
+13	Clients	2	247860 Tue Nov  5 13:26:55 2013
+10	Ping average	9	247860 Tue Nov  5 13:26:55 2013
+8	Ping min	9	247860 Tue Nov  5 13:26:55 2013
+9	Ping max	10	247860 Tue Nov  5 13:26:55 2013
+11	CPU %	3	247860 Tue Nov  5 13:26:55 2013
+5	Total Output	508104	248880 Tue Nov  5 13:26:56 2013
+6	Total Input	672540	248880 Tue Nov  5 13:26:56 2013
+3	Output	1584	248880 Tue Nov  5 13:26:56 2013
+4	Input	3036	248880 Tue Nov  5 13:26:56 2013
+12	fps	33	248880 Tue Nov  5 13:26:56 2013
+13	Clients	2	248880 Tue Nov  5 13:26:56 2013
+10	Ping average	11	248880 Tue Nov  5 13:26:56 2013
+8	Ping min	10	248880 Tue Nov  5 13:26:56 2013
+9	Ping max	13	248880 Tue Nov  5 13:26:56 2013
+11	CPU %	2	248880 Tue Nov  5 13:26:56 2013
+5	Total Output	511560	249900 Tue Nov  5 13:26:57 2013
+6	Total Input	675092	249900 Tue Nov  5 13:26:57 2013
+3	Output	3456	249900 Tue Nov  5 13:26:57 2013
+4	Input	2552	249900 Tue Nov  5 13:26:57 2013
+12	fps	33	249900 Tue Nov  5 13:26:57 2013
+13	Clients	2	249900 Tue Nov  5 13:26:57 2013
+10	Ping average	9	249900 Tue Nov  5 13:26:57 2013
+8	Ping min	9	249900 Tue Nov  5 13:26:57 2013
+9	Ping max	10	249900 Tue Nov  5 13:26:57 2013
+11	CPU %	3	249900 Tue Nov  5 13:26:57 2013
+5	Total Output	513144	250920 Tue Nov  5 13:26:58 2013
+6	Total Input	678744	250920 Tue Nov  5 13:26:58 2013
+3	Output	1584	250920 Tue Nov  5 13:26:58 2013
+4	Input	3652	250920 Tue Nov  5 13:26:58 2013
+12	fps	33	250920 Tue Nov  5 13:26:58 2013
+13	Clients	2	250920 Tue Nov  5 13:26:58 2013
+10	Ping average	10	250920 Tue Nov  5 13:26:58 2013
+8	Ping min	10	250920 Tue Nov  5 13:26:58 2013
+9	Ping max	11	250920 Tue Nov  5 13:26:58 2013
+11	CPU %	1	250920 Tue Nov  5 13:26:58 2013
+5	Total Output	514728	251940 Tue Nov  5 13:27:13 2013
+6	Total Input	710776	251940 Tue Nov  5 13:27:13 2013
+3	Output	1584	251940 Tue Nov  5 13:27:13 2013
+4	Input	32032	251940 Tue Nov  5 13:27:13 2013
+12	fps	2	251940 Tue Nov  5 13:27:13 2013
+13	Clients	2	251940 Tue Nov  5 13:27:13 2013
+10	Ping average	11	251940 Tue Nov  5 13:27:13 2013
+8	Ping min	10	251940 Tue Nov  5 13:27:13 2013
+9	Ping max	12	251940 Tue Nov  5 13:27:13 2013
+11	CPU %	1	251940 Tue Nov  5 13:27:13 2013
+5	Total Output	518888	252960 Tue Nov  5 13:27:14 2013
+6	Total Input	712888	252960 Tue Nov  5 13:27:14 2013
+3	Output	4160	252960 Tue Nov  5 13:27:14 2013
+4	Input	2112	252960 Tue Nov  5 13:27:14 2013
+12	fps	33	252960 Tue Nov  5 13:27:14 2013
+13	Clients	2	252960 Tue Nov  5 13:27:14 2013
+10	Ping average	11	252960 Tue Nov  5 13:27:14 2013
+8	Ping min	9	252960 Tue Nov  5 13:27:14 2013
+9	Ping max	14	252960 Tue Nov  5 13:27:14 2013
+11	CPU %	3	252960 Tue Nov  5 13:27:14 2013
+5	Total Output	520296	253980 Tue Nov  5 13:27:15 2013
+6	Total Input	715044	253980 Tue Nov  5 13:27:15 2013
+3	Output	1408	253980 Tue Nov  5 13:27:15 2013
+4	Input	2156	253980 Tue Nov  5 13:27:15 2013
+12	fps	33	253980 Tue Nov  5 13:27:15 2013
+13	Clients	2	253980 Tue Nov  5 13:27:15 2013
+10	Ping average	13	253980 Tue Nov  5 13:27:15 2013
+8	Ping min	11	253980 Tue Nov  5 13:27:15 2013
+9	Ping max	15	253980 Tue Nov  5 13:27:15 2013
+11	CPU %	1	253980 Tue Nov  5 13:27:15 2013
+5	Total Output	521880	255000 Tue Nov  5 13:27:16 2013
+6	Total Input	717156	255000 Tue Nov  5 13:27:16 2013
+3	Output	1584	255000 Tue Nov  5 13:27:16 2013
+4	Input	2112	255000 Tue Nov  5 13:27:16 2013
+12	fps	33	255000 Tue Nov  5 13:27:16 2013
+13	Clients	2	255000 Tue Nov  5 13:27:16 2013
+10	Ping average	12	255000 Tue Nov  5 13:27:16 2013
+8	Ping min	9	255000 Tue Nov  5 13:27:16 2013
+9	Ping max	15	255000 Tue Nov  5 13:27:16 2013
+11	CPU %	2	255000 Tue Nov  5 13:27:16 2013
+5	Total Output	525336	256020 Tue Nov  5 13:27:17 2013
+6	Total Input	719312	256020 Tue Nov  5 13:27:17 2013
+3	Output	3456	256020 Tue Nov  5 13:27:17 2013
+4	Input	2156	256020 Tue Nov  5 13:27:17 2013
+12	fps	33	256020 Tue Nov  5 13:27:17 2013
+13	Clients	2	256020 Tue Nov  5 13:27:17 2013
+10	Ping average	13	256020 Tue Nov  5 13:27:17 2013
+8	Ping min	10	256020 Tue Nov  5 13:27:17 2013
+9	Ping max	16	256020 Tue Nov  5 13:27:17 2013
+11	CPU %	2	256020 Tue Nov  5 13:27:17 2013
+5	Total Output	526920	257040 Tue Nov  5 13:27:18 2013
+6	Total Input	722920	257040 Tue Nov  5 13:27:18 2013
+3	Output	1584	257040 Tue Nov  5 13:27:18 2013
+4	Input	3608	257040 Tue Nov  5 13:27:18 2013
+12	fps	33	257040 Tue Nov  5 13:27:18 2013
+13	Clients	2	257040 Tue Nov  5 13:27:18 2013
+10	Ping average	10	257040 Tue Nov  5 13:27:18 2013
+8	Ping min	8	257040 Tue Nov  5 13:27:18 2013
+9	Ping max	12	257040 Tue Nov  5 13:27:18 2013
+11	CPU %	2	257040 Tue Nov  5 13:27:18 2013
+5	Total Output	530376	258060 Tue Nov  5 13:27:19 2013
+6	Total Input	725560	258060 Tue Nov  5 13:27:19 2013
+3	Output	3456	258060 Tue Nov  5 13:27:19 2013
+4	Input	2640	258060 Tue Nov  5 13:27:19 2013
+12	fps	33	258060 Tue Nov  5 13:27:19 2013
+13	Clients	2	258060 Tue Nov  5 13:27:19 2013
+10	Ping average	10	258060 Tue Nov  5 13:27:19 2013
+8	Ping min	8	258060 Tue Nov  5 13:27:19 2013
+9	Ping max	12	258060 Tue Nov  5 13:27:19 2013
+11	CPU %	2	258060 Tue Nov  5 13:27:19 2013
+5	Total Output	531960	259080 Tue Nov  5 13:27:20 2013
+6	Total Input	730796	259080 Tue Nov  5 13:27:20 2013
+3	Output	1584	259080 Tue Nov  5 13:27:20 2013
+4	Input	5236	259080 Tue Nov  5 13:27:20 2013
+12	fps	33	259080 Tue Nov  5 13:27:20 2013
+13	Clients	2	259080 Tue Nov  5 13:27:20 2013
+10	Ping average	10	259080 Tue Nov  5 13:27:20 2013
+8	Ping min	7	259080 Tue Nov  5 13:27:20 2013
+9	Ping max	13	259080 Tue Nov  5 13:27:20 2013
+11	CPU %	2	259080 Tue Nov  5 13:27:20 2013
+5	Total Output	533368	260100 Tue Nov  5 13:27:21 2013
+6	Total Input	735504	260100 Tue Nov  5 13:27:21 2013
+3	Output	1408	260100 Tue Nov  5 13:27:21 2013
+4	Input	4708	260100 Tue Nov  5 13:27:21 2013
+12	fps	33	260100 Tue Nov  5 13:27:21 2013
+13	Clients	2	260100 Tue Nov  5 13:27:21 2013
+10	Ping average	9	260100 Tue Nov  5 13:27:21 2013
+8	Ping min	9	260100 Tue Nov  5 13:27:21 2013
+9	Ping max	9	260100 Tue Nov  5 13:27:21 2013
+11	CPU %	3	260100 Tue Nov  5 13:27:21 2013
+5	Total Output	537000	261120 Tue Nov  5 13:27:22 2013
+6	Total Input	740388	261120 Tue Nov  5 13:27:22 2013
+3	Output	3632	261120 Tue Nov  5 13:27:22 2013
+4	Input	4884	261120 Tue Nov  5 13:27:22 2013
+12	fps	33	261120 Tue Nov  5 13:27:22 2013
+13	Clients	2	261120 Tue Nov  5 13:27:22 2013
+10	Ping average	9	261120 Tue Nov  5 13:27:22 2013
+8	Ping min	8	261120 Tue Nov  5 13:27:22 2013
+9	Ping max	11	261120 Tue Nov  5 13:27:22 2013
+11	CPU %	2	261120 Tue Nov  5 13:27:22 2013
+5	Total Output	538408	262140 Tue Nov  5 13:27:24 2013
+6	Total Input	744920	262140 Tue Nov  5 13:27:24 2013
+3	Output	1408	262140 Tue Nov  5 13:27:24 2013
+4	Input	4532	262140 Tue Nov  5 13:27:24 2013
+12	fps	33	262140 Tue Nov  5 13:27:24 2013
+13	Clients	2	262140 Tue Nov  5 13:27:24 2013
+10	Ping average	11	262140 Tue Nov  5 13:27:24 2013
+8	Ping min	10	262140 Tue Nov  5 13:27:24 2013
+9	Ping max	12	262140 Tue Nov  5 13:27:24 2013
+11	CPU %	2	262140 Tue Nov  5 13:27:24 2013
+5	Total Output	539816	263160 Tue Nov  5 13:27:25 2013
+6	Total Input	748748	263160 Tue Nov  5 13:27:25 2013
+3	Output	1408	263160 Tue Nov  5 13:27:25 2013
+4	Input	3828	263160 Tue Nov  5 13:27:25 2013
+12	fps	33	263160 Tue Nov  5 13:27:25 2013
+13	Clients	2	263160 Tue Nov  5 13:27:25 2013
+10	Ping average	12	263160 Tue Nov  5 13:27:25 2013
+8	Ping min	10	263160 Tue Nov  5 13:27:25 2013
+9	Ping max	14	263160 Tue Nov  5 13:27:25 2013
+11	CPU %	2	263160 Tue Nov  5 13:27:25 2013
+5	Total Output	543448	264180 Tue Nov  5 13:27:26 2013
+6	Total Input	752840	264180 Tue Nov  5 13:27:26 2013
+3	Output	3632	264180 Tue Nov  5 13:27:26 2013
+4	Input	4092	264180 Tue Nov  5 13:27:26 2013
+12	fps	33	264180 Tue Nov  5 13:27:26 2013
+13	Clients	2	264180 Tue Nov  5 13:27:26 2013
+10	Ping average	9	264180 Tue Nov  5 13:27:26 2013
+8	Ping min	8	264180 Tue Nov  5 13:27:26 2013
+9	Ping max	11	264180 Tue Nov  5 13:27:26 2013
+11	CPU %	3	264180 Tue Nov  5 13:27:26 2013
+5	Total Output	544856	265200 Tue Nov  5 13:27:27 2013
+6	Total Input	755788	265200 Tue Nov  5 13:27:27 2013
+3	Output	1408	265200 Tue Nov  5 13:27:27 2013
+4	Input	2948	265200 Tue Nov  5 13:27:27 2013
+12	fps	33	265200 Tue Nov  5 13:27:27 2013
+13	Clients	2	265200 Tue Nov  5 13:27:27 2013
+10	Ping average	10	265200 Tue Nov  5 13:27:27 2013
+8	Ping min	10	265200 Tue Nov  5 13:27:27 2013
+9	Ping max	11	265200 Tue Nov  5 13:27:27 2013
+11	CPU %	2	265200 Tue Nov  5 13:27:27 2013
+5	Total Output	546440	266220 Tue Nov  5 13:27:28 2013
+6	Total Input	758340	266220 Tue Nov  5 13:27:28 2013
+3	Output	1584	266220 Tue Nov  5 13:27:28 2013
+4	Input	2552	266220 Tue Nov  5 13:27:28 2013
+12	fps	33	266220 Tue Nov  5 13:27:28 2013
+13	Clients	2	266220 Tue Nov  5 13:27:28 2013
+10	Ping average	11	266220 Tue Nov  5 13:27:28 2013
+8	Ping min	11	266220 Tue Nov  5 13:27:28 2013
+9	Ping max	11	266220 Tue Nov  5 13:27:28 2013
+11	CPU %	2	266220 Tue Nov  5 13:27:28 2013
+5	Total Output	549896	267240 Tue Nov  5 13:27:29 2013
+6	Total Input	762740	267240 Tue Nov  5 13:27:29 2013
+3	Output	3456	267240 Tue Nov  5 13:27:29 2013
+4	Input	4400	267240 Tue Nov  5 13:27:29 2013
+12	fps	33	267240 Tue Nov  5 13:27:29 2013
+13	Clients	2	267240 Tue Nov  5 13:27:29 2013
+10	Ping average	12	267240 Tue Nov  5 13:27:29 2013
+8	Ping min	12	267240 Tue Nov  5 13:27:29 2013
+9	Ping max	13	267240 Tue Nov  5 13:27:29 2013
+11	CPU %	2	267240 Tue Nov  5 13:27:29 2013
+5	Total Output	551480	268260 Tue Nov  5 13:27:30 2013
+6	Total Input	765028	268260 Tue Nov  5 13:27:30 2013
+3	Output	1584	268260 Tue Nov  5 13:27:30 2013
+4	Input	2288	268260 Tue Nov  5 13:27:30 2013
+12	fps	33	268260 Tue Nov  5 13:27:30 2013
+13	Clients	2	268260 Tue Nov  5 13:27:30 2013
+10	Ping average	9	268260 Tue Nov  5 13:27:30 2013
+8	Ping min	9	268260 Tue Nov  5 13:27:30 2013
+9	Ping max	10	268260 Tue Nov  5 13:27:30 2013
+11	CPU %	2	268260 Tue Nov  5 13:27:30 2013
+5	Total Output	552888	269280 Tue Nov  5 13:27:31 2013
+6	Total Input	767756	269280 Tue Nov  5 13:27:31 2013
+3	Output	1408	269280 Tue Nov  5 13:27:31 2013
+4	Input	2728	269280 Tue Nov  5 13:27:31 2013
+12	fps	33	269280 Tue Nov  5 13:27:31 2013
+13	Clients	2	269280 Tue Nov  5 13:27:31 2013
+10	Ping average	10	269280 Tue Nov  5 13:27:31 2013
+8	Ping min	10	269280 Tue Nov  5 13:27:31 2013
+9	Ping max	11	269280 Tue Nov  5 13:27:31 2013
+11	CPU %	2	269280 Tue Nov  5 13:27:31 2013
+5	Total Output	556520	270300 Tue Nov  5 13:27:32 2013
+6	Total Input	770000	270300 Tue Nov  5 13:27:32 2013
+3	Output	3632	270300 Tue Nov  5 13:27:32 2013
+4	Input	2244	270300 Tue Nov  5 13:27:32 2013
+12	fps	33	270300 Tue Nov  5 13:27:32 2013
+13	Clients	2	270300 Tue Nov  5 13:27:32 2013
+10	Ping average	11	270300 Tue Nov  5 13:27:32 2013
+8	Ping min	9	270300 Tue Nov  5 13:27:32 2013
+9	Ping max	14	270300 Tue Nov  5 13:27:32 2013
+11	CPU %	2	270300 Tue Nov  5 13:27:32 2013
+5	Total Output	557928	271320 Tue Nov  5 13:27:33 2013
+6	Total Input	772420	271320 Tue Nov  5 13:27:33 2013
+3	Output	1408	271320 Tue Nov  5 13:27:33 2013
+4	Input	2420	271320 Tue Nov  5 13:27:33 2013
+12	fps	33	271320 Tue Nov  5 13:27:33 2013
+13	Clients	2	271320 Tue Nov  5 13:27:33 2013
+10	Ping average	10	271320 Tue Nov  5 13:27:33 2013
+8	Ping min	9	271320 Tue Nov  5 13:27:33 2013
+9	Ping max	12	271320 Tue Nov  5 13:27:33 2013
+11	CPU %	3	271320 Tue Nov  5 13:27:33 2013
+5	Total Output	559512	272340 Tue Nov  5 13:27:34 2013
+6	Total Input	774796	272340 Tue Nov  5 13:27:34 2013
+3	Output	1584	272340 Tue Nov  5 13:27:34 2013
+4	Input	2376	272340 Tue Nov  5 13:27:34 2013
+12	fps	33	272340 Tue Nov  5 13:27:34 2013
+13	Clients	2	272340 Tue Nov  5 13:27:34 2013
+10	Ping average	10	272340 Tue Nov  5 13:27:34 2013
+8	Ping min	9	272340 Tue Nov  5 13:27:34 2013
+9	Ping max	12	272340 Tue Nov  5 13:27:34 2013
+11	CPU %	2	272340 Tue Nov  5 13:27:34 2013
+5	Total Output	562968	273360 Tue Nov  5 13:27:35 2013
+6	Total Input	776996	273360 Tue Nov  5 13:27:35 2013
+3	Output	3456	273360 Tue Nov  5 13:27:35 2013
+4	Input	2200	273360 Tue Nov  5 13:27:35 2013
+12	fps	33	273360 Tue Nov  5 13:27:35 2013
+13	Clients	2	273360 Tue Nov  5 13:27:35 2013
+10	Ping average	11	273360 Tue Nov  5 13:27:35 2013
+8	Ping min	9	273360 Tue Nov  5 13:27:35 2013
+9	Ping max	14	273360 Tue Nov  5 13:27:35 2013
+11	CPU %	2	273360 Tue Nov  5 13:27:35 2013
+5	Total Output	564552	274380 Tue Nov  5 13:27:36 2013
+6	Total Input	780076	274380 Tue Nov  5 13:27:36 2013
+3	Output	1584	274380 Tue Nov  5 13:27:36 2013
+4	Input	3080	274380 Tue Nov  5 13:27:36 2013
+12	fps	33	274380 Tue Nov  5 13:27:36 2013
+13	Clients	2	274380 Tue Nov  5 13:27:36 2013
+10	Ping average	11	274380 Tue Nov  5 13:27:36 2013
+8	Ping min	11	274380 Tue Nov  5 13:27:36 2013
+9	Ping max	12	274380 Tue Nov  5 13:27:36 2013
+11	CPU %	2	274380 Tue Nov  5 13:27:36 2013
+5	Total Output	565960	275400 Tue Nov  5 13:27:37 2013
+6	Total Input	784520	275400 Tue Nov  5 13:27:37 2013
+3	Output	1408	275400 Tue Nov  5 13:27:37 2013
+4	Input	4444	275400 Tue Nov  5 13:27:37 2013
+12	fps	33	275400 Tue Nov  5 13:27:37 2013
+13	Clients	2	275400 Tue Nov  5 13:27:37 2013
+10	Ping average	9	275400 Tue Nov  5 13:27:37 2013
+8	Ping min	9	275400 Tue Nov  5 13:27:37 2013
+9	Ping max	9	275400 Tue Nov  5 13:27:37 2013
+11	CPU %	2	275400 Tue Nov  5 13:27:37 2013
+5	Total Output	569416	276420 Tue Nov  5 13:27:38 2013
+6	Total Input	789492	276420 Tue Nov  5 13:27:38 2013
+3	Output	3456	276420 Tue Nov  5 13:27:38 2013
+4	Input	4972	276420 Tue Nov  5 13:27:38 2013
+12	fps	33	276420 Tue Nov  5 13:27:38 2013
+13	Clients	2	276420 Tue Nov  5 13:27:38 2013
+10	Ping average	10	276420 Tue Nov  5 13:27:38 2013
+8	Ping min	10	276420 Tue Nov  5 13:27:38 2013
+9	Ping max	11	276420 Tue Nov  5 13:27:38 2013
+11	CPU %	2	276420 Tue Nov  5 13:27:38 2013
+5	Total Output	571000	277440 Tue Nov  5 13:27:39 2013
+6	Total Input	792000	277440 Tue Nov  5 13:27:39 2013
+3	Output	1584	277440 Tue Nov  5 13:27:39 2013
+4	Input	2508	277440 Tue Nov  5 13:27:39 2013
+12	fps	33	277440 Tue Nov  5 13:27:39 2013
+13	Clients	2	277440 Tue Nov  5 13:27:39 2013
+10	Ping average	10	277440 Tue Nov  5 13:27:39 2013
+8	Ping min	10	277440 Tue Nov  5 13:27:39 2013
+9	Ping max	10	277440 Tue Nov  5 13:27:39 2013
+11	CPU %	2	277440 Tue Nov  5 13:27:39 2013
+5	Total Output	572408	278460 Tue Nov  5 13:27:40 2013
+6	Total Input	794156	278460 Tue Nov  5 13:27:40 2013
+3	Output	1408	278460 Tue Nov  5 13:27:40 2013
+4	Input	2156	278460 Tue Nov  5 13:27:40 2013
+12	fps	33	278460 Tue Nov  5 13:27:40 2013
+13	Clients	2	278460 Tue Nov  5 13:27:40 2013
+10	Ping average	10	278460 Tue Nov  5 13:27:40 2013
+8	Ping min	9	278460 Tue Nov  5 13:27:40 2013
+9	Ping max	12	278460 Tue Nov  5 13:27:40 2013
+11	CPU %	3	278460 Tue Nov  5 13:27:40 2013
+5	Total Output	576040	279480 Tue Nov  5 13:27:41 2013
+6	Total Input	796356	279480 Tue Nov  5 13:27:41 2013
+3	Output	3632	279480 Tue Nov  5 13:27:41 2013
+4	Input	2200	279480 Tue Nov  5 13:27:41 2013
+12	fps	33	279480 Tue Nov  5 13:27:41 2013
+13	Clients	2	279480 Tue Nov  5 13:27:41 2013
+10	Ping average	13	279480 Tue Nov  5 13:27:41 2013
+8	Ping min	11	279480 Tue Nov  5 13:27:41 2013
+9	Ping max	16	279480 Tue Nov  5 13:27:41 2013
+11	CPU %	1	279480 Tue Nov  5 13:27:41 2013
+5	Total Output	577448	280500 Tue Nov  5 13:27:42 2013
+6	Total Input	798512	280500 Tue Nov  5 13:27:42 2013
+3	Output	1408	280500 Tue Nov  5 13:27:42 2013
+4	Input	2156	280500 Tue Nov  5 13:27:42 2013
+12	fps	33	280500 Tue Nov  5 13:27:42 2013
+13	Clients	2	280500 Tue Nov  5 13:27:42 2013
+10	Ping average	10	280500 Tue Nov  5 13:27:42 2013
+8	Ping min	10	280500 Tue Nov  5 13:27:42 2013
+9	Ping max	11	280500 Tue Nov  5 13:27:42 2013
+11	CPU %	2	280500 Tue Nov  5 13:27:42 2013
+5	Total Output	579032	281520 Tue Nov  5 13:27:43 2013
+6	Total Input	800624	281520 Tue Nov  5 13:27:43 2013
+3	Output	1584	281520 Tue Nov  5 13:27:43 2013
+4	Input	2112	281520 Tue Nov  5 13:27:43 2013
+12	fps	33	281520 Tue Nov  5 13:27:43 2013
+13	Clients	2	281520 Tue Nov  5 13:27:43 2013
+10	Ping average	10	281520 Tue Nov  5 13:27:43 2013
+8	Ping min	10	281520 Tue Nov  5 13:27:43 2013
+9	Ping max	11	281520 Tue Nov  5 13:27:43 2013
+11	CPU %	2	281520 Tue Nov  5 13:27:43 2013
+5	Total Output	582488	282540 Tue Nov  5 13:27:44 2013
+6	Total Input	802780	282540 Tue Nov  5 13:27:44 2013
+3	Output	3456	282540 Tue Nov  5 13:27:44 2013
+4	Input	2156	282540 Tue Nov  5 13:27:44 2013
+12	fps	33	282540 Tue Nov  5 13:27:44 2013
+13	Clients	2	282540 Tue Nov  5 13:27:44 2013
+10	Ping average	10	282540 Tue Nov  5 13:27:44 2013
+8	Ping min	9	282540 Tue Nov  5 13:27:44 2013
+9	Ping max	11	282540 Tue Nov  5 13:27:44 2013
+11	CPU %	2	282540 Tue Nov  5 13:27:44 2013
+5	Total Output	584072	283560 Tue Nov  5 13:27:45 2013
+6	Total Input	806564	283560 Tue Nov  5 13:27:45 2013
+3	Output	1584	283560 Tue Nov  5 13:27:45 2013
+4	Input	3784	283560 Tue Nov  5 13:27:45 2013
+12	fps	33	283560 Tue Nov  5 13:27:45 2013
+13	Clients	2	283560 Tue Nov  5 13:27:45 2013
+10	Ping average	11	283560 Tue Nov  5 13:27:45 2013
+8	Ping min	9	283560 Tue Nov  5 13:27:45 2013
+9	Ping max	14	283560 Tue Nov  5 13:27:45 2013
+11	CPU %	2	283560 Tue Nov  5 13:27:45 2013
+5	Total Output	585480	284580 Tue Nov  5 13:27:46 2013
+6	Total Input	808984	284580 Tue Nov  5 13:27:46 2013
+3	Output	1408	284580 Tue Nov  5 13:27:46 2013
+4	Input	2420	284580 Tue Nov  5 13:27:46 2013
+12	fps	33	284580 Tue Nov  5 13:27:46 2013
+13	Clients	2	284580 Tue Nov  5 13:27:46 2013
+10	Ping average	11	284580 Tue Nov  5 13:27:46 2013
+8	Ping min	9	284580 Tue Nov  5 13:27:46 2013
+9	Ping max	13	284580 Tue Nov  5 13:27:46 2013
+11	CPU %	2	284580 Tue Nov  5 13:27:46 2013
+5	Total Output	589112	285600 Tue Nov  5 13:27:47 2013
+6	Total Input	812768	285600 Tue Nov  5 13:27:47 2013
+3	Output	3632	285600 Tue Nov  5 13:27:47 2013
+4	Input	3784	285600 Tue Nov  5 13:27:47 2013
+12	fps	33	285600 Tue Nov  5 13:27:47 2013
+13	Clients	2	285600 Tue Nov  5 13:27:47 2013
+10	Ping average	10	285600 Tue Nov  5 13:27:47 2013
+8	Ping min	9	285600 Tue Nov  5 13:27:47 2013
+9	Ping max	12	285600 Tue Nov  5 13:27:47 2013
+11	CPU %	3	285600 Tue Nov  5 13:27:47 2013
+5	Total Output	590520	286620 Tue Nov  5 13:27:48 2013
+6	Total Input	816948	286620 Tue Nov  5 13:27:48 2013
+3	Output	1408	286620 Tue Nov  5 13:27:48 2013
+4	Input	4180	286620 Tue Nov  5 13:27:48 2013
+12	fps	33	286620 Tue Nov  5 13:27:48 2013
+13	Clients	2	286620 Tue Nov  5 13:27:48 2013
+10	Ping average	10	286620 Tue Nov  5 13:27:48 2013
+8	Ping min	10	286620 Tue Nov  5 13:27:48 2013
+9	Ping max	11	286620 Tue Nov  5 13:27:48 2013
+11	CPU %	1	286620 Tue Nov  5 13:27:48 2013
+5	Total Output	592104	287640 Tue Nov  5 13:27:49 2013
+6	Total Input	819984	287640 Tue Nov  5 13:27:49 2013
+3	Output	1584	287640 Tue Nov  5 13:27:49 2013
+4	Input	3036	287640 Tue Nov  5 13:27:49 2013
+12	fps	33	287640 Tue Nov  5 13:27:49 2013
+13	Clients	2	287640 Tue Nov  5 13:27:49 2013
+10	Ping average	9	287640 Tue Nov  5 13:27:49 2013
+8	Ping min	8	287640 Tue Nov  5 13:27:49 2013
+9	Ping max	11	287640 Tue Nov  5 13:27:49 2013
+11	CPU %	3	287640 Tue Nov  5 13:27:49 2013
+5	Total Output	595560	288660 Tue Nov  5 13:27:50 2013
+6	Total Input	822756	288660 Tue Nov  5 13:27:50 2013
+3	Output	3456	288660 Tue Nov  5 13:27:50 2013
+4	Input	2772	288660 Tue Nov  5 13:27:50 2013
+12	fps	33	288660 Tue Nov  5 13:27:50 2013
+13	Clients	2	288660 Tue Nov  5 13:27:50 2013
+10	Ping average	11	288660 Tue Nov  5 13:27:50 2013
+8	Ping min	8	288660 Tue Nov  5 13:27:50 2013
+9	Ping max	14	288660 Tue Nov  5 13:27:50 2013
+11	CPU %	2	288660 Tue Nov  5 13:27:50 2013
+5	Total Output	597144	289680 Tue Nov  5 13:27:51 2013
+6	Total Input	826188	289680 Tue Nov  5 13:27:51 2013
+3	Output	1584	289680 Tue Nov  5 13:27:51 2013
+4	Input	3432	289680 Tue Nov  5 13:27:51 2013
+12	fps	33	289680 Tue Nov  5 13:27:51 2013
+13	Clients	2	289680 Tue Nov  5 13:27:51 2013
+10	Ping average	9	289680 Tue Nov  5 13:27:51 2013
+8	Ping min	8	289680 Tue Nov  5 13:27:51 2013
+9	Ping max	11	289680 Tue Nov  5 13:27:51 2013
+11	CPU %	3	289680 Tue Nov  5 13:27:51 2013
+5	Total Output	598552	290700 Tue Nov  5 13:27:52 2013
+6	Total Input	828696	290700 Tue Nov  5 13:27:52 2013
+3	Output	1408	290700 Tue Nov  5 13:27:52 2013
+4	Input	2508	290700 Tue Nov  5 13:27:52 2013
+12	fps	33	290700 Tue Nov  5 13:27:52 2013
+13	Clients	2	290700 Tue Nov  5 13:27:52 2013
+10	Ping average	12	290700 Tue Nov  5 13:27:52 2013
+8	Ping min	10	290700 Tue Nov  5 13:27:52 2013
+9	Ping max	14	290700 Tue Nov  5 13:27:52 2013
+11	CPU %	2	290700 Tue Nov  5 13:27:52 2013
+5	Total Output	602184	291720 Tue Nov  5 13:27:53 2013
+6	Total Input	830720	291720 Tue Nov  5 13:27:53 2013
+3	Output	3632	291720 Tue Nov  5 13:27:53 2013
+4	Input	2024	291720 Tue Nov  5 13:27:53 2013
+12	fps	33	291720 Tue Nov  5 13:27:53 2013
+13	Clients	2	291720 Tue Nov  5 13:27:53 2013
+10	Ping average	11	291720 Tue Nov  5 13:27:53 2013
+8	Ping min	9	291720 Tue Nov  5 13:27:53 2013
+9	Ping max	14	291720 Tue Nov  5 13:27:53 2013
+11	CPU %	1	291720 Tue Nov  5 13:27:53 2013
+5	Total Output	603592	292740 Tue Nov  5 13:27:54 2013
+6	Total Input	832964	292740 Tue Nov  5 13:27:54 2013
+3	Output	1408	292740 Tue Nov  5 13:27:54 2013
+4	Input	2244	292740 Tue Nov  5 13:27:54 2013
+12	fps	33	292740 Tue Nov  5 13:27:54 2013
+13	Clients	2	292740 Tue Nov  5 13:27:54 2013
+10	Ping average	11	292740 Tue Nov  5 13:27:54 2013
+8	Ping min	10	292740 Tue Nov  5 13:27:54 2013
+9	Ping max	12	292740 Tue Nov  5 13:27:54 2013
+11	CPU %	3	292740 Tue Nov  5 13:27:54 2013
+5	Total Output	605176	293760 Tue Nov  5 13:27:55 2013
+6	Total Input	835120	293760 Tue Nov  5 13:27:55 2013
+3	Output	1584	293760 Tue Nov  5 13:27:55 2013
+4	Input	2156	293760 Tue Nov  5 13:27:55 2013
+12	fps	33	293760 Tue Nov  5 13:27:55 2013
+13	Clients	2	293760 Tue Nov  5 13:27:55 2013
+10	Ping average	12	293760 Tue Nov  5 13:27:55 2013
+8	Ping min	12	293760 Tue Nov  5 13:27:55 2013
+9	Ping max	12	293760 Tue Nov  5 13:27:55 2013
+11	CPU %	2	293760 Tue Nov  5 13:27:55 2013
+5	Total Output	608632	294780 Tue Nov  5 13:27:56 2013
+6	Total Input	837716	294780 Tue Nov  5 13:27:56 2013
+3	Output	3456	294780 Tue Nov  5 13:27:56 2013
+4	Input	2596	294780 Tue Nov  5 13:27:56 2013
+12	fps	33	294780 Tue Nov  5 13:27:56 2013
+13	Clients	2	294780 Tue Nov  5 13:27:56 2013
+10	Ping average	9	294780 Tue Nov  5 13:27:56 2013
+8	Ping min	8	294780 Tue Nov  5 13:27:56 2013
+9	Ping max	10	294780 Tue Nov  5 13:27:56 2013
+11	CPU %	2	294780 Tue Nov  5 13:27:56 2013
+5	Total Output	610216	295800 Tue Nov  5 13:27:57 2013
+6	Total Input	839916	295800 Tue Nov  5 13:27:57 2013
+3	Output	1584	295800 Tue Nov  5 13:27:57 2013
+4	Input	2200	295800 Tue Nov  5 13:27:57 2013
+12	fps	33	295800 Tue Nov  5 13:27:57 2013
+13	Clients	2	295800 Tue Nov  5 13:27:57 2013
+10	Ping average	9	295800 Tue Nov  5 13:27:57 2013
+8	Ping min	7	295800 Tue Nov  5 13:27:57 2013
+9	Ping max	11	295800 Tue Nov  5 13:27:57 2013
+11	CPU %	3	295800 Tue Nov  5 13:27:57 2013
+5	Total Output	611624	296820 Tue Nov  5 13:27:58 2013
+6	Total Input	842028	296820 Tue Nov  5 13:27:58 2013
+3	Output	1408	296820 Tue Nov  5 13:27:58 2013
+4	Input	2112	296820 Tue Nov  5 13:27:58 2013
+12	fps	33	296820 Tue Nov  5 13:27:58 2013
+13	Clients	2	296820 Tue Nov  5 13:27:58 2013
+10	Ping average	10	296820 Tue Nov  5 13:27:58 2013
+8	Ping min	9	296820 Tue Nov  5 13:27:58 2013
+9	Ping max	11	296820 Tue Nov  5 13:27:58 2013
+11	CPU %	2	296820 Tue Nov  5 13:27:58 2013
+5	Total Output	615256	297840 Tue Nov  5 13:27:59 2013
+6	Total Input	844316	297840 Tue Nov  5 13:27:59 2013
+3	Output	3632	297840 Tue Nov  5 13:27:59 2013
+4	Input	2288	297840 Tue Nov  5 13:27:59 2013
+12	fps	33	297840 Tue Nov  5 13:27:59 2013
+13	Clients	2	297840 Tue Nov  5 13:27:59 2013
+10	Ping average	13	297840 Tue Nov  5 13:27:59 2013
+8	Ping min	12	297840 Tue Nov  5 13:27:59 2013
+9	Ping max	14	297840 Tue Nov  5 13:27:59 2013
+11	CPU %	3	297840 Tue Nov  5 13:27:59 2013
+5	Total Output	616664	298860 Tue Nov  5 13:28:00 2013
+6	Total Input	847792	298860 Tue Nov  5 13:28:00 2013
+3	Output	1408	298860 Tue Nov  5 13:28:00 2013
+4	Input	3476	298860 Tue Nov  5 13:28:00 2013
+12	fps	33	298860 Tue Nov  5 13:28:00 2013
+13	Clients	2	298860 Tue Nov  5 13:28:00 2013
+10	Ping average	9	298860 Tue Nov  5 13:28:00 2013
+8	Ping min	8	298860 Tue Nov  5 13:28:00 2013
+9	Ping max	11	298860 Tue Nov  5 13:28:00 2013
+11	CPU %	3	298860 Tue Nov  5 13:28:00 2013
+5	Total Output	618248	299880 Tue Nov  5 13:28:01 2013
+6	Total Input	850784	299880 Tue Nov  5 13:28:01 2013
+3	Output	1584	299880 Tue Nov  5 13:28:01 2013
+4	Input	2992	299880 Tue Nov  5 13:28:01 2013
+12	fps	33	299880 Tue Nov  5 13:28:01 2013
+13	Clients	2	299880 Tue Nov  5 13:28:01 2013
+10	Ping average	10	299880 Tue Nov  5 13:28:01 2013
+8	Ping min	8	299880 Tue Nov  5 13:28:01 2013
+9	Ping max	12	299880 Tue Nov  5 13:28:01 2013
+11	CPU %	2	299880 Tue Nov  5 13:28:01 2013
+5	Total Output	621704	300900 Tue Nov  5 13:28:02 2013
+6	Total Input	853072	300900 Tue Nov  5 13:28:02 2013
+3	Output	3456	300900 Tue Nov  5 13:28:02 2013
+4	Input	2288	300900 Tue Nov  5 13:28:02 2013
+12	fps	33	300900 Tue Nov  5 13:28:02 2013
+13	Clients	2	300900 Tue Nov  5 13:28:02 2013
+10	Ping average	11	300900 Tue Nov  5 13:28:02 2013
+8	Ping min	8	300900 Tue Nov  5 13:28:02 2013
+9	Ping max	15	300900 Tue Nov  5 13:28:02 2013
+11	CPU %	3	300900 Tue Nov  5 13:28:02 2013
+5	Total Output	623288	301920 Tue Nov  5 13:28:03 2013
+6	Total Input	855360	301920 Tue Nov  5 13:28:03 2013
+3	Output	1584	301920 Tue Nov  5 13:28:03 2013
+4	Input	2288	301920 Tue Nov  5 13:28:03 2013
+12	fps	33	301920 Tue Nov  5 13:28:03 2013
+13	Clients	2	301920 Tue Nov  5 13:28:03 2013
+10	Ping average	10	301920 Tue Nov  5 13:28:03 2013
+8	Ping min	8	301920 Tue Nov  5 13:28:03 2013
+9	Ping max	12	301920 Tue Nov  5 13:28:03 2013
+11	CPU %	2	301920 Tue Nov  5 13:28:03 2013
+5	Total Output	624696	302940 Tue Nov  5 13:28:04 2013
+6	Total Input	857780	302940 Tue Nov  5 13:28:04 2013
+3	Output	1408	302940 Tue Nov  5 13:28:04 2013
+4	Input	2420	302940 Tue Nov  5 13:28:04 2013
+12	fps	33	302940 Tue Nov  5 13:28:04 2013
+13	Clients	2	302940 Tue Nov  5 13:28:04 2013
+10	Ping average	11	302940 Tue Nov  5 13:28:04 2013
+8	Ping min	8	302940 Tue Nov  5 13:28:04 2013
+9	Ping max	14	302940 Tue Nov  5 13:28:04 2013
+11	CPU %	2	302940 Tue Nov  5 13:28:04 2013
+5	Total Output	628328	303960 Tue Nov  5 13:28:05 2013
+6	Total Input	860728	303960 Tue Nov  5 13:28:05 2013
+3	Output	3632	303960 Tue Nov  5 13:28:05 2013
+4	Input	2948	303960 Tue Nov  5 13:28:05 2013
+12	fps	33	303960 Tue Nov  5 13:28:05 2013
+13	Clients	2	303960 Tue Nov  5 13:28:05 2013
+10	Ping average	12	303960 Tue Nov  5 13:28:05 2013
+8	Ping min	9	303960 Tue Nov  5 13:28:05 2013
+9	Ping max	16	303960 Tue Nov  5 13:28:05 2013
+11	CPU %	3	303960 Tue Nov  5 13:28:05 2013
+5	Total Output	629736	304980 Tue Nov  5 13:28:06 2013
+6	Total Input	863808	304980 Tue Nov  5 13:28:06 2013
+3	Output	1408	304980 Tue Nov  5 13:28:06 2013
+4	Input	3080	304980 Tue Nov  5 13:28:06 2013
+12	fps	33	304980 Tue Nov  5 13:28:06 2013
+13	Clients	2	304980 Tue Nov  5 13:28:06 2013
+10	Ping average	12	304980 Tue Nov  5 13:28:06 2013
+8	Ping min	12	304980 Tue Nov  5 13:28:06 2013
+9	Ping max	12	304980 Tue Nov  5 13:28:06 2013
+11	CPU %	2	304980 Tue Nov  5 13:28:06 2013
+5	Total Output	631320	306000 Tue Nov  5 13:28:08 2013
+6	Total Input	866184	306000 Tue Nov  5 13:28:08 2013
+3	Output	1584	306000 Tue Nov  5 13:28:08 2013
+4	Input	2376	306000 Tue Nov  5 13:28:08 2013
+12	fps	33	306000 Tue Nov  5 13:28:08 2013
+13	Clients	2	306000 Tue Nov  5 13:28:08 2013
+10	Ping average	12	306000 Tue Nov  5 13:28:08 2013
+8	Ping min	10	306000 Tue Nov  5 13:28:08 2013
+9	Ping max	15	306000 Tue Nov  5 13:28:08 2013
+11	CPU %	3	306000 Tue Nov  5 13:28:08 2013
+5	Total Output	634776	307020 Tue Nov  5 13:28:09 2013
+6	Total Input	869440	307020 Tue Nov  5 13:28:09 2013
+3	Output	3456	307020 Tue Nov  5 13:28:09 2013
+4	Input	3256	307020 Tue Nov  5 13:28:09 2013
+12	fps	33	307020 Tue Nov  5 13:28:09 2013
+13	Clients	2	307020 Tue Nov  5 13:28:09 2013
+10	Ping average	12	307020 Tue Nov  5 13:28:09 2013
+8	Ping min	11	307020 Tue Nov  5 13:28:09 2013
+9	Ping max	13	307020 Tue Nov  5 13:28:09 2013
+11	CPU %	2	307020 Tue Nov  5 13:28:09 2013
+5	Total Output	636360	308040 Tue Nov  5 13:28:10 2013
+6	Total Input	872960	308040 Tue Nov  5 13:28:10 2013
+3	Output	1584	308040 Tue Nov  5 13:28:10 2013
+4	Input	3520	308040 Tue Nov  5 13:28:10 2013
+12	fps	33	308040 Tue Nov  5 13:28:10 2013
+13	Clients	2	308040 Tue Nov  5 13:28:10 2013
+10	Ping average	11	308040 Tue Nov  5 13:28:10 2013
+8	Ping min	11	308040 Tue Nov  5 13:28:10 2013
+9	Ping max	12	308040 Tue Nov  5 13:28:10 2013
+11	CPU %	3	308040 Tue Nov  5 13:28:10 2013
+5	Total Output	639816	309060 Tue Nov  5 13:28:11 2013
+6	Total Input	875336	309060 Tue Nov  5 13:28:11 2013
+3	Output	3456	309060 Tue Nov  5 13:28:11 2013
+4	Input	2376	309060 Tue Nov  5 13:28:11 2013
+12	fps	33	309060 Tue Nov  5 13:28:11 2013
+13	Clients	2	309060 Tue Nov  5 13:28:11 2013
+10	Ping average	12	309060 Tue Nov  5 13:28:11 2013
+8	Ping min	11	309060 Tue Nov  5 13:28:11 2013
+9	Ping max	13	309060 Tue Nov  5 13:28:11 2013
+11	CPU %	2	309060 Tue Nov  5 13:28:11 2013
+5	Total Output	641400	310080 Tue Nov  5 13:28:12 2013
+6	Total Input	877624	310080 Tue Nov  5 13:28:12 2013
+3	Output	1584	310080 Tue Nov  5 13:28:12 2013
+4	Input	2288	310080 Tue Nov  5 13:28:12 2013
+12	fps	33	310080 Tue Nov  5 13:28:12 2013
+13	Clients	2	310080 Tue Nov  5 13:28:12 2013
+10	Ping average	12	310080 Tue Nov  5 13:28:12 2013
+8	Ping min	9	310080 Tue Nov  5 13:28:12 2013
+9	Ping max	15	310080 Tue Nov  5 13:28:12 2013
+11	CPU %	3	310080 Tue Nov  5 13:28:12 2013
+5	Total Output	642808	311100 Tue Nov  5 13:28:13 2013
+6	Total Input	879692	311100 Tue Nov  5 13:28:13 2013
+3	Output	1408	311100 Tue Nov  5 13:28:13 2013
+4	Input	2068	311100 Tue Nov  5 13:28:13 2013
+12	fps	33	311100 Tue Nov  5 13:28:13 2013
+13	Clients	2	311100 Tue Nov  5 13:28:13 2013
+10	Ping average	10	311100 Tue Nov  5 13:28:13 2013
+8	Ping min	10	311100 Tue Nov  5 13:28:13 2013
+9	Ping max	11	311100 Tue Nov  5 13:28:13 2013
+11	CPU %	2	311100 Tue Nov  5 13:28:13 2013
+5	Total Output	646440	312120 Tue Nov  5 13:28:14 2013
+6	Total Input	882948	312120 Tue Nov  5 13:28:14 2013
+3	Output	3632	312120 Tue Nov  5 13:28:14 2013
+4	Input	3256	312120 Tue Nov  5 13:28:14 2013
+12	fps	33	312120 Tue Nov  5 13:28:14 2013
+13	Clients	2	312120 Tue Nov  5 13:28:14 2013
+10	Ping average	10	312120 Tue Nov  5 13:28:14 2013
+8	Ping min	9	312120 Tue Nov  5 13:28:14 2013
+9	Ping max	11	312120 Tue Nov  5 13:28:14 2013
+11	CPU %	2	312120 Tue Nov  5 13:28:14 2013
+5	Total Output	647848	313140 Tue Nov  5 13:28:15 2013
+6	Total Input	886204	313140 Tue Nov  5 13:28:15 2013
+3	Output	1408	313140 Tue Nov  5 13:28:15 2013
+4	Input	3256	313140 Tue Nov  5 13:28:15 2013
+12	fps	33	313140 Tue Nov  5 13:28:15 2013
+13	Clients	2	313140 Tue Nov  5 13:28:15 2013
+10	Ping average	9	313140 Tue Nov  5 13:28:15 2013
+8	Ping min	8	313140 Tue Nov  5 13:28:15 2013
+9	Ping max	10	313140 Tue Nov  5 13:28:15 2013
+11	CPU %	4	313140 Tue Nov  5 13:28:15 2013
+5	Total Output	649432	314160 Tue Nov  5 13:28:16 2013
+6	Total Input	889856	314160 Tue Nov  5 13:28:16 2013
+3	Output	1584	314160 Tue Nov  5 13:28:16 2013
+4	Input	3652	314160 Tue Nov  5 13:28:16 2013
+12	fps	33	314160 Tue Nov  5 13:28:16 2013
+13	Clients	2	314160 Tue Nov  5 13:28:16 2013
+10	Ping average	10	314160 Tue Nov  5 13:28:16 2013
+8	Ping min	10	314160 Tue Nov  5 13:28:16 2013
+9	Ping max	11	314160 Tue Nov  5 13:28:16 2013
+11	CPU %	2	314160 Tue Nov  5 13:28:16 2013
+5	Total Output	652888	315180 Tue Nov  5 13:28:17 2013
+6	Total Input	892540	315180 Tue Nov  5 13:28:17 2013
+3	Output	3456	315180 Tue Nov  5 13:28:17 2013
+4	Input	2684	315180 Tue Nov  5 13:28:17 2013
+12	fps	33	315180 Tue Nov  5 13:28:17 2013
+13	Clients	2	315180 Tue Nov  5 13:28:17 2013
+10	Ping average	11	315180 Tue Nov  5 13:28:17 2013
+8	Ping min	9	315180 Tue Nov  5 13:28:17 2013
+9	Ping max	13	315180 Tue Nov  5 13:28:17 2013
+11	CPU %	2	315180 Tue Nov  5 13:28:17 2013
+5	Total Output	654472	316200 Tue Nov  5 13:28:18 2013
+6	Total Input	895356	316200 Tue Nov  5 13:28:18 2013
+3	Output	1584	316200 Tue Nov  5 13:28:18 2013
+4	Input	2816	316200 Tue Nov  5 13:28:18 2013
+12	fps	33	316200 Tue Nov  5 13:28:18 2013
+13	Clients	2	316200 Tue Nov  5 13:28:18 2013
+10	Ping average	11	316200 Tue Nov  5 13:28:18 2013
+8	Ping min	10	316200 Tue Nov  5 13:28:18 2013
+9	Ping max	12	316200 Tue Nov  5 13:28:18 2013
+11	CPU %	4	316200 Tue Nov  5 13:28:18 2013
+5	Total Output	655880	317220 Tue Nov  5 13:28:19 2013
+6	Total Input	898436	317220 Tue Nov  5 13:28:19 2013
+3	Output	1408	317220 Tue Nov  5 13:28:19 2013
+4	Input	3080	317220 Tue Nov  5 13:28:19 2013
+12	fps	33	317220 Tue Nov  5 13:28:19 2013
+13	Clients	2	317220 Tue Nov  5 13:28:19 2013
+10	Ping average	11	317220 Tue Nov  5 13:28:19 2013
+8	Ping min	8	317220 Tue Nov  5 13:28:19 2013
+9	Ping max	14	317220 Tue Nov  5 13:28:19 2013
+11	CPU %	2	317220 Tue Nov  5 13:28:19 2013
+5	Total Output	659512	318240 Tue Nov  5 13:28:20 2013
+6	Total Input	901296	318240 Tue Nov  5 13:28:20 2013
+3	Output	3632	318240 Tue Nov  5 13:28:20 2013
+4	Input	2860	318240 Tue Nov  5 13:28:20 2013
+12	fps	33	318240 Tue Nov  5 13:28:20 2013
+13	Clients	2	318240 Tue Nov  5 13:28:20 2013
+10	Ping average	11	318240 Tue Nov  5 13:28:20 2013
+8	Ping min	10	318240 Tue Nov  5 13:28:20 2013
+9	Ping max	12	318240 Tue Nov  5 13:28:20 2013
+11	CPU %	3	318240 Tue Nov  5 13:28:20 2013
+5	Total Output	660920	319260 Tue Nov  5 13:28:21 2013
+6	Total Input	903848	319260 Tue Nov  5 13:28:21 2013
+3	Output	1408	319260 Tue Nov  5 13:28:21 2013
+4	Input	2552	319260 Tue Nov  5 13:28:21 2013
+12	fps	33	319260 Tue Nov  5 13:28:21 2013
+13	Clients	2	319260 Tue Nov  5 13:28:21 2013
+10	Ping average	13	319260 Tue Nov  5 13:28:21 2013
+8	Ping min	13	319260 Tue Nov  5 13:28:21 2013
+9	Ping max	14	319260 Tue Nov  5 13:28:21 2013
+11	CPU %	2	319260 Tue Nov  5 13:28:21 2013
+5	Total Output	662328	320280 Tue Nov  5 13:28:22 2013
+6	Total Input	907720	320280 Tue Nov  5 13:28:22 2013
+3	Output	1408	320280 Tue Nov  5 13:28:22 2013
+4	Input	3872	320280 Tue Nov  5 13:28:22 2013
+12	fps	33	320280 Tue Nov  5 13:28:22 2013
+13	Clients	2	320280 Tue Nov  5 13:28:22 2013
+10	Ping average	11	320280 Tue Nov  5 13:28:22 2013
+8	Ping min	11	320280 Tue Nov  5 13:28:22 2013
+9	Ping max	12	320280 Tue Nov  5 13:28:22 2013
+11	CPU %	3	320280 Tue Nov  5 13:28:22 2013
+5	Total Output	665960	321300 Tue Nov  5 13:28:23 2013
+6	Total Input	911636	321300 Tue Nov  5 13:28:23 2013
+3	Output	3632	321300 Tue Nov  5 13:28:23 2013
+4	Input	3916	321300 Tue Nov  5 13:28:23 2013
+12	fps	33	321300 Tue Nov  5 13:28:23 2013
+13	Clients	2	321300 Tue Nov  5 13:28:23 2013
+10	Ping average	11	321300 Tue Nov  5 13:28:23 2013
+8	Ping min	10	321300 Tue Nov  5 13:28:23 2013
+9	Ping max	13	321300 Tue Nov  5 13:28:23 2013
+11	CPU %	3	321300 Tue Nov  5 13:28:23 2013
+5	Total Output	667368	322320 Tue Nov  5 13:28:24 2013
+6	Total Input	913748	322320 Tue Nov  5 13:28:24 2013
+3	Output	1408	322320 Tue Nov  5 13:28:24 2013
+4	Input	2112	322320 Tue Nov  5 13:28:24 2013
+12	fps	33	322320 Tue Nov  5 13:28:24 2013
+13	Clients	2	322320 Tue Nov  5 13:28:24 2013
+10	Ping average	12	322320 Tue Nov  5 13:28:24 2013
+8	Ping min	11	322320 Tue Nov  5 13:28:24 2013
+9	Ping max	13	322320 Tue Nov  5 13:28:24 2013
+11	CPU %	2	322320 Tue Nov  5 13:28:24 2013
+5	Total Output	668952	323340 Tue Nov  5 13:28:25 2013
+6	Total Input	915816	323340 Tue Nov  5 13:28:25 2013
+3	Output	1584	323340 Tue Nov  5 13:28:25 2013
+4	Input	2068	323340 Tue Nov  5 13:28:25 2013
+12	fps	33	323340 Tue Nov  5 13:28:25 2013
+13	Clients	2	323340 Tue Nov  5 13:28:25 2013
+10	Ping average	10	323340 Tue Nov  5 13:28:25 2013
+8	Ping min	9	323340 Tue Nov  5 13:28:25 2013
+9	Ping max	12	323340 Tue Nov  5 13:28:25 2013
+11	CPU %	2	323340 Tue Nov  5 13:28:25 2013
