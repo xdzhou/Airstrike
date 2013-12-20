@@ -1,14 +1,20 @@
 CFLAGS:= -g -O2 -Wall -Wno-unused $(OPTIONS)
 #
-CFLAGS += $(shell sdl-config --cflags) -Isprite -I. -Isupport -I../enet/include -DINLINE=inline -lm 
+CFLAGS += $(shell sdl-config --cflags) -Isprite -I. -Isupport -I../enet/include -DINLINE=inline -lm
+#C Files
 CFILES:= $(shell find . -name '*.c') 
 OBJECTS:= $(CFILES:.c=.o)
 
+all: airstrike photonLib
+
 airstrike: $(OBJECTS)
-	$(CC) -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` -lSDL_image -lSDL_mixer -lm -lenet
+	g++ -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` -lSDL_image -lSDL_mixer -lm -lenet
 
 airstrike-sound: $(OBJECTS)
-	$(CC) -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` -lSDL_image -lSDL_mixer -lm -lenet
+	g++ -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` -lSDL_image -lSDL_mixer -lm -lenet
+
+photonLib:
+	g++    -c -o PhotonLib.o PhotonLib.cpp -I../PhotonSDK
 
 # Use the rule below when coding new sprite types
 #sprites_autogen.h: sprite_types/*.c
