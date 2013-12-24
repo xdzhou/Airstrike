@@ -18,7 +18,6 @@
 #include <unistd.h>
 #include "SDL/SDL_mixer.h"
 
-
 sprite_group_t *mech_group;
 sprite_group_t *bullet_group;
 sprite_group_t *bomb_group;
@@ -600,8 +599,6 @@ void init_spawn_delays()
 
 void scorekeeper()
 {
-
-
 	char cbuf[500];
 	char cbuf2[40];
 	sprite_t *s;
@@ -862,9 +859,15 @@ void connect_frame(){
 
 int main(int argc, char *argv[])
 {
+	NotifyPhotonServer("192.168.60.2:5055");
+	return 0;
+}
+/*
+int main(int argc, char *argv[])
+{
 	int res;
 
-	if (argc == 5)
+	if (argc == 6)
 	{
 		nbTeams = (int) strtol(argv[1], &argv[1], 10);
 		//TODO : mettre des #define pour equipe min et max
@@ -888,7 +891,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("Airstrike nbOfTeams nbOfPlayers NetworkLoad(Bytes) networkLoadinterval(ms)\n");
+		printf("Airstrike nbOfTeams nbOfPlayers NetworkLoad(Bytes) networkLoadinterval(ms) IPadressOfPhoton:Port\n");
 		exit(EXIT_SUCCESS);
 	}
 
@@ -929,7 +932,7 @@ int main(int argc, char *argv[])
 			paused = 0;
 		}
 	}
-	/* We probably never get here right now, because of exit() calls. */
+	// We probably never get here right now, because of exit() calls. 
 	fprintf(stderr, "Left main loop.\n");
 	sprite_group_free(mech_group);
 	sprite_group_free(bomb_group);
@@ -938,3 +941,4 @@ int main(int argc, char *argv[])
 	sprite_group_free(foreground_group);
 	return EXIT_SUCCESS;
 }
+*/

@@ -12,7 +12,7 @@ class PhotonLib : public PhotonListener
     public:
         PhotonLib(void);
         virtual ~PhotonLib(void);
-        void startwork(void);
+        void startwork(const JString& ipAddr);
 
     protected:
 
@@ -46,4 +46,4 @@ class PhotonLib : public PhotonListener
 
 };
 
-
+extern "C" void NotifyPhotonServer(char * ipadress);

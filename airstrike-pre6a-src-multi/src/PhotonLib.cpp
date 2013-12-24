@@ -20,13 +20,12 @@ PhotonLib::~PhotonLib(void)
     delete peer;
 }
 
-void PhotonLib::startwork(void){
-
+void PhotonLib::startwork(const JString& ipAddr){
     while(true){
         printf(".\n");
         switch(mState){
             case State::INITIALIZED:
-                peer->connect(JString(L"192.168.1.24:5055"));
+                peer->connect(ipAddr);
                 mState = State::CONNECTING;
                 printf("Connecting \n");
                 break;
@@ -34,12 +33,10 @@ void PhotonLib::startwork(void){
             case State::CONNECTED:
                 {
                     printf("Connected \n");
-                    char * login = "test";
-                    char * password = "1234";
-                    OperationRequestParameters op;
-                    op.put(1, ValueObject<JString>(login));
-                    op.put(2, ValueObject<JString>(password));
-                    peer->opCustom(OperationRequest(5, op), true);
+                    //OperationRequestParameters op;
+                    //op.put(1, ValueObject<JString>(login));
+                    //op.put(2, ValueObject<JString>(password));
+                    //peer->opCustom(OperationRequest(5, op), true);
                     break;
                 }
 
@@ -89,4 +86,12 @@ void PhotonLib::onEvent(const EventData& eventData){
 
 void PhotonLib::debugReturn(ExitGames::Common::DebugLevel::DebugLevel debugLevel, const ExitGames::Common::JString& string){
 
+}
+
+void NotifyPhotonServer(char * ipadress)
+{
+        JString ipAddr(ipadress);
+        PhotonLib * photonLib = new PhotonLib();
+        photonLib->startwork(ipAddr);
+        delete photonLib;
 }
