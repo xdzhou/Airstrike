@@ -1,3 +1,8 @@
+#include <sys/ioctl.h>  
+#include <net/if.h>  
+#include <arpa/inet.h>
+#include <stdio.h>
+#include <string.h>
 #include "Photon-cpp/inc/PhotonPeer.h"
 #include "Photon-cpp/inc/OperationRequest.h"
 #include "Photon-cpp/inc/OperationResponse.h"
@@ -12,7 +17,7 @@ class PhotonLib : public PhotonListener
     public:
         PhotonLib(void);
         virtual ~PhotonLib(void);
-        void startwork(const JString& ipAddr);
+        void startwork(const JString& ipAddrPhoton, char* airstrikeIP);
 
     protected:
 
@@ -30,12 +35,8 @@ class PhotonLib : public PhotonListener
                 INITIALIZED = 0,
                 CONNECTING,
                 CONNECTED,
-                JOINING,
-                JOINED,
-                SENT_DATA,
-                RECEIVED_DATA,
-                LEAVING,
-                LEFT,
+                SENDING_IPADRESS,
+                SENDED,
                 DISCONNECTING,
                 DISCONNECTED
             };
@@ -46,4 +47,5 @@ class PhotonLib : public PhotonListener
 
 };
 
-extern "C" void NotifyPhotonServer(char * ipadress);
+extern "C" void NotifyPhotonServer(char * ipadressPhoton);
+char* GetLocalIp();

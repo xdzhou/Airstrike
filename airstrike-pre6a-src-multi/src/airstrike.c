@@ -859,12 +859,6 @@ void connect_frame(){
 
 int main(int argc, char *argv[])
 {
-	NotifyPhotonServer("192.168.60.2:5055");
-	return 0;
-}
-/*
-int main(int argc, char *argv[])
-{
 	int res;
 
 	if (argc == 6)
@@ -883,6 +877,8 @@ int main(int argc, char *argv[])
 			printf("Please enter a number of players between 2 and %d\n", MAXPLAYERS);
 			exit(EXIT_SUCCESS);
 		}
+		//tell photon server the ip adress
+		NotifyPhotonServer(argv[5]);
 
 		networkLoad = (int) strtol(argv[3], &argv[3], 10);
 		networkLoadinterval = (int) strtol(argv[4], &argv[4], 10);
@@ -941,4 +937,3 @@ int main(int argc, char *argv[])
 	sprite_group_free(foreground_group);
 	return EXIT_SUCCESS;
 }
-*/

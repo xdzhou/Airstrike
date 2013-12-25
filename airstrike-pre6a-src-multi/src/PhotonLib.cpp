@@ -20,7 +20,7 @@ PhotonLib::~PhotonLib(void)
     delete peer;
 }
 
-void PhotonLib::startwork(const JString& ipAddr){
+void PhotonLib::startwork(const JString& ipAddr, char* airstrikeIP){
     while(true){
         printf(".\n");
         switch(mState){
@@ -33,10 +33,10 @@ void PhotonLib::startwork(const JString& ipAddr){
             case State::CONNECTED:
                 {
                     printf("Connected \n");
-                    //OperationRequestParameters op;
-                    //op.put(1, ValueObject<JString>(login));
-                    //op.put(2, ValueObject<JString>(password));
-                    //peer->opCustom(OperationRequest(5, op), true);
+                    OperationRequestParameters op;
+                    op.put(1, ValueObject<JString>(airstrikeIP));
+                    peer->opCustom(OperationRequest(5, op), true);
+		    mState = State::SENDING_IPADRESS;
                     break;
                 }
 
@@ -49,6 +49,7 @@ void PhotonLib::startwork(const JString& ipAddr){
         }
         peer->service();
         SLEEP(500);
+	if(mState == State::SENDED) break;
     }
 
 }
@@ -73,7 +74,8 @@ void PhotonLib::onOperationResponse(const OperationResponse& operationResponse)
 	switch(operationResponse.getOperationCode())
 	{
 	case 5:
-        printf("Login success \n");
+        	printf("ip adress send success \n");
+		mState = State::SENDED;
 		break;
 	default:
 		break;
@@ -88,10 +90,40 @@ void PhotonLib::debugReturn(ExitGames::Common::DebugLevel::DebugLevel debugLevel
 
 }
 
-void NotifyPhotonServer(char * ipadress)
-{
-        JString ipAddr(ipadress);
+void NotifyPhotonServer(char * photonIP)
+{	
+	char airstrikeIP[20];
+    	strcpy(airstrikeIP, GetLocalIp());
+    	strcat(airstrikeIP, ":1234");	
+	printf("AirStrike IP adress = %s\n",airstrikeIP);
+
+        JString ipAddrPhoton(photonIP);
         PhotonLib * photonLib = new PhotonLib();
-        photonLib->startwork(ipAddr);
+        photonLib->startwork(ipAddrPhoton, airstrikeIP);
         delete photonLib;
+}
+
+char* GetLocalIp()    
+{          
+    int MAXINTERFACES=16;    
+    char *ip;    
+    int fd, intrface, retn = 0;      
+    struct ifreq buf[MAXINTERFACES];      
+    struct ifconf ifc;      
+  
+    if ((fd = socket(AF_INET, SOCK_DGRAM, 0)) >= 0){      
+        ifc.ifc_len = sizeof(buf);      
+        ifc.ifc_buf = (caddr_t)buf;      
+        if (!ioctl(fd, SIOCGIFCONF, (char *)&ifc)){      
+            intrface = ifc.ifc_len / sizeof(struct ifreq);       
+            while (intrface-- > 0){      
+                if (!(ioctl (fd, SIOCGIFADDR, (char *) &buf[intrface]))){      
+                    ip=(inet_ntoa(((struct sockaddr_in*)(&buf[intrface].ifr_addr))->sin_addr));      
+                    break;    
+                }                          
+            }    
+        }      
+        close (fd);      
+        return ip;      
+    }    
 }
