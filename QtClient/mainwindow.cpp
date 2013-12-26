@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <QSettings>
 #include <QKeyEvent>
+#include <QLabel>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,6 +15,9 @@ MainWindow::MainWindow(QWidget *parent) :
     started = false;
 
     ui->setupUi(this);
+    QLabel *b = new QLabel(ui->groupBox);
+    b->setText(QString::fromUtf8("bonjour"));
+    ui->formLayout->setWidget(6, QFormLayout::LabelRole, b);
 
     displayText("Start");
 
