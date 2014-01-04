@@ -28,10 +28,10 @@ $(CPPOBJECTS): %.o: %.cpp
 #	../utils/genspritelist.sh $^
 
 clean:
-	rm -f `find . -name '*.[od]' -or -name '*~' -or -name '*.bb' -or -name '*.bbg'`
+	rm -f `find . -name '*.[od]' -or -name '*~' -or -name '*.bb' -or -name '*.bbg'` airstrike
 
 dryclean: 
-	rm -f `find . -name '*.[^ch]' -type f` 
+	rm -f `find . -name '*.[^ch]' -type f` airstrike
 
 #Automatic dependency handling. This is not needed for a simple compile.
 

@@ -1,3 +1,6 @@
+#ifndef PHOTONLIB_H
+#define PHOTONLIB_H
+
 #include <sys/ioctl.h>  
 #include <net/if.h>  
 #include <arpa/inet.h>
@@ -8,17 +11,20 @@
 #include "Photon-cpp/inc/OperationResponse.h"
 #include "Photon-cpp/inc/PhotonListener.h"
 #include "Common-cpp/inc/Dictionary.h"
+#include <QObject>
 
 using namespace ExitGames::Common;
 using namespace ExitGames::Photon;
 using namespace std;
 
-class PhotonLib : public PhotonListener
+class PhotonLib : public QObject, public PhotonListener
 {
+    Q_OBJECT
+
     public:
         PhotonLib(void);
         virtual ~PhotonLib(void);
-        void startwork(const JString& ipAddrPhoton, char* airstrikeIP);
+        void startwork(const string ipAddrPhoton);
 
     protected:
 
@@ -48,6 +54,5 @@ class PhotonLib : public PhotonListener
 
 };
 
-extern "C" void NotifyPhotonServer(char * ipadressPhoton);
-char* GetLocalIp();
 void showMsg(JString s);
+#endif 

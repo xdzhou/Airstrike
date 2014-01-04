@@ -21,12 +21,12 @@ PhotonLib::~PhotonLib(void)
     delete peer;
 }
 
-void PhotonLib::startwork(const JString& ipAddr, char* airstrikeIP){
+void PhotonLib::startwork(const string ipAddr){
     while(true){
         printf(".\n");
         switch(mState){
             case State::INITIALIZED:
-                peer->connect(ipAddr);
+                peer->connect(JString(ipAddr.c_str()));
                 mState = State::CONNECTING;
                 printf("Connecting \n");
                 break;
@@ -34,11 +34,7 @@ void PhotonLib::startwork(const JString& ipAddr, char* airstrikeIP){
             case State::CONNECTED:
                 {
                     printf("Connected \n");
-                    OperationRequestParameters op;
-                    op.put((nByte)1, ValueObject<JString>(airstrikeIP));
-		    op.put((nByte)2, ValueObject<JString>("1234"));
-		    op.put((nByte)3, ValueObject<JString>("amphie 10"));
-		    OperationRequest opRequest = OperationRequest((nByte)1, op);
+		    OperationRequest opRequest = OperationRequest((nByte)2);
 		    showMsg(opRequest.toString(true, true));
                     peer->opCustom(opRequest, true);
 		    mState = State::SENDING_IPADRESS;
@@ -99,46 +95,6 @@ void PhotonLib::onEvent(const EventData& eventData){
 
 void PhotonLib::debugReturn(ExitGames::Common::DebugLevel::DebugLevel debugLevel, const ExitGames::Common::JString& string){
 
-}
-
-void NotifyPhotonServer(char * photonIP)
-{	
-	char photonIPport[20];
-    	strcpy(photonIPport, photonIP);
-    	strcat(photonIPport, ":5055");
-	char * airstrikeIP = GetLocalIp();
-	printf("AirStrike IP adress = %s\n",airstrikeIP);
-	printf("Photon IP adress = %s\n",photonIPport);
-
-        JString ipAddrPhoton(photonIPport);
-        PhotonLib * photonLib = new PhotonLib();
-        photonLib->startwork(ipAddrPhoton, airstrikeIP);
-        delete photonLib;
-}
-
-char* GetLocalIp()    
-{          
-    int MAXINTERFACES=16;    
-    char *ip;    
-    int fd, intrface, retn = 0;      
-    struct ifreq buf[MAXINTERFACES];      
-    struct ifconf ifc;      
-  
-    if ((fd = socket(AF_INET, SOCK_DGRAM, 0)) >= 0){      
-        ifc.ifc_len = sizeof(buf);      
-        ifc.ifc_buf = (caddr_t)buf;      
-        if (!ioctl(fd, SIOCGIFCONF, (char *)&ifc)){      
-            intrface = ifc.ifc_len / sizeof(struct ifreq);       
-            while (intrface-- > 0){      
-                if (!(ioctl (fd, SIOCGIFADDR, (char *) &buf[intrface]))){      
-                    ip=(inet_ntoa(((struct sockaddr_in*)(&buf[intrface].ifr_addr))->sin_addr));      
-                    break;    
-                }                          
-            }    
-        }      
-        close (fd);      
-        return ip;      
-    }    
 }
 
 void showMsg(JString s){

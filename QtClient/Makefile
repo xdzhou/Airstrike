@@ -13,10 +13,10 @@ CXX           = g++
 DEFINES       = -DQT_WEBKIT -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED
 CFLAGS        = -pipe -O2 -Wall -W -D_REENTRANT $(DEFINES)
 CXXFLAGS      = -pipe -O2 -Wall -W -D_REENTRANT $(DEFINES)
-INCPATH       = -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../enet/enet-1.3.3/include -I. -I.
+INCPATH       = -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../enet/enet-1.3.3/include -I. -I./PhotonSDK
 LINK          = g++
 LFLAGS        = -Wl,-O1
-LIBS          = $(SUBLIBS)  -L/usr/lib/i386-linux-gnu -L../enet/enet-1.3.3/.libs/ -lenet -lQtGui -lQtCore -lpthread 
+LIBS          = $(SUBLIBS)  -L/usr/lib/i386-linux-gnu -L../enet/enet-1.3.3/.libs/ -lenet -lQtGui -lQtCore -lpthread -L./PhotonSDK/Photon-cpp -L./PhotonSDK/Common-cpp -lPhotonRelease32 -lCommonRelease32
 AR            = ar cqs
 RANLIB        = 
 QMAKE         = /usr/bin/qmake
@@ -44,13 +44,13 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = main.cpp \
-		mainwindow.cpp \
+		mainwindow.cpp PhotonDialog.cpp PhotonLib.cpp \
 		networkmanager.cpp moc_mainwindow.cpp \
 		moc_networkmanager.cpp
 OBJECTS       = main.o \
-		mainwindow.o \
+		mainwindow.o PhotonDialog.o PhotonLib.o \
 		networkmanager.o \
-		moc_mainwindow.o \
+		moc_mainwindow.o moc_PhotonDialog.o moc_PhotonLib.o \
 		moc_networkmanager.o
 DIST          = /usr/share/qt4/mkspecs/common/unix.conf \
 		/usr/share/qt4/mkspecs/common/linux.conf \
@@ -187,15 +187,22 @@ mocclean: compiler_moc_header_clean compiler_moc_source_clean
 
 mocables: compiler_moc_header_make_all compiler_moc_source_make_all
 
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_networkmanager.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_networkmanager.cpp moc_PhotonDialog.cpp moc_PhotonLib.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_networkmanager.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_networkmanager.cpp moc_PhotonDialog.cpp moc_PhotonLib.cpp
+
 moc_mainwindow.cpp: networkmanager.h \
 		mainwindow.h
 	/usr/bin/moc-qt4 $(DEFINES) $(INCPATH) mainwindow.h -o moc_mainwindow.cpp
 
 moc_networkmanager.cpp: networkmanager.h
 	/usr/bin/moc-qt4 $(DEFINES) $(INCPATH) networkmanager.h -o moc_networkmanager.cpp
+
+moc_PhotonDialog.cpp: PhotonDialog.h
+	/usr/bin/moc-qt4 $(DEFINES) $(INCPATH) PhotonDialog.h -o moc_PhotonDialog.cpp
+
+moc_PhotonLib.cpp: PhotonLib.h
+	/usr/bin/moc-qt4 $(DEFINES) $(INCPATH) PhotonLib.h -o moc_PhotonLib.cpp
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
@@ -220,7 +227,7 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-main.o: main.cpp mainwindow.h \
+main.o: main.cpp mainwindow.h PhotonDialog.h \
 		networkmanager.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
@@ -228,6 +235,12 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		networkmanager.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
+
+PhotonDialog.o: PhotonDialog.cpp PhotonDialog.h PhotonLib.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PhotonDialog.o PhotonDialog.cpp
+
+PhotonLib.o: PhotonLib.cpp PhotonLib.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PhotonLib.o PhotonLib.cpp
 
 networkmanager.o: networkmanager.cpp networkmanager.h \
 		messages.h \
@@ -239,6 +252,12 @@ moc_mainwindow.o: moc_mainwindow.cpp
 
 moc_networkmanager.o: moc_networkmanager.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_networkmanager.o moc_networkmanager.cpp
+
+moc_PhotonDialog.o: moc_PhotonDialog.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_PhotonDialog.o moc_PhotonDialog.cpp
+
+moc_PhotonLib.o: moc_PhotonLib.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_PhotonLib.o moc_PhotonLib.cpp
 
 ####### Install
 

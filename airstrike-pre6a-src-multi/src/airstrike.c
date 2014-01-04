@@ -887,7 +887,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("Airstrike nbOfTeams nbOfPlayers NetworkLoad(Bytes) networkLoadinterval(ms) IPadressOfPhoton:Port\n");
+		printf("Airstrike nbOfTeams nbOfPlayers NetworkLoad(Bytes) networkLoadinterval(ms) IPadressOfPhoton\n");
 		exit(EXIT_SUCCESS);
 	}
 
