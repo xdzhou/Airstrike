@@ -15,6 +15,10 @@ PhotonDialog::PhotonDialog(QWidget *parent) : QDialog(parent)
     h1->addWidget(line_photon);
     h1->addWidget(btn_ok); 
  
+    h2 = new QVBoxLayout(); 
+    grp = new QButtonGroup(this);
+    grp->setExclusive(true);
+
     v = new QVBoxLayout();  
     v->addLayout(h1);  
   
@@ -24,36 +28,34 @@ PhotonDialog::PhotonDialog(QWidget *parent) : QDialog(parent)
     QThread * photonThread = new QThread();
     photonlib = new PhotonLib();
     photonlib->moveToThread(photonThread);
+    connect(photonlib, SIGNAL(addNewRadioBtn(const char *,int)), this, SLOT(addNewRadioBtn(const char *,int)));
 }
 
 void PhotonDialog::ok_clicked()  
-{  
+{ 
+    btn_ok->setEnabled(false); 
     string ipPhoton = line_photon->text().toStdString();
-    photonlib->startwork(ipPhoton);
-    serverList[0] = string("192.168.2.101"); numServer++;
-    serverList[1] = string("192.168.2.103"); numServer++;
-    updateUI();
-    btn_ok->setEnabled(false);
+    photonlib->startwork(ipPhoton.c_str());
+    updateUI();    
 }
+
 void PhotonDialog::go_clicked()  
 { 
     printf("selected id = %d\n",grp->checkedId()); 
-    //accept();
-}
-
-void PhotonDialog::updateUI()  
-{ 
-    QVBoxLayout *h2 = new QVBoxLayout(); 
-    grp = new QButtonGroup(this);
-    grp->setExclusive(true);
-    QRadioButton * radios[5];
-    int i;
-    for(i=0;i<numServer;i++) {
-	radios[i] = new QRadioButton(serverList[i].c_str());
-	grp->addButton(radios[i], i);
-        h2->addWidget(radios[i]);
+    if(grp->checkedId()!=-1) {
+	ip = grp->checkedButton()->text();
+ 	printf("go_clicked - %s\n",ip.toStdString().c_str());
+	accept();
     }
-    //grp->setButton(0);    
+}
+void PhotonDialog::addNewRadioBtn(const char * name, int id)  
+{ 
+    QRadioButton *rb = new QRadioButton(name);
+    grp->addButton(rb, id);
+    h2->addWidget(rb);
+}
+void PhotonDialog::updateUI()  
+{     
     v->addLayout(h2);
 
     btn_go = new QPushButton("GO");
@@ -64,9 +66,8 @@ void PhotonDialog::updateUI()
     connect(btn_go, SIGNAL(clicked()), this, SLOT(go_clicked()));  
 }
 
-string PhotonDialog::GetAirstrikeIP()  
+QString PhotonDialog::GetAirstrikeIP()  
 {  
-    return serverList[grp->checkedId()];  
-}  
- 
- 
+    printf("PhotonDialog - %s\n",ip.toStdString().c_str());
+    return ip;
+}

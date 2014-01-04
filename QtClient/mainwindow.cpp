@@ -5,19 +5,18 @@
 #include <QSettings>
 #include <QKeyEvent>
 #include <QLabel>
+#include <stdio.h>
 
-MainWindow::MainWindow(QWidget *parent) :
+MainWindow::MainWindow(QString ip, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-
     isBot=false;
     started = false;
 
     ui->setupUi(this);
-
     displayText("Start");
-
+    printf("MainWindow - %s\n",ip.toStdString().c_str());
     // Load sounds
     bullet = new QSound("/sounds/bullet.wav");
 
@@ -46,6 +45,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(this, SIGNAL(startNetworkManager()), networkManager, SLOT(network_init()));
 
     readSettings();
+    ui->ipEdit->setText(ip.toStdString().c_str());
+    ui->portEdit->setText("1234");
 }
 
 MainWindow::~MainWindow()

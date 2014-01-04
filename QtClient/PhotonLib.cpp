@@ -21,12 +21,12 @@ PhotonLib::~PhotonLib(void)
     delete peer;
 }
 
-void PhotonLib::startwork(const string ipAddr){
+void PhotonLib::startwork(const char * ipAddr){
     while(true){
         printf(".\n");
         switch(mState){
             case State::INITIALIZED:
-                peer->connect(JString(ipAddr.c_str()));
+                peer->connect(JString(ipAddr));
                 mState = State::CONNECTING;
                 printf("Connecting \n");
                 break;
@@ -43,6 +43,10 @@ void PhotonLib::startwork(const string ipAddr){
 
             case State::DISCONNECTED:
                 printf("Disconnected \n");
+		mState = State::SENDED;
+		emit addNewRadioBtn("192.168.2.101",0);
+		emit addNewRadioBtn("192.168.2.102",1);
+		emit addNewRadioBtn("192.168.2.103",2);
                 break;
 
             default:
@@ -52,7 +56,7 @@ void PhotonLib::startwork(const string ipAddr){
         SLEEP(500);
 	if(mState == State::SENDED) break;
     }
-
+    peer->disconnect();
 }
 
 void PhotonLib::onStatusChanged(int statusCode)
@@ -63,6 +67,7 @@ void PhotonLib::onStatusChanged(int statusCode)
 		mState = State::CONNECTED;
 		break;
 	case StatusCode::DISCONNECT:
+		printf("onStatusChanged Disconnected \n");
 		mState = State::DISCONNECTED;
 		break;
 	default:
@@ -75,13 +80,15 @@ void PhotonLib::onOperationResponse(const OperationResponse& opResponse)
 	JString msg("Test");
 	switch(opResponse.getOperationCode())
 	{
-	case 1:
-        	cout << opResponse.getParameters().toString() << endl;
+	case 2:
 		//msg = ((ExitGames::Common::ValueObject<JString>)opResponse.getParameterForCode(1)).getDataCopy();
 		//msg = opResponse.getParameters().getValue(1);
 		msg = opResponse.toString(true, true, true);
 		showMsg(msg);
 		mState = State::SENDED;
+		emit addNewRadioBtn("192.168.2.101",0);
+		emit addNewRadioBtn("192.168.2.102",1);
+		emit addNewRadioBtn("192.168.2.103",2);
 		break;
 	default:
 		showMsg(opResponse.toString(true, true, true));

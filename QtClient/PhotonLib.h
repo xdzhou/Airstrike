@@ -24,7 +24,7 @@ class PhotonLib : public QObject, public PhotonListener
     public:
         PhotonLib(void);
         virtual ~PhotonLib(void);
-        void startwork(const string ipAddrPhoton);
+        
 
     protected:
 
@@ -51,7 +51,13 @@ class PhotonLib : public QObject, public PhotonListener
 
         State::States mState;
         PhotonPeer* peer;
+	string serverList[5];
 
+    public slots:
+	void startwork(const char * ipAddrPhoton);
+
+    signals:
+    	void addNewRadioBtn(const char * name, int id);
 };
 
 void showMsg(JString s);
