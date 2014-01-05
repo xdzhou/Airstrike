@@ -33,7 +33,8 @@ class PhotonLib : public QObject, public PhotonListener
         void onStatusChanged(int statusCode);
         void onEvent(const EventData& eventData);
         void debugReturn(ExitGames::Common::DebugLevel::DebugLevel debugLevel, const ExitGames::Common::JString& string);
-
+        void emitIpAdress(JString s);
+        
         class State
         {
         public:
@@ -57,8 +58,9 @@ class PhotonLib : public QObject, public PhotonListener
 	void startwork(const char * ipAddrPhoton);
 
     signals:
-    	void addNewRadioBtn(const char * name, int id);
+    void addNewRadioBtn(const char * name, int id);
 };
 
 void showMsg(JString s);
+
 #endif 

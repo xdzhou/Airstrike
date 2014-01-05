@@ -23,7 +23,7 @@ PhotonLib::~PhotonLib(void)
 
 void PhotonLib::startwork(const JString& ipAddr, char* airstrikeIP){
     while(true){
-        printf(".\n");
+        //printf(".\n");
         switch(mState){
             case State::INITIALIZED:
                 peer->connect(ipAddr);
@@ -33,15 +33,15 @@ void PhotonLib::startwork(const JString& ipAddr, char* airstrikeIP){
 
             case State::CONNECTED:
                 {
+		            mState = State::SENDING_IPADRESS;
                     printf("Connected \n");
                     OperationRequestParameters op;
-                    op.put((nByte)1, ValueObject<JString>(airstrikeIP));
-		    op.put((nByte)2, ValueObject<JString>("1234"));
-		    op.put((nByte)3, ValueObject<JString>("amphie 10"));
-		    OperationRequest opRequest = OperationRequest((nByte)1, op);
-		    showMsg(opRequest.toString(true, true));
+                    op.put((nByte)1, ValueObject<JString>("amphie 10"));
+		            op.put((nByte)2, ValueObject<JString>(airstrikeIP));
+
+		            OperationRequest opRequest = OperationRequest(1, op);
+		            showMsg(opRequest.toString(true, true));
                     peer->opCustom(opRequest, true);
-		    mState = State::SENDING_IPADRESS;
                     break;
                 }
 
@@ -52,8 +52,8 @@ void PhotonLib::startwork(const JString& ipAddr, char* airstrikeIP){
             default:
                 break;
         }
+        SLEEP(100);
         peer->service();
-        SLEEP(500);
 	if(mState == State::SENDED) break;
     }
 
@@ -70,22 +70,18 @@ void PhotonLib::onStatusChanged(int statusCode)
 		mState = State::DISCONNECTED;
 		break;
 	default:
+		printf("unkown status");
 		break;
 	}
 }
 
 void PhotonLib::onOperationResponse(const OperationResponse& opResponse)
 {
-	JString msg("Test");
-	switch(opResponse.getOperationCode())
+	switch((int)opResponse.getOperationCode())
 	{
-	case 1:
-        	cout << opResponse.getParameters().toString() << endl;
-		//msg = ((ExitGames::Common::ValueObject<JString>)opResponse.getParameterForCode(1)).getDataCopy();
-		//msg = opResponse.getParameters().getValue(1);
-		msg = opResponse.toString(true, true, true);
-		showMsg(msg);
-		mState = State::SENDED;
+	case 1:		
+        if (opResponse.getReturnCode() == -1) showMsg(opResponse.toString(true, true, true));
+        else mState = State::SENDED;
 		break;
 	default:
 		showMsg(opResponse.toString(true, true, true));
@@ -94,32 +90,32 @@ void PhotonLib::onOperationResponse(const OperationResponse& opResponse)
 }
 
 void PhotonLib::onEvent(const EventData& eventData){
-
+	printf("onEvent \n");
 }
 
 void PhotonLib::debugReturn(ExitGames::Common::DebugLevel::DebugLevel debugLevel, const ExitGames::Common::JString& string){
-
+	printf("onDebug \n");
 }
 
 void NotifyPhotonServer(char * photonIP)
 {	
-	char photonIPport[20];
-    	strcpy(photonIPport, photonIP);
-    	strcat(photonIPport, ":5055");
-	char * airstrikeIP = GetLocalIp();
-	printf("AirStrike IP adress = %s\n",airstrikeIP);
-	printf("Photon IP adress = %s\n",photonIPport);
+	    char airStrikrIPport[25];
+    	strcpy(airStrikrIPport, GetLocalIp());
+    	strcat(airStrikrIPport, ":1234");
 
-        JString ipAddrPhoton(photonIPport);
+	    printf("AirStrike IP adress = %s\n",airStrikrIPport);
+	    printf("Photon IP adress = %s\n",photonIP);
+
+        JString ipAddrPhoton(photonIP);
         PhotonLib * photonLib = new PhotonLib();
-        photonLib->startwork(ipAddrPhoton, airstrikeIP);
+        photonLib->startwork(ipAddrPhoton, airStrikrIPport);
         delete photonLib;
 }
 
 char* GetLocalIp()    
 {          
     int MAXINTERFACES=16;    
-    char *ip;    
+    char *ip = NULL;    
     int fd, intrface, retn = 0;      
     struct ifreq buf[MAXINTERFACES];      
     struct ifconf ifc;      
@@ -146,4 +142,10 @@ void showMsg(JString s){
 	int i;
 	for(i=0;i<size;i++)printf("%c",(char) s.charAt(i));
 	printf("\n");
+}
+void PhotonLib::debug(){
+	printf("\npeer id = %d\n",peer->getPeerId());
+	printf("Peer Count = %d\n",peer->getPeerCount());
+	printf("Queued Incoming Commands = %d\n",peer->getQueuedIncomingCommands());
+	printf("Round Trip Time = %d\n\n",peer->getRoundTripTime());
 }

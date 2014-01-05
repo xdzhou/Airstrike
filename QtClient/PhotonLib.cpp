@@ -34,10 +34,10 @@ void PhotonLib::startwork(const char * ipAddr){
             case State::CONNECTED:
                 {
                     printf("Connected \n");
-		    OperationRequest opRequest = OperationRequest((nByte)2);
-		    showMsg(opRequest.toString(true, true));
+		    		OperationRequest opRequest = OperationRequest((nByte)2);
+		    		showMsg(opRequest.toString(true, true));
                     peer->opCustom(opRequest, true);
-		    mState = State::SENDING_IPADRESS;
+		    		mState = State::SENDING_IPADRESS;
                     break;
                 }
 
@@ -77,18 +77,17 @@ void PhotonLib::onStatusChanged(int statusCode)
 
 void PhotonLib::onOperationResponse(const OperationResponse& opResponse)
 {
-	JString msg("Test");
+	Dictionary<JString,JString> servers;
 	switch(opResponse.getOperationCode())
 	{
 	case 2:
-		//msg = ((ExitGames::Common::ValueObject<JString>)opResponse.getParameterForCode(1)).getDataCopy();
-		//msg = opResponse.getParameters().getValue(1);
-		msg = opResponse.toString(true, true, true);
-		showMsg(msg);
-		mState = State::SENDED;
-		emit addNewRadioBtn("192.168.2.101",0);
-		emit addNewRadioBtn("192.168.2.102",1);
-		emit addNewRadioBtn("192.168.2.103",2);
+		if (opResponse.getReturnCode() == -1) showMsg(opResponse.toString(true, true, true));
+		else{
+			servers = ((ExitGames::Common::ValueObject<Dictionary<JString,JString> >)opResponse.getParameterForCode(2)).getDataCopy();
+			emitIpAdress(servers.toString());
+			mState = State::SENDED;
+		}
+		
 		break;
 	default:
 		showMsg(opResponse.toString(true, true, true));
@@ -109,4 +108,26 @@ void showMsg(JString s){
 	int i;
 	for(i=0;i<size;i++)printf("%c",(char) s.charAt(i));
 	printf("\n");
+}
+void PhotonLib::emitIpAdress(JString s){
+	int size = s.length(), i;
+	char * string = (char *)malloc(sizeof(char)*(size+1));
+	for(i=0; i<size; i++) string[i] = (char) s.charAt(i);
+	string[size] = '\0';
+	int numPrime = 0, flag = 0, ID;
+	char *p;
+	for(i=0; i<size; i++){
+		if(numPrime==3 && flag==0) {
+			p = & string[i];
+			flag = 1;
+		}
+		if(string[i]=='\"') numPrime ++;
+		if(string[i]==':') string[i] = '\0';
+		if(numPrime==4 && flag==1) {
+			string[i] = '\0';
+			flag = numPrime = 0;
+			printf("---%s\n", p);
+			emit addNewRadioBtn(p,ID++);
+		}
+	}
 }

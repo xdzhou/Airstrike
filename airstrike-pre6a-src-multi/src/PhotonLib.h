@@ -23,6 +23,7 @@ class PhotonLib : public PhotonListener
     protected:
 
     private:
+	void debug();
         void onOperationResponse(const OperationResponse& operationResponse);
         void onStatusChanged(int statusCode);
         void onEvent(const EventData& eventData);
