@@ -1,27 +1,21 @@
-LIB_PATH=../PhotonSDK
+
 #headfile
 CFLAGS:= -g -O2 -Wall -Wno-unused $(OPTIONS)
-CFLAGS += $(shell sdl-config --cflags) -Isprite -I$(LIB_PATH) -I. -Isupport -I../enet/include -DINLINE=inline -lm
+CFLAGS += $(shell sdl-config --cflags) -Isprite -I. -Isupport  -DINLINE=inline -lm
 #lib
-CLIB:= -L$(LIB_PATH)/Common-cpp -L$(LIB_PATH)/Photon-cpp -lSDL_image -lSDL_mixer -lm -lenet -pthread -lPhotonRelease32 -lCommonRelease32
+CLIB:= -lSDL_image -lSDL_mixer -lm -lzmq -pthread
 #C Files
 CFILES:= $(shell find . -name '*.c') 
 COBJECTS:= $(CFILES:.c=.o)
-#cpp files
-CPPFILES:= $(shell find . -name '*.cpp')
-CPPOBJECTS:= $(CPPFILES:.cpp=.o)
 
 airstrike: $(COBJECTS) $(CPPOBJECTS)
-	g++ -o $@ $(CFLAGS) $(COBJECTS) $(CPPOBJECTS) `sdl-config --libs` $(CLIB)
+	gcc -o $@ $(CFLAGS) $(COBJECTS) $(CPPOBJECTS) `sdl-config --libs` $(CLIB)
 
 airstrike-sound: $(OBJECTS)
-	g++ -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` -lSDL_image -lSDL_mixer -lm -lenet -pthread -lPhotonRelease32 -lCommonRelease32
+	gcc -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` -lSDL_image -lSDL_mixer -lm -lzmq -pthread
 
-$(COBJECTS): %.o: %.c
-	gcc $(CFLAGS) -c $< -o $@
-
-$(CPPOBJECTS): %.o: %.cpp
-	g++ -c $(CFLAGS) $< -o $@
+#$(COBJECTS): %.o: %.c
+#	gcc $(CFLAGS) -c $< -o $@
 
 # Use the rule below when coding new sprite types
 #sprites_autogen.h: sprite_types/*.c

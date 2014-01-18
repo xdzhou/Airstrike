@@ -860,7 +860,6 @@ void connect_frame(){
 int main(int argc, char *argv[])
 {
 	int res;
-
 	if (argc == 6)
 	{
 		nbTeams = (int) strtol(argv[1], &argv[1], 10);
@@ -877,20 +876,14 @@ int main(int argc, char *argv[])
 			printf("Please enter a number of players between 2 and %d\n", MAXPLAYERS);
 			exit(EXIT_SUCCESS);
 		}
-		//tell photon server the ip adress
-		NotifyPhotonServer(argv[5]);
 
 		networkLoad = (int) strtol(argv[3], &argv[3], 10);
 		networkLoadinterval = (int) strtol(argv[4], &argv[4], 10);
 		printf("%d teams, %d players\n", nbTeams, nbPlayers);
-
-	}
-	else
-	{
+	}else{
 		printf("Airstrike nbOfTeams nbOfPlayers NetworkLoad(Bytes) networkLoadinterval(ms) IPadressOfPhoton\n");
 		exit(EXIT_SUCCESS);
 	}
-
 	res = general_setup() == 0;
 	assert(res);
 	engine_setup();
@@ -904,7 +897,6 @@ int main(int argc, char *argv[])
 	networkport = cfgnum("network.port",1234);
 
 	network_init();
-
 
 	Mix_Music *play_sound = NULL;
 	play_sound = Mix_LoadMUS("data/sound/Xcyril-La_decouverte_et_la_conquete.wav");

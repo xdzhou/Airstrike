@@ -20,6 +20,9 @@ enum messages_types {
 	MSG_DAMAGE = 7,
 	MSG_TEAM_ID = 8,
 	MSG_ID_IN_TEAM = 9,
+	MSG_GET_SERVER = 10,
+	MSG_SET_SERVER = 11,
+	MSG_DISCONNECTED = 12,
 };
 
 typedef struct
@@ -28,7 +31,19 @@ typedef struct
 	int mess_type;
 	int data;
 	char name[32];
-
 }  __attribute__ ((__packed__)) AS_message_t;
+
+typedef struct
+{
+	char name[32];
+	char ipadress[32];
+} Server_info_t;
+
+typedef struct
+{
+	int mess_type;
+	int flag;
+	Server_info_t server_info;
+} Message_server_t;
 
 #endif /* MESSAGES_C_ */
