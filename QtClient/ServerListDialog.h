@@ -10,6 +10,7 @@
 #include <string>
 #include <string.h>
 #include "zmqhelper.h"
+#include "networkmanager.h"
 
 using namespace std;  
 
@@ -36,7 +37,7 @@ private:
 public slots:  
     void ok_clicked();
     void go_clicked();
-    void addNewRadioBtn(char name[], char ip[], int id);
+    void addNewRadioBtn(char *name, char *ip, int id);
 
 signals:
  

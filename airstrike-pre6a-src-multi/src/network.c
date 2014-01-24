@@ -82,7 +82,7 @@ char* GetLocalIp()
 void printAllServers() {
 	struct servers_list_record * temp = servers_list;
 	while(temp != NULL) {
-		printf("%s - %s\n", temp->data->name, temp->data->ipadress);
+		printf("[%s - %s]\n", temp->data->name, temp->data->ipadress);
 		temp = temp->next;
 	}
 }
@@ -126,14 +126,16 @@ void network_init(char* primaryServerIP, char* serverName){
 	strcpy(data->ipadress, GetLocalIp());
 	if (primaryServerIP == NULL)
 	{
+		printf("I'm a primier Server\n");
 		struct servers_list_record* primary = malloc(sizeof(struct servers_list_record));
 		primary->data = data;
 		primary->next = NULL;
 		servers_list = primary;
+		nb_server ++;
 	}
 	else
 	{
-		// Send my ip to primary server
+		printf("I'm a normal Server\n");
 		primaryServer = malloc(sizeof(char) * strlen(primaryServerIP) + 1);
 		strcpy(primaryServer, primaryServerIP);
 		Message_server_t * msg = malloc(sizeof(Message_server_t));
@@ -141,12 +143,12 @@ void network_init(char* primaryServerIP, char* serverName){
 		msg->server_info = *data;
 		msg->flag = 0;
 		s_send_server_msg(rep_socket, msg);
+		s_recv_server_msg(rep_socket);
 	}
 	printAllServers();
 }
 
 void *thread_function( void *arg ){
-
 	int i;
 	for (i=0; i<MAXPLAYERS;i++){
 		clientConnected[i]=0;
@@ -226,9 +228,12 @@ void network_loop(){
 			int rc = zmq_poll (items, 2, 300);
 	        if (rc == -1) break;
 			if (items [0].revents & ZMQ_POLLIN) {
+				//printf("Request of type REQ.\n");
 	            Message_server_t * msg = s_recv_server_msg(rep_socket);
+	            //printf("message type: %d flag:%d\n", msg->mess_type, msg->flag);
 	            if(msg->mess_type == MSG_GET_SERVER){
 	                if(msg->flag < nb_server){
+	                	printf("client get server info.\n");
 	                    msg->mess_type = MSG_SET_SERVER;
 	                    struct servers_list_record* temp = servers_list;
 	                    int i;

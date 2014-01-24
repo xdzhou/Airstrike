@@ -56,7 +56,7 @@ signals:
     void newIdInTeam(int value);
     //void newStartTime(int value);
     void disconnected();
-    void addNewRadioBtn(char name[], char ip[], int id);
+    void addNewRadioBtn(char *name, char *ip, int id);
 
 };
 

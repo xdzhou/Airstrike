@@ -20,11 +20,11 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
     // Load sounds
     bullet = new QSound("/sounds/bullet.wav");
 
-    networkThread = new QThread();
+    //networkThread = new QThread();
     networkManager = NetworkManager::getInstance();
 
-    networkManager->moveToThread(networkThread);
-    networkThread->start();
+    //networkManager->moveToThread(networkThread);
+    //networkThread->start();
     //connect(networkThread, SIGNAL(started()), networkManager, SLOT(network_init()));
 
     connect(ui->connectButton,SIGNAL(clicked()),this,SLOT(connect_clicked()));
@@ -39,7 +39,7 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
     connect(ui->checkBoxBot, SIGNAL(stateChanged(int)), this, SLOT(setBot(int)));
     connect(ui->nameEdit, SIGNAL(textChanged(QString)), networkManager, SLOT(setLogin(QString)));
     connect(ui->disconnectButton, SIGNAL(released()), networkManager, SLOT(disconnectClient()));
-    connect(this, SIGNAL(setIP(QString,int)), networkManager, SLOT(setIP(QString,int)));
+    connect(this, SIGNAL(setGameServerIP(QString)), networkManager, SLOT(setGameServerIP(QString)));
     connect(this, SIGNAL(setRequestedTeam(int)), networkManager, SLOT(setRequestedTeam(int)));
     connect(networkManager, SIGNAL(disconnected()), this, SLOT(stopPlay()));
     connect(this, SIGNAL(startNetworkManager()), networkManager, SLOT(network_init()));
@@ -61,7 +61,7 @@ void MainWindow::displayText(QString string){
 
 void MainWindow::connect_clicked(){
     emit setRequestedTeam(ui->comboBoxTeam->currentIndex());
-    emit setIP(ui->ipEdit->text(),ui->portEdit->text().toInt());
+    emit setGameServerIP(ui->ipEdit->text());
     emit startNetworkManager();
     startPlay();
 }

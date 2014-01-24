@@ -5,6 +5,8 @@
 #include <QTimer>
 #include <QDebug>
 
+NetworkManager* NetworkManager::instance = NULL; 
+
 NetworkManager::NetworkManager()
 {
     //this->game_server_ip = NULL;
@@ -15,13 +17,13 @@ NetworkManager::NetworkManager()
     //this->login;
     startTime = 0;
     requestedTeam=0;
+    //instance = NULL;
 }
 
-NetworkManager * NetworkManager::getInstance() {
-    if (!instance) {
-        instance = new NetworkManager();
-    };
+NetworkManager* NetworkManager::getInstance() {
+    if (!instance) instance = new NetworkManager;
     return instance;
+
 };
 
 NetworkManager::~NetworkManager()
@@ -30,23 +32,26 @@ NetworkManager::~NetworkManager()
 }
 
 void NetworkManager::getServerList(const char * primier_server_ip){
+    int rc;
     char tcp_adress[100] = "tcp://";
     strcat(tcp_adress, primier_server_ip);
     strcat(tcp_adress, ":5008");
     printf("primier_server_ip : %s\n", tcp_adress);
 
     req_socket = zmq_socket (context, ZMQ_REQ);
-    zmq_connect (req_socket, tcp_adress);
-
+    rc = zmq_connect (req_socket, tcp_adress);
+    assert(rc==0);
     int nb_server = 0;
 
     while(1){
         Message_server_t server_info;
         server_info.mess_type = MSG_GET_SERVER;
         server_info.flag = nb_server;
-        s_send_server_msg(req_socket, &server_info);
-        //assert(rc==0);
+        rc = s_send_server_msg(req_socket, &server_info);
+        assert(rc!=-1);
+        printf("get server info request sended\n");
         Message_server_t *msg = s_recv_server_msg(req_socket);
+        //printf("serverName:%s ip:%s flag:%d\n",msg->server_info.name, msg->server_info.ipadress, msg->flag);
         if(msg->flag == 1){
             printf("[%s] = %s\n", msg->server_info.name, msg->server_info.ipadress);
             //list_servers[nb_server] = msg->server_info;
@@ -62,66 +67,17 @@ void NetworkManager::getServerList(const char * primier_server_ip){
 
 
 int NetworkManager::network_init(){
-    writeText("Initializing ZeroMQ.");
-/*
-    if (enet_initialize() != 0) {
-        emit writeText("An error occurred while initializing ENet");
-        return -1;
-    }
-    emit writeText("ENet started.");
-    client = enet_host_create(NULL // create a client host ,
-                              1 // only allow 1 outgoing connection  ,
-                              2 // allow up 2 channels to be used, 0 and 1  ,
-                              57600 / 8 // 56K modem with 56 Kbps downstream bandwidth  ,
-                              14400 / 8 // 56K modem with 14 Kbps upstream bandwidth  );
+    //Hello Msg to send
+    AS_message_t msg;
+    msg.mess_type = MSG_HELLO;
+    msg.client_id = myClientId;
+    msg.data = requestedTeam;
+    strcpy(msg.name, login.toStdString().c_str());
+    s_send_msg(push_socket, &msg);
+    printf("Hello Msg Send\n");
 
-    if (client == NULL) {
-        writeText("An error occurred while trying to create an ENet client host.");
-        return -1;
-    }
-
-    // Connect to some.server.net:1234. 
-    // enet_address_set_host(&address, ip_addr.toStdString().c_str());
-    //address.port = port;
-
-    enet_address_set_host(&address, ip_addr.toStdString().c_str());
-    address.port = port;
-
-    // Wait up to 5 seconds for the connection attempt to succeed. 
-    int trying_left = 5;
-    int connect_succeeded=0;
-    while (!connect_succeeded){
-        writeText("Trying to connect to " + ip_addr + ":" + QString::number(port) + "...");
-        // Initiate the connection, allocating the two channels 0 and 1. 
-        peer = enet_host_connect(client, &address, 2, 0);
-
-        if (peer == NULL) {
-            writeText("No available peers for initiating an ENet connection.");
-            emit disconnected();
-            return -1;
-        }
-
-        if (enet_host_service(client, &event, 3000) > 0 && event.type == ENET_EVENT_TYPE_CONNECT) {
-            writeText("Connection to " + ip_addr + ":" + QString::number(port) + "succeeded.");
-            connect_succeeded=1;
-           // sendMessage(MSG_HELLO,myClientId);
-            sendMessage(MSG_HELLO,myClientId,requestedTeam);
-        } else {
-            // Either the 5 seconds are up or a disconnect event was 
-            // received. Reset the peer in the event the 5 seconds   
-            // had run out without any significant event.            
-            enet_peer_reset(peer);
-            //printf("Connection to %s:%d failed.\n",ip_addr,port);
-            trying_left--;
-            if(trying_left<=0){
-                writeText("Could not connect to " + ip_addr + ":" + port);
-                emit disconnected();
-                return -1;
-            }
-        }
-    }
-    start();
-*/
+    network_loop();
+    
     return 0;
 }
 
@@ -203,36 +159,11 @@ void NetworkManager::set_key(int key){
 }
 
 void NetworkManager::network_loop(){
-/*
-    int serviceResult;
-    // Keep doing host_service until no events are left 
-    while ( (serviceResult=enet_host_service(client, &event, 0))!=0) {
-        if (serviceResult > 0) {
-            switch (event.type) {
-            case ENET_EVENT_TYPE_CONNECT:
-                //printf("A new client connected from %x:%u.\n", event.peer->address.host, event.peer->address.port);
-                event.peer->data = (void *)"New User";
-                break;
-
-            case ENET_EVENT_TYPE_RECEIVE:
-                process_packet(&event);
-                break;
-
-            case ENET_EVENT_TYPE_DISCONNECT:
-                writeText("Server disconected.\n");
-                emit disconnected();
-                //exit(EXIT_FAILURE);
-                break;
-
-            case ENET_EVENT_TYPE_NONE:
-                break;
-            }
-        } else if (serviceResult < 0) {
-            writeText("Error with servicing the client");
-            emit disconnected();
-            //exit(EXIT_FAILURE);
-        }
-*/
+    while(1){
+        AS_message_t *msg = s_recv_sub(sub_socket);
+        process_packet(msg);
+        free(msg);
+    }
 }
 
 void NetworkManager::testFunction()
@@ -242,25 +173,39 @@ void NetworkManager::testFunction()
 
 void NetworkManager::sendMessage(int msgType, int clientId, int data)
 {
-    /*
-    // ENetPeer *p = &server->peers[peerId];
-    if (!(peer==NULL)){
-        AS_message_t msg;
-        msg.mess_type=msgType;
-        msg.client_id = clientId;
-        msg.data = data;
-        //msg.name = "Noki";
-        //strcpy(msg.name,"Noki\0");
-        strcpy(msg.name,login.toUtf8().data());
-        ENetPacket *packet = enet_packet_create(&msg, sizeof(AS_message_t), ENET_PACKET_FLAG_RELIABLE);
-        enet_peer_send(peer, 0, packet);
-    }
-    */
+    AS_message_t msg;
+    msg.mess_type = msgType;
+    msg.client_id = clientId;
+    msg.data = data;
+    //msg.name = "Noki";
+    //strcpy(msg.name,"Noki\0");
+    strcpy(msg.name, login.toUtf8().data());
+    s_send_msg(push_socket, &msg);
+    printf ("Client PUSH msg = %s\n", msg.name);
+    
 }
 
 void NetworkManager::setGameServerIP(QString game_server_ip)
 {
     this->game_server_ip = game_server_ip;
+
+    char sub_adress[60];
+    strcpy(sub_adress,"tcp://");
+    strcat(sub_adress,game_server_ip.toStdString().c_str());
+    strcat(sub_adress,"5009");
+    sub_socket =zmq_socket (context, ZMQ_SUB);
+    zmq_connect (sub_socket, sub_adress);
+    zmq_setsockopt (sub_socket, ZMQ_SUBSCRIBE,&myClientId, sizeof(int));
+    printf("sub_socket - %s\n", sub_adress);
+
+    push_socket = zmq_socket (context, ZMQ_PUSH);
+    char push_adress[60];
+    strcpy(push_adress,"tcp://");
+    strcat(push_adress,game_server_ip.toStdString().c_str());
+    strcat(push_adress,"5010");
+    zmq_connect (push_socket, push_adress);
+    printf("push_socket - %s\n", push_adress);
+
 }
 
 void NetworkManager::setRequestedTeam(int team)

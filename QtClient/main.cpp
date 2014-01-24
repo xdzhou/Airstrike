@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
     //w.show();
     ServerListDialog d;
     if(d.exec()==QDialog::Accepted){	
-	MainWindow w(d.GetAirstrikeIP());
-	w.show();
-	return a.exec();
+    	MainWindow w(d.GetAirstrikeIP());
+    	w.show();
+    	return a.exec();
     }else
 	return 0;
 

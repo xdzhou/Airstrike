@@ -5,7 +5,6 @@
 
 ServerListDialog::ServerListDialog(QWidget *parent) : QDialog(parent)
 {  
-    numServer = 0;
     label_photon = new QLabel("Photon IP");   
     line_photon = new QLineEdit(); 
     line_photon->setFixedWidth(140); 
@@ -30,7 +29,7 @@ ServerListDialog::ServerListDialog(QWidget *parent) : QDialog(parent)
     QThread * networkThread = new QThread();
     networkManager = NetworkManager::getInstance();
     networkManager->moveToThread(networkThread);
-    connect(networkManager, SIGNAL(addNewRadioBtn(const char *,int)), this, SLOT(addNewRadioBtn(const char *,int)));
+    connect(networkManager, SIGNAL(addNewRadioBtn(char*, char* ,int)), this, SLOT(addNewRadioBtn(char*, char*, int)));
 }
 
 void ServerListDialog::ok_clicked()  
@@ -50,8 +49,9 @@ void ServerListDialog::go_clicked()
         accept();
     }
 }
-void ServerListDialog::addNewRadioBtn(char name[], char ip[], int id)  
+void ServerListDialog::addNewRadioBtn(char *name, char *ip, int id)  
 { 
+    printf("Dialog - name:%s ip:%s\n",name, ip );
     char nameIP[100];
     strcpy(nameIP, name);
     strcat(nameIP, " - ");
