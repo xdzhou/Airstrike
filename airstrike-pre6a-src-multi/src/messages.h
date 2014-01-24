@@ -39,6 +39,13 @@ typedef struct
 	char ipadress[32];
 } Server_info_t;
 
+
+struct servers_list_record
+{
+	Server_info_t * data;
+	struct servers_list_record * next;
+};
+
 typedef struct
 {
 	int mess_type;

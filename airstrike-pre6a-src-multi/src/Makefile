@@ -1,18 +1,23 @@
 
 #headfile
 CFLAGS:= -g -O2 -Wall -Wno-unused $(OPTIONS)
-CFLAGS += $(shell sdl-config --cflags) -Isprite -I. -Isupport  -DINLINE=inline -lm
+CFLAGS += $(shell sdl-config --cflags) -Isprite -I. -Isupport  -DINLINE=inline -lm 
+#CFLAGS += -L ~/Tool/zlib-1.2.8/
+#CFLAGS += -L ~/Tool/libpng-1.6.8/.libs/
+CFLAGS += -I ~/Tool/zeromq-4.0.3/include/ -L ~/Tool/zeromq-4.0.3/src/.libs
+CFLAGS += -I ~/Tool/SDL_image-1.2.12/ -L ~/Tool/SDL_image-1.2.12/.libs
+CFLAGS += -I ~/Tool/SDL_mixer-1.2.12/ -L ~/Tool/SDL_mixer-1.2.12/build/.libs
 #lib
-CLIB:= -lSDL_image -lSDL_mixer -lm -lzmq -pthread
+CLIB:= -lSDL_image -lSDL_mixer -lm -lzmq -lpthread
 #C Files
 CFILES:= $(shell find . -name '*.c') 
 COBJECTS:= $(CFILES:.c=.o)
 
-airstrike: $(COBJECTS) $(CPPOBJECTS)
-	gcc -o $@ $(CFLAGS) $(COBJECTS) $(CPPOBJECTS) `sdl-config --libs` $(CLIB)
+airstrike: $(COBJECTS)
+	gcc -o $@ $(CFLAGS) $(COBJECTS) `sdl-config --libs` $(CLIB)
 
 airstrike-sound: $(OBJECTS)
-	gcc -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` -lSDL_image -lSDL_mixer -lm -lzmq -pthread
+	gcc -o $@ $(CFLAGS) $(OBJECTS) `sdl-config --libs` $(CLIB)
 
 #$(COBJECTS): %.o: %.c
 #	gcc $(CFLAGS) -c $< -o $@

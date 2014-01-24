@@ -43,6 +43,9 @@ static int nbPlayers; //TODO: eliminate nbPlayers or player count, redundant
 static int timeToStop;
 static int planeCollision=1;
 
+static char* serverName;
+static char* primaryServerIP = NULL;
+
 static void atexit_cleanup(void)
 {
 	/* Since we don't want a crash in fullscreen mode
@@ -69,7 +72,7 @@ static int general_setup(void)
 
 	atexit(atexit_cleanup);
 
-	SDL_WM_SetCaption(VERSIONSTRING, 0);
+	SDL_WM_SetCaption(serverName, 0);
 
 	sprite_global.display = SDL_SetVideoMode(screen_w, screen_h, 0, displayflags);
 	assert(sprite_global.display);
@@ -860,7 +863,8 @@ void connect_frame(){
 int main(int argc, char *argv[])
 {
 	int res;
-	if (argc == 6)
+	//if (argc == 4 || (argc == 5 && ((strcmp(argv[4], "y") == 0) || (strcmp(argv[4], "n") == 0))))
+	if (argc == 4 || argc == 5)
 	{
 		nbTeams = (int) strtol(argv[1], &argv[1], 10);
 		//TODO : mettre des #define pour equipe min et max
@@ -877,11 +881,22 @@ int main(int argc, char *argv[])
 			exit(EXIT_SUCCESS);
 		}
 
-		networkLoad = (int) strtol(argv[3], &argv[3], 10);
-		networkLoadinterval = (int) strtol(argv[4], &argv[4], 10);
+		serverName = malloc(strlen(argv[3] + 1) * sizeof(char));
+		strcpy(serverName, argv[3]);
+
+		//networkLoad = (int) strtol(argv[3], &argv[3], 10);
+		//networkLoadinterval = (int) strtol(argv[4], &argv[4], 10);
 		printf("%d teams, %d players\n", nbTeams, nbPlayers);
-	}else{
-		printf("Airstrike nbOfTeams nbOfPlayers NetworkLoad(Bytes) networkLoadinterval(ms) IPadressOfPhoton\n");
+		if (argc == 4) {
+			printf("I am the primary server.\n");
+		}
+		else {
+			printf("I'm a regular server.\n");
+			primaryServerIP = malloc(strlen(argv[4] + 1) * sizeof(char));
+			strcpy(primaryServerIP, argv[4]);
+		}
+	} else {
+		printf("Airstrike nbOfTeams nbOfPlayers serverName [PrimaryServerIP]\n");
 		exit(EXIT_SUCCESS);
 	}
 	res = general_setup() == 0;
@@ -896,7 +911,7 @@ int main(int argc, char *argv[])
 	planeCollision=cfgnum("game.planeCollision",1);
 	networkport = cfgnum("network.port",1234);
 
-	network_init();
+	network_init(primaryServerIP, serverName);
 
 	Mix_Music *play_sound = NULL;
 	play_sound = Mix_LoadMUS("data/sound/Xcyril-La_decouverte_et_la_conquete.wav");
@@ -922,6 +937,7 @@ int main(int argc, char *argv[])
 	}
 	// We probably never get here right now, because of exit() calls. 
 	fprintf(stderr, "Left main loop.\n");
+	free(serverName);
 	sprite_group_free(mech_group);
 	sprite_group_free(bomb_group);
 	sprite_group_free(bullet_group);

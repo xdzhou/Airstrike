@@ -11,7 +11,7 @@
 #include "players.h"
 
 
-void network_init();
+void network_init(char* primaryServerIP, char* serverName);
 
 int network_keymap[MAXPLAYERS][MAX_CONTROLLER_KEYS];
 

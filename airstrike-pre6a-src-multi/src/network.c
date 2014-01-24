@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <error.h>
-#include <enet/enet.h>
 #include "network.h"
 #include "messages.h"
 #include "prototype.h"
@@ -12,6 +11,9 @@
 #include "sprite.h"
 #include <sys/time.h>
 #include <sys/resource.h>
+#include <net/if.h>  
+#include <arpa/inet.h>
+#include <sys/ioctl.h>
 
 void *thread_function( void *arg );
 void network_loop();
@@ -41,13 +43,66 @@ void *rep_socket;
 void *pub_socket;
 void *pull_socket;
 int nb_server = 0;
-Server_info_t *list_servers;
+// Server_info_t *list_servers;
 
-void network_init(){
+struct servers_list_record * servers_list;
+static char* primaryServer = NULL;
+
+
+void showMsg(AS_message_t * msg){
+	printf("clientID %d, msgType %d dada %d name %s\n", msg->client_id, msg->mess_type, msg->data, msg->name);
+}
+
+char* GetLocalIp()    
+{          
+    int MAXINTERFACES=16;    
+    char *ip = NULL;    
+    int fd, intrface, retn = 0;      
+    struct ifreq buf[MAXINTERFACES];      
+    struct ifconf ifc;      
+  
+    if ((fd = socket(AF_INET, SOCK_DGRAM, 0)) >= 0){      
+        ifc.ifc_len = sizeof(buf);      
+        ifc.ifc_buf = (caddr_t)buf;      
+        if (!ioctl(fd, SIOCGIFCONF, (char *)&ifc)){      
+            intrface = ifc.ifc_len / sizeof(struct ifreq);       
+            while (intrface-- > 0){      
+                if (!(ioctl (fd, SIOCGIFADDR, (char *) &buf[intrface]))){      
+                    ip=(inet_ntoa(((struct sockaddr_in*)(&buf[intrface].ifr_addr))->sin_addr));      
+                    break;    
+                }                          
+            }    
+        }      
+        close (fd);      
+        //return ip;      
+    }
+    return ip;
+}
+
+void printAllServers() {
+	struct servers_list_record * temp = servers_list;
+	while(temp != NULL) {
+		printf("%s - %s\n", temp->data->name, temp->data->ipadress);
+		temp = temp->next;
+	}
+}
+
+void network_init(char* primaryServerIP, char* serverName){
 	//  Socket to talk to clients
     void *context = zmq_ctx_new ();
-    rep_socket = zmq_socket (context, ZMQ_REP);
-    int rc = zmq_bind (rep_socket, "tcp://*:5008");
+    int rc;
+    if (primaryServerIP == NULL) {
+	    rep_socket = zmq_socket (context, ZMQ_REP);
+	    rc = zmq_bind (rep_socket, "tcp://*:5008");
+    }
+    else {
+	    rep_socket = zmq_socket (context, ZMQ_REQ);
+	    char tcp_adress[100] = "tcp://";
+	    strcat(tcp_adress, primaryServerIP);
+	    strcat(tcp_adress, ":5008");
+	    printf("%s\n", tcp_adress);
+	    rc = zmq_connect (rep_socket,  tcp_adress);
+    }
     assert (rc == 0);
 
     pub_socket = zmq_socket (context, ZMQ_PUB);
@@ -58,12 +113,36 @@ void network_init(){
     rc = zmq_bind (pull_socket, "tcp://*:5010");
     assert (rc == 0);
     //
-    list_servers = (Server_info_t *)malloc(sizeof(Server_info_t *)*10);
+    // list_servers = (Server_info_t *)malloc(sizeof(Server_info_t)*10);
 
 	pthread_t thread;
 	rc = pthread_create( &thread, NULL, thread_function, NULL);
 	if(rc)
 		error(EXIT_FAILURE, rc, "pthread_create");
+	// printf("%s\n", serverName);
+	// I am the primary server
+	Server_info_t* data = malloc(sizeof(Server_info_t));
+	strcpy(data->name, serverName);
+	strcpy(data->ipadress, GetLocalIp());
+	if (primaryServerIP == NULL)
+	{
+		struct servers_list_record* primary = malloc(sizeof(struct servers_list_record));
+		primary->data = data;
+		primary->next = NULL;
+		servers_list = primary;
+	}
+	else
+	{
+		// Send my ip to primary server
+		primaryServer = malloc(sizeof(char) * strlen(primaryServerIP) + 1);
+		strcpy(primaryServer, primaryServerIP);
+		Message_server_t * msg = malloc(sizeof(Message_server_t));
+		msg->mess_type = MSG_SET_SERVER;
+		msg->server_info = *data;
+		msg->flag = 0;
+		s_send_server_msg(rep_socket, msg);
+	}
+	printAllServers();
 }
 
 void *thread_function( void *arg ){
@@ -150,20 +229,34 @@ void network_loop(){
 	            Message_server_t * msg = s_recv_server_msg(rep_socket);
 	            if(msg->mess_type == MSG_GET_SERVER){
 	                if(msg->flag < nb_server){
-	                    msg->mess_type = MSG_SET_SERVER;                  
-	                    msg->server_info = list_servers[msg->flag];
+	                    msg->mess_type = MSG_SET_SERVER;
+	                    struct servers_list_record* temp = servers_list;
+	                    int i;
+	                    for (i = 0; i < msg->flag; i++)
+	                    	temp = temp->next;
+	                    msg->server_info = *(temp->data);
+	                    //msg->server_info = list_servers[msg->flag];
 	                    msg->flag = 1;
 	                }else{
 	                    msg->mess_type = MSG_SET_SERVER;
 	                    msg->flag = 0;
 	                }
 	                s_send_server_msg(rep_socket, msg);
-	            }else if(msg->mess_type == MSG_SET_SERVER){             
-	                //list_servers[nb_server] = msg->server_info;
-	                strcpy(list_servers[nb_server].name, msg->server_info.name);
-    				strcpy(list_servers[nb_server].ipadress, msg->server_info.ipadress);
+	            }else if(msg->mess_type == MSG_SET_SERVER && primaryServer == NULL){             
+	                // //list_servers[nb_server] = msg->server_info;
+	                // strcpy(list_servers[nb_server].name, msg->server_info.name);
+    				// strcpy(list_servers[nb_server].ipadress, msg->server_info.ipadress);
+    				struct servers_list_record* new_serv = malloc(sizeof(struct servers_list_record));
+					Server_info_t* data = malloc(sizeof(Server_info_t));
+					strcpy(data->name, msg->server_info.name);
+					strcpy(data->ipadress, msg->server_info.ipadress);
+					new_serv->data = data;
+					new_serv->next = servers_list;
+					servers_list = new_serv;
 	                nb_server++;
+	                // ?? why are we resending the msg ??
 	                s_send_server_msg(rep_socket, msg);
+	                printAllServers();
 	                free(msg);
 	            }else{
 	                printf("unknown server info message!\n");
@@ -263,9 +356,5 @@ void process_packet(AS_message_t * msg){
 	free(msg);
 }
 
-
-void showMsg(AS_message_t * msg){
-	printf("clientID %d, msgType %d dada %d name %s\n", msg->client_id, msg->mess_type, msg->data, msg->name);
-}
 
 
