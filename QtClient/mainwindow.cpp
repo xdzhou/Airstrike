@@ -21,7 +21,7 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
     bullet = new QSound("/sounds/bullet.wav");
 
     networkThread = new QThread();
-    networkManager = new NetworkManager();
+    networkManager = NetworkManager::getInstance();
 
     networkManager->moveToThread(networkThread);
     networkThread->start();

@@ -20,5 +20,5 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-LIBS += -L../enet/enet-1.3.3/.libs/ -lenet
-INCLUDEPATH += ../enet/enet-1.3.3/include/
+LIBS += -L ~/Tool/zeromq-4.0.3/src/.libs -lzmq
+INCLUDEPATH += ~/Tool/zeromq-4.0.3/include/

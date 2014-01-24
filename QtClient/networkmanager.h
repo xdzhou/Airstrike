@@ -1,35 +1,36 @@
 #ifndef NETWORKMANAGER_H
 #define NETWORKMANAGER_H
 
-#include <enet/enet.h>
 #include <QObject>
 #include <QString>
 #include <QWidget>
+#include "zmqhelper.h"
 
 class NetworkManager : public QObject
 {
     Q_OBJECT
 
 private:
-    ENetHost *client;
-    ENetAddress address;
-    ENetEvent event;
-    ENetPeer *peer;
-    QString ip_addr;
-    int port;
+    QString game_server_ip;
     int next_time;
     int keep_running;
     int myClientId;
     QString login;
     int startTime;
     int requestedTeam;
+    NetworkManager();
+    static NetworkManager* instance;
+    void *context;
+    void *req_socket;
+    void *sub_socket;
+    void *push_socket;
 
 public:
-    NetworkManager();
+    static NetworkManager* getInstance();
     ~NetworkManager();
     void set_key(int key);
     void network_loop();
-    void process_packet(ENetEvent * event);
+    void process_packet(AS_message_t * msg);
     void update_state();
     void testFunction();
     void sendMessage(int msgType,int clientId,int data = 0);
@@ -42,8 +43,9 @@ public slots:
     void set_rand_key();
     void setLogin(QString newLogin);
     void disconnectClient();
-    void setIP(QString ip_addr = "127.0.0.1", int port=1234);
+    void setGameServerIP(QString game_server_ip);
     void setRequestedTeam(int team);
+    void getServerList(const char * primier_server_ip);
 
 signals:
     void writeText(QString text);
@@ -54,6 +56,7 @@ signals:
     void newIdInTeam(int value);
     //void newStartTime(int value);
     void disconnected();
+    void addNewRadioBtn(char name[], char ip[], int id);
 
 };
 

@@ -11,15 +11,17 @@
 //  Include a bunch of headers that we will need in the examples
 
 #include <zmq.h>
-
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/time.h>
+#include <time.h>
 #include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
 #include <assert.h>
 #include <malloc.h>
+#include "messages.h"
 
 //  Version checking, and patch up missing constants to match 2.1
 #if ZMQ_VERSION_MAJOR == 2
@@ -131,7 +133,7 @@ static void s_console (const char *format, ...)
 {
     time_t curtime = time (NULL);
     struct tm *loctime = localtime (&curtime);
-    char *formatted = malloc (20);
+    char *formatted = (char *)malloc (20);
     strftime (formatted, 20, "%y-%m-%d %H:%M:%S ", loctime);
     printf ("%s", formatted);
     free (formatted);

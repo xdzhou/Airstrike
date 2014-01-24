@@ -1,3 +1,6 @@
+#ifndef SERVERLISTDIALOG_H
+#define SERVERLISTDIALOG_H
+
 #include <QDialog>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
@@ -5,16 +8,16 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QVBoxLayout>
 #include <string>
-#include "PhotonLib.h"
 #include <string.h>
+#include "zmqhelper.h"
 
 using namespace std;  
 
-class PhotonDialog : public QDialog  
+class ServerListDialog : public QDialog  
 {  
     Q_OBJECT  
 public:  
-    explicit PhotonDialog(QWidget *parent = 0);
+    explicit ServerListDialog(QWidget *parent = 0);
     QString GetAirstrikeIP();  
 
 private:  
@@ -25,17 +28,18 @@ private:
     QVBoxLayout *h2;       
     QPushButton *btn_go;
     QVBoxLayout *v;   
-    string serverList[5];
-    int numServer;
-    PhotonLib *photonlib;
+    NetworkManager * networkManager;
     void updateUI();
-    QString ip;
+    int gameServerID;
+    Server_info_t * serverList;
 
 public slots:  
     void ok_clicked();
     void go_clicked();
-    void addNewRadioBtn(const char * name, int id);
+    void addNewRadioBtn(char name[], char ip[], int id);
 
 signals:
  
 };  
+
+#endif // SERVERLISTDIALOG_H
