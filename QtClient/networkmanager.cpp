@@ -5,7 +5,9 @@
 #include <QTimer>
 #include <QDebug>
 
-NetworkManager* NetworkManager::instance = NULL; 
+void showMsg(AS_message_t * msg){
+    printf("[clientID=%d, msgType=%d, dada=%d, name=%s]\n", msg->client_id, msg->mess_type, msg->data, msg->name);
+}
 
 NetworkManager::NetworkManager()
 {
@@ -21,9 +23,7 @@ NetworkManager::NetworkManager()
 }
 
 NetworkManager* NetworkManager::getInstance() {
-    if (!instance) instance = new NetworkManager;
-    return instance;
-
+    return new NetworkManager;
 };
 
 NetworkManager::~NetworkManager()
@@ -67,26 +67,46 @@ void NetworkManager::getServerList(const char * primier_server_ip){
 
 
 int NetworkManager::network_init(){
+    printf("NetworkManager - network init\n");
     //Hello Msg to send
     AS_message_t msg;
     msg.mess_type = MSG_HELLO;
     msg.client_id = myClientId;
     msg.data = requestedTeam;
     strcpy(msg.name, login.toStdString().c_str());
-    s_send_msg(push_socket, &msg);
-    printf("Hello Msg Send\n");
+    s_send_msg(req_game_socket, &msg);
 
-    network_loop();
-    
+    AS_message_t *as_msg = s_recv_msg(req_game_socket);
+    process_packet(as_msg);
+    setSubSocket();
+    free(as_msg);
+    zmq_close (req_game_socket);
+
+    network_loop();   
     return 0;
 }
 
+void NetworkManager::network_loop(){
+    printf("NetworkManager - network loop\n");
+    int flag = 0;  
+    while(1){
+        AS_message_t *msg = s_recv_sub(sub_socket);
+        process_packet(msg);
+        free(msg);
+        if(flag==0){
+            flag = 1;
+            sendMessage(MSG_READY, myClientId, 0);
+        }
+    }
+}
+
 void NetworkManager::process_packet(AS_message_t * msg){
+    if(msg->mess_type!=3 && msg->mess_type!=7) showMsg(msg);
     switch (msg->mess_type) {
     case MSG_POINTS:
         emit newPlayerScore(msg->data);
         break;
-    case MSG_HELLO:
+    case MSG_HELLO:       
         myClientId = msg->client_id;
         emit newPlayerId(myClientId);
         writeText("Connected");
@@ -112,11 +132,26 @@ void NetworkManager::process_packet(AS_message_t * msg){
     case MSG_ID_IN_TEAM:
         emit newIdInTeam(msg->data);
         qDebug()<< "Recu id in team"<< msg->data;
+
         break;
     default:
         break;
     }
     //enet_packet_destroy(event->packet);
+}
+
+void NetworkManager::sendMessage(int msgType, int clientId, int data)
+{
+    AS_message_t msg;
+    msg.mess_type = msgType;
+    msg.client_id = clientId;
+    msg.data = data;
+    //msg.name = "Noki";
+    //strcpy(msg.name,"Noki\0");
+    strcpy(msg.name, login.toUtf8().data());
+    printf("client send msg: ");
+    showMsg(&msg);
+    s_send_msg(push_socket, &msg);   
 }
 
 void NetworkManager::set_rand_key(){
@@ -151,61 +186,52 @@ void NetworkManager::set_rand_key(){
 
 void NetworkManager::setLogin(QString newLogin)
 {
+    printf("NetworkManager - set login\n");
     this->login = newLogin;
 }
 
 void NetworkManager::set_key(int key){
+    printf("NetworkManager - set_key\n");
     sendMessage(MSG_KEY, myClientId, key);
 }
 
-void NetworkManager::network_loop(){
-    while(1){
-        AS_message_t *msg = s_recv_sub(sub_socket);
-        process_packet(msg);
-        free(msg);
-    }
-}
-
-void NetworkManager::testFunction()
+void NetworkManager::setSubSocket()
 {
-    emit writeText("Test");
-}
-
-void NetworkManager::sendMessage(int msgType, int clientId, int data)
-{
-    AS_message_t msg;
-    msg.mess_type = msgType;
-    msg.client_id = clientId;
-    msg.data = data;
-    //msg.name = "Noki";
-    //strcpy(msg.name,"Noki\0");
-    strcpy(msg.name, login.toUtf8().data());
-    s_send_msg(push_socket, &msg);
-    printf ("Client PUSH msg = %s\n", msg.name);
-    
+    assert(myClientId != -1);
+    int rc;
+    char sub_adress[60];
+    strcpy(sub_adress,"tcp://");
+    strcat(sub_adress,game_server_ip.toStdString().c_str());
+    strcat(sub_adress,":5009");
+    sub_socket =zmq_socket (context, ZMQ_SUB);
+    rc = zmq_connect (sub_socket, sub_adress);
+    assert(rc==0);
+    zmq_setsockopt (sub_socket, ZMQ_SUBSCRIBE,&myClientId, sizeof(int));
+    printf("sub_socket - %s  with topic(clientId)- %d\n", sub_adress, myClientId);
 }
 
 void NetworkManager::setGameServerIP(QString game_server_ip)
 {
+    printf("NetworkManager - set game server ip\n");
     this->game_server_ip = game_server_ip;
 
-    char sub_adress[60];
-    strcpy(sub_adress,"tcp://");
-    strcat(sub_adress,game_server_ip.toStdString().c_str());
-    strcat(sub_adress,"5009");
-    sub_socket =zmq_socket (context, ZMQ_SUB);
-    zmq_connect (sub_socket, sub_adress);
-    zmq_setsockopt (sub_socket, ZMQ_SUBSCRIBE,&myClientId, sizeof(int));
-    printf("sub_socket - %s\n", sub_adress);
+    int rc;
+    char tcp_adress[60] = "tcp://";
+    strcat(tcp_adress, game_server_ip.toStdString().c_str());
+    strcat(tcp_adress, ":5008");   
+    req_game_socket = zmq_socket (context, ZMQ_REQ);
+    rc = zmq_connect (req_game_socket, tcp_adress);
+    assert(rc==0);
+    printf("req_game_socket : %s\n", tcp_adress);
 
     push_socket = zmq_socket (context, ZMQ_PUSH);
     char push_adress[60];
     strcpy(push_adress,"tcp://");
     strcat(push_adress,game_server_ip.toStdString().c_str());
-    strcat(push_adress,"5010");
-    zmq_connect (push_socket, push_adress);
+    strcat(push_adress,":5010");
+    rc = zmq_connect (push_socket, push_adress);
+    assert(rc==0);
     printf("push_socket - %s\n", push_adress);
-
 }
 
 void NetworkManager::setRequestedTeam(int team)

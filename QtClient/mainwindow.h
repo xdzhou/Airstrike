@@ -47,6 +47,7 @@ signals:
     void setGameServerIP(QString ip_addr);
     void setRequestedTeam(int team);
     void startNetworkManager();
+    void setLogin(QString login);
 };
 
 #endif // MAINWINDOW_H

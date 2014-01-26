@@ -16,15 +16,14 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
 
     ui->setupUi(this);
     displayText("Start");
-    printf("MainWindow - %s\n",ip.toStdString().c_str());
+    //printf("MainWindow - %s\n",ip.toStdString().c_str());
     // Load sounds
     bullet = new QSound("/sounds/bullet.wav");
-
-    //networkThread = new QThread();
+    networkThread = new QThread();
     networkManager = NetworkManager::getInstance();
-
-    //networkManager->moveToThread(networkThread);
-    //networkThread->start();
+    if(!networkManager) printf("NO instance\n");
+    networkManager->moveToThread(networkThread);
+    networkThread->start();
     //connect(networkThread, SIGNAL(started()), networkManager, SLOT(network_init()));
 
     connect(ui->connectButton,SIGNAL(clicked()),this,SLOT(connect_clicked()));
@@ -37,7 +36,7 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
     connect(networkManager, SIGNAL(newTeamId(int)),ui->equipe, SLOT(setNum(int)));
     connect(networkManager, SIGNAL(newIdInTeam(int)), this, SLOT(setSprite(int)));
     connect(ui->checkBoxBot, SIGNAL(stateChanged(int)), this, SLOT(setBot(int)));
-    connect(ui->nameEdit, SIGNAL(textChanged(QString)), networkManager, SLOT(setLogin(QString)));
+    connect(this, SIGNAL(setLogin(QString)), networkManager, SLOT(setLogin(QString)));
     connect(ui->disconnectButton, SIGNAL(released()), networkManager, SLOT(disconnectClient()));
     connect(this, SIGNAL(setGameServerIP(QString)), networkManager, SLOT(setGameServerIP(QString)));
     connect(this, SIGNAL(setRequestedTeam(int)), networkManager, SLOT(setRequestedTeam(int)));
@@ -60,9 +59,12 @@ void MainWindow::displayText(QString string){
 }
 
 void MainWindow::connect_clicked(){
+    printf("connect clicked\n");
     emit setRequestedTeam(ui->comboBoxTeam->currentIndex());
     emit setGameServerIP(ui->ipEdit->text());
+    emit setLogin(ui->nameEdit->text());
     emit startNetworkManager();
+    printf("MainWindow - 3 emit finished\n");
     startPlay();
 }
 
@@ -131,6 +133,7 @@ void MainWindow::stopPlay()
 
 void MainWindow::setBot(int state)
 {
+    printf("set bot clicked\n");
     if(state == 0)
         isBot = false;
     if(state == 2)

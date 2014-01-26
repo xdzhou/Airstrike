@@ -23,6 +23,7 @@ enum messages_types {
 	MSG_GET_SERVER = 10,
 	MSG_SET_SERVER = 11,
 	MSG_DISCONNECTED = 12,
+	MSG_READY = 13,
 };
 
 typedef struct

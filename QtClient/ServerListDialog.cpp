@@ -78,5 +78,6 @@ QString ServerListDialog::GetAirstrikeIP()
 {  
     QString gameIP(serverList[gameServerID].ipadress);
     free(serverList);
+    delete networkManager;
     return gameIP;
 }

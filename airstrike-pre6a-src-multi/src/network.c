@@ -20,6 +20,10 @@ void network_loop();
 void process_packet(AS_message_t * msg);
 void sendMessage(int msgType,int clientId,int data);
 void sendMessageLoad(int peerId, int sizeInByte);
+void sendServerInfo(char* primaryServerIP, Server_info_t* data);
+char* GetLocalIp();
+void showMsg(AS_message_t * msg);
+void printAllServers();
 
 int  clientConnected[MAXPLAYERS];
 int  clientCount= 0;
@@ -42,67 +46,24 @@ void * loadData;
 void *rep_socket;
 void *pub_socket;
 void *pull_socket;
+void *context;
 int nb_server = 0;
 // Server_info_t *list_servers;
 
 struct servers_list_record * servers_list;
-static char* primaryServer = NULL;
-
-
-void showMsg(AS_message_t * msg){
-	printf("clientID %d, msgType %d dada %d name %s\n", msg->client_id, msg->mess_type, msg->data, msg->name);
-}
-
-char* GetLocalIp()    
-{          
-    int MAXINTERFACES=16;    
-    char *ip = NULL;    
-    int fd, intrface, retn = 0;      
-    struct ifreq buf[MAXINTERFACES];      
-    struct ifconf ifc;      
-  
-    if ((fd = socket(AF_INET, SOCK_DGRAM, 0)) >= 0){      
-        ifc.ifc_len = sizeof(buf);      
-        ifc.ifc_buf = (caddr_t)buf;      
-        if (!ioctl(fd, SIOCGIFCONF, (char *)&ifc)){      
-            intrface = ifc.ifc_len / sizeof(struct ifreq);       
-            while (intrface-- > 0){      
-                if (!(ioctl (fd, SIOCGIFADDR, (char *) &buf[intrface]))){      
-                    ip=(inet_ntoa(((struct sockaddr_in*)(&buf[intrface].ifr_addr))->sin_addr));      
-                    break;    
-                }                          
-            }    
-        }      
-        close (fd);      
-        //return ip;      
-    }
-    return ip;
-}
-
-void printAllServers() {
-	struct servers_list_record * temp = servers_list;
-	while(temp != NULL) {
-		printf("[%s - %s]\n", temp->data->name, temp->data->ipadress);
-		temp = temp->next;
-	}
-}
+char* primaryServer = NULL;
 
 void network_init(char* primaryServerIP, char* serverName){
+	//copy primary server ip info
+	if(primaryServerIP!=NULL){
+		primaryServer = (char *) malloc(sizeof(char) * strlen(primaryServerIP) + 1);
+		strcpy(primaryServer, primaryServerIP);
+	}	
 	//  Socket to talk to clients
-    void *context = zmq_ctx_new ();
+    context = zmq_ctx_new ();
     int rc;
-    if (primaryServerIP == NULL) {
-	    rep_socket = zmq_socket (context, ZMQ_REP);
-	    rc = zmq_bind (rep_socket, "tcp://*:5008");
-    }
-    else {
-	    rep_socket = zmq_socket (context, ZMQ_REQ);
-	    char tcp_adress[100] = "tcp://";
-	    strcat(tcp_adress, primaryServerIP);
-	    strcat(tcp_adress, ":5008");
-	    printf("%s\n", tcp_adress);
-	    rc = zmq_connect (rep_socket,  tcp_adress);
-    }
+    rep_socket = zmq_socket (context, ZMQ_REP);
+    rc = zmq_bind (rep_socket, "tcp://*:5008");
     assert (rc == 0);
 
     pub_socket = zmq_socket (context, ZMQ_PUB);
@@ -112,38 +73,26 @@ void network_init(char* primaryServerIP, char* serverName){
     pull_socket = zmq_socket (context, ZMQ_PULL);
     rc = zmq_bind (pull_socket, "tcp://*:5010");
     assert (rc == 0);
-    //
-    // list_servers = (Server_info_t *)malloc(sizeof(Server_info_t)*10);
 
+    // list_servers = (Server_info_t *)malloc(sizeof(Server_info_t)*10);
 	pthread_t thread;
 	rc = pthread_create( &thread, NULL, thread_function, NULL);
-	if(rc)
-		error(EXIT_FAILURE, rc, "pthread_create");
-	// printf("%s\n", serverName);
+	if(rc) error(EXIT_FAILURE, rc, "pthread_create");
+
 	// I am the primary server
 	Server_info_t* data = malloc(sizeof(Server_info_t));
 	strcpy(data->name, serverName);
 	strcpy(data->ipadress, GetLocalIp());
-	if (primaryServerIP == NULL)
-	{
+	if (primaryServerIP == NULL){
 		printf("I'm a primier Server\n");
-		struct servers_list_record* primary = malloc(sizeof(struct servers_list_record));
+		struct servers_list_record* primary = malloc(sizeof(struct servers_list_record));	
 		primary->data = data;
 		primary->next = NULL;
 		servers_list = primary;
 		nb_server ++;
-	}
-	else
-	{
-		printf("I'm a normal Server\n");
-		primaryServer = malloc(sizeof(char) * strlen(primaryServerIP) + 1);
-		strcpy(primaryServer, primaryServerIP);
-		Message_server_t * msg = malloc(sizeof(Message_server_t));
-		msg->mess_type = MSG_SET_SERVER;
-		msg->server_info = *data;
-		msg->flag = 0;
-		s_send_server_msg(rep_socket, msg);
-		s_recv_server_msg(rep_socket);
+	}else{
+		sendServerInfo(primaryServerIP, data);
+		free(data);
 	}
 	printAllServers();
 }
@@ -249,8 +198,6 @@ void network_loop(){
 	                s_send_server_msg(rep_socket, msg);
 	            }else if(msg->mess_type == MSG_SET_SERVER && primaryServer == NULL){             
 	                // //list_servers[nb_server] = msg->server_info;
-	                // strcpy(list_servers[nb_server].name, msg->server_info.name);
-    				// strcpy(list_servers[nb_server].ipadress, msg->server_info.ipadress);
     				struct servers_list_record* new_serv = malloc(sizeof(struct servers_list_record));
 					Server_info_t* data = malloc(sizeof(Server_info_t));
 					strcpy(data->name, msg->server_info.name);
@@ -263,13 +210,18 @@ void network_loop(){
 	                s_send_server_msg(rep_socket, msg);
 	                printAllServers();
 	                free(msg);
-	            }else{
+	            }else if (msg->mess_type == -1){
+	                //as_msg of type HELLO
+	                AS_message_t *as_msg = (AS_message_t *)msg;                
+	                process_packet(as_msg);
+	                //s_send_msg(rep_socket, as_msg);
+	            }
+	            else{
 	                printf("unknown server info message!\n");
 	            }
 	        }
 	        if (items [1].revents & ZMQ_POLLIN) {
 	        	AS_message_t * msg = s_recv_msg(pull_socket);
-	        	showMsg(msg);
 	            process_packet(msg);
 	        }
 
@@ -286,9 +238,12 @@ void sendMessage(int msgType,int clientId,int data){
 	msg.name[0] = '\0';
 	s_send_pub(pub_socket, &msg, clientId);
 	counterOut += sizeof(AS_message_t);
+	//printf("server send msg: ");
+    //showMsg(&msg);
 }
 
 void process_packet(AS_message_t * msg){
+	showMsg(msg);
 	counterIn += sizeof(AS_message_t);
 	switch (msg->mess_type) {
 	case MSG_HELLO:
@@ -298,15 +253,18 @@ void process_packet(AS_message_t * msg){
 		int teamRequested = msg->data;
 		if (msg->client_id>=0 && msg->client_id<playerCount && !clientConnected[msg->client_id] && players[msg->client_id].team->id == teamRequested){
 			client_id = msg->client_id;
+			/////////////
+			s_send_msg(rep_socket, msg);
+			/////////////
 			clientCount++;
 			clientConnected[client_id]=1;
 			players[client_id].isConnected=1;
 			strncpy(players[client_id].name,msg->name,32);
 			printf("*******************************%s   %s\n",msg->name,players[client_id].name);
 			players[client_id].name[31]='\0';
-			sendMessage(MSG_HELLO,client_id,client_id);
-			sendMessage(MSG_TEAM_ID,client_id,players[client_id].team->id);
-			sendMessage(MSG_ID_IN_TEAM,client_id,players[client_id].id_in_team);
+			//sendMessage(MSG_HELLO,client_id,client_id);
+			//sendMessageTeam(MSG_TEAM_ID,client_id,players[client_id].team->id);
+			//sendMessageTeam(MSG_ID_IN_TEAM,client_id,players[client_id].id_in_team);
 			mylog(LOG_MESSAGE,"MSG_HELLO sent to",msg->client_id);
 			success=1;
 		}else{
@@ -314,15 +272,19 @@ void process_packet(AS_message_t * msg){
 			for (i=0;i < playerCount; i++){
 				if (!clientConnected[i] && players[i].team->id == teamRequested){
 					client_id = i;
+					/////////////
+					msg->client_id = i;
+					s_send_msg(rep_socket, msg);
+					/////////////
 					clientCount++;
 					clientConnected[client_id]=1;
 					players[client_id].isConnected=1;
 					strncpy(players[client_id].name,msg->name,32);
 					printf("*******************************%s   %s\n",msg->name,players[client_id].name);
 					players[client_id].name[31]='\0';
-					sendMessage(MSG_HELLO,client_id,client_id);
-					sendMessage(MSG_TEAM_ID,client_id,players[client_id].team->id);
-					sendMessage(MSG_ID_IN_TEAM,client_id,players[client_id].id_in_team);
+					//sendMessage(MSG_HELLO,client_id,client_id);
+					//sendMessageTeam(MSG_TEAM_ID,client_id,players[client_id].team->id);
+					//sendMessageTeam(MSG_ID_IN_TEAM,client_id,players[client_id].id_in_team);
 					mylog(LOG_MESSAGE,"MSG_HELLO sent to",msg->client_id);
 					success=1;
 					break;
@@ -335,6 +297,11 @@ void process_packet(AS_message_t * msg){
 			mylog(LOG_MESSAGE,"MSG_NO_SPACE sent to",msg->client_id);
 			break;
 		}
+		break;
+	case MSG_READY:
+		assert(msg->client_id!=-1);
+		sendMessage(MSG_TEAM_ID, msg->client_id, players[msg->client_id].team->id);
+		sendMessage(MSG_ID_IN_TEAM, msg->client_id, players[msg->client_id].id_in_team);
 		break;
 	case MSG_KEY:
 		//printf("Key %d message received from %d\n",msg->data,peerID);
@@ -361,5 +328,59 @@ void process_packet(AS_message_t * msg){
 	free(msg);
 }
 
+void sendServerInfo(char *primaryServerIP, Server_info_t* data){
+	int rc;
+	printf("I'm a normal Server\n");
+	void *req_socket = zmq_socket (context, ZMQ_REQ);
+    char tcp_adress[100] = "tcp://";
+    strcat(tcp_adress, primaryServerIP);
+    strcat(tcp_adress, ":5008");
+    printf("temp req_socket - %s\n", tcp_adress);
+    rc = zmq_connect (req_socket,  tcp_adress);
+    assert(rc == 0);
+    
+	Message_server_t msg;
+	msg.mess_type = MSG_SET_SERVER;
+	msg.server_info = *data;
+	msg.flag = 0;
+	s_send_server_msg(req_socket, &msg);
+	Message_server_t *msg_server = s_recv_server_msg(req_socket);
+	free(msg_server);
+	zmq_close (req_socket);
+}
 
+char* GetLocalIp(){          
+    int MAXINTERFACES=16;    
+    char *ip = NULL;    
+    int fd, intrface, retn = 0;      
+    struct ifreq buf[MAXINTERFACES];      
+    struct ifconf ifc;      
+  
+    if ((fd = socket(AF_INET, SOCK_DGRAM, 0)) >= 0){      
+        ifc.ifc_len = sizeof(buf);      
+        ifc.ifc_buf = (caddr_t)buf;      
+        if (!ioctl(fd, SIOCGIFCONF, (char *)&ifc)){      
+            intrface = ifc.ifc_len / sizeof(struct ifreq);       
+            while (intrface-- > 0){      
+                if (!(ioctl (fd, SIOCGIFADDR, (char *) &buf[intrface]))){      
+                    ip=(inet_ntoa(((struct sockaddr_in*)(&buf[intrface].ifr_addr))->sin_addr));      
+                    break;    
+                }                          
+            }    
+        }      
+        close (fd);   
+    }
+    return ip;
+}
 
+void showMsg(AS_message_t * msg){
+	printf("[clientID=%d, msgType=%d, dada=%d, name=%s]\n", msg->client_id, msg->mess_type, msg->data, msg->name);
+}
+
+void printAllServers() {
+	struct servers_list_record * temp = servers_list;
+	while(temp != NULL) {
+		printf("[%s - %s]\n", temp->data->name, temp->data->ipadress);
+		temp = temp->next;
+	}
+}

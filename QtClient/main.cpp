@@ -6,14 +6,13 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //MainWindow w;
-    //w.show();
+
     ServerListDialog d;
-    if(d.exec()==QDialog::Accepted){	
+    if(d.exec() == QDialog::Accepted){	
     	MainWindow w(d.GetAirstrikeIP());
     	w.show();
     	return a.exec();
-    }else
-	return 0;
+    }
+    else return 0;
 
 }

@@ -22,6 +22,7 @@ private:
     static NetworkManager* instance;
     void *context;
     void *req_socket;
+    void *req_game_socket;
     void *sub_socket;
     void *push_socket;
 
@@ -32,7 +33,7 @@ public:
     void network_loop();
     void process_packet(AS_message_t * msg);
     void update_state();
-    void testFunction();
+    void setSubSocket();
     void sendMessage(int msgType,int clientId,int data = 0);
 
 

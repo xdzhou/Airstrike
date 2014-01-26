@@ -85,6 +85,7 @@ static AS_message_t * s_recv_sub (void *socket) {
     zmq_recv (socket, clientid, sizeof(int), 0);
     AS_message_t * msg = (AS_message_t *)malloc(sizeof(AS_message_t));
     zmq_recv (socket, msg, sizeof(AS_message_t), 0);
+    //if(msg->mess_type!=3 && msg->mess_type!=7) printf("msg_type-%d\n", msg->mess_type);
     free(clientid);
     return msg;
 }
