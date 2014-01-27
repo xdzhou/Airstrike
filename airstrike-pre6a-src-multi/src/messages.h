@@ -49,8 +49,8 @@ struct servers_list_record
 
 typedef struct
 {
-	int mess_type;
 	int flag;
+	int mess_type;
 	Server_info_t server_info;
 } Message_server_t;
 

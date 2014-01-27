@@ -28,7 +28,7 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
 
     connect(ui->connectButton,SIGNAL(clicked()),this,SLOT(connect_clicked()));
     connect(networkManager, SIGNAL(writeText(QString)), this, SLOT(displayText(QString)));
-    connect(ui->disconnectButton, SIGNAL(released()), this, SLOT(stopPlay()));
+    connect(ui->disconnectButton, SIGNAL(clicked()), this, SLOT(disconnect_clicked()));
     connect(this, SIGNAL(sendKeyEvent(QKeyEvent*,int)), networkManager, SLOT(process_key(QKeyEvent*,int)));
     connect(networkManager, SIGNAL(newPlayerScore(int)), ui->playerScore, SLOT(setNum(int)));
     connect(networkManager, SIGNAL(newHealthPoints(int)), ui->healthPoints, SLOT(setValue(int)));
@@ -37,7 +37,7 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
     connect(networkManager, SIGNAL(newIdInTeam(int)), this, SLOT(setSprite(int)));
     connect(ui->checkBoxBot, SIGNAL(stateChanged(int)), this, SLOT(setBot(int)));
     connect(this, SIGNAL(setLogin(QString)), networkManager, SLOT(setLogin(QString)));
-    connect(ui->disconnectButton, SIGNAL(released()), networkManager, SLOT(disconnectClient()));
+    connect(this, SIGNAL(disconnectClient()), networkManager, SLOT(disconnectClient()));
     connect(this, SIGNAL(setGameServerIP(QString)), networkManager, SLOT(setGameServerIP(QString)));
     connect(this, SIGNAL(setRequestedTeam(int)), networkManager, SLOT(setRequestedTeam(int)));
     connect(networkManager, SIGNAL(disconnected()), this, SLOT(stopPlay()));
@@ -45,7 +45,7 @@ MainWindow::MainWindow(QString ip, QWidget *parent) :
 
     readSettings();
     ui->ipEdit->setText(ip.toStdString().c_str());
-    ui->portEdit->setText("1234");
+    ui->portEdit->setText("not used!!");
 }
 
 MainWindow::~MainWindow()
@@ -58,13 +58,18 @@ void MainWindow::displayText(QString string){
     qDebug() << string;
 }
 
+void MainWindow::disconnect_clicked(){
+    printf("disconnect clicked\n");
+    emit networkManager->disconnectClient();
+    stopPlay();
+}
+
 void MainWindow::connect_clicked(){
     printf("connect clicked\n");
     emit setRequestedTeam(ui->comboBoxTeam->currentIndex());
     emit setGameServerIP(ui->ipEdit->text());
     emit setLogin(ui->nameEdit->text());
     emit startNetworkManager();
-    printf("MainWindow - 3 emit finished\n");
     startPlay();
 }
 
@@ -100,6 +105,7 @@ void MainWindow::keyReleaseEvent(QKeyEvent * event){
 
 void MainWindow::startPlay()
 {
+    printf("start play\n");
     started = true;
     ui->groupBox->setEnabled(false);
     ui->connectButton->setEnabled(false);

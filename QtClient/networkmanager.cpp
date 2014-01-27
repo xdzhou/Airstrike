@@ -14,12 +14,15 @@ NetworkManager::NetworkManager()
     //this->game_server_ip = NULL;
     context = zmq_ctx_new ();
     next_time = 0;
-    keep_running = 42;
+    keep_running = 1;
     myClientId = -1;
     //this->login;
     startTime = 0;
     requestedTeam=0;
-    //instance = NULL;
+    req_socket=NULL;
+    req_game_socket=NULL;
+    sub_socket=NULL;
+    push_socket=NULL;
 }
 
 NetworkManager* NetworkManager::getInstance() {
@@ -80,7 +83,7 @@ int NetworkManager::network_init(){
     process_packet(as_msg);
     setSubSocket();
     free(as_msg);
-    zmq_close (req_game_socket);
+    //zmq_close (req_game_socket);
 
     network_loop();   
     return 0;
@@ -88,8 +91,9 @@ int NetworkManager::network_init(){
 
 void NetworkManager::network_loop(){
     printf("NetworkManager - network loop\n");
-    int flag = 0;  
-    while(1){
+    int flag = 0; 
+    keep_running = 1;
+    while(keep_running==1){
         AS_message_t *msg = s_recv_sub(sub_socket);
         process_packet(msg);
         free(msg);
@@ -98,6 +102,7 @@ void NetworkManager::network_loop(){
             sendMessage(MSG_READY, myClientId, 0);
         }
     }
+    printf("keep_running == 0 \n");
 }
 
 void NetworkManager::process_packet(AS_message_t * msg){
@@ -132,7 +137,10 @@ void NetworkManager::process_packet(AS_message_t * msg){
     case MSG_ID_IN_TEAM:
         emit newIdInTeam(msg->data);
         qDebug()<< "Recu id in team"<< msg->data;
-
+        break;
+    case MSG_DISCONNECTED:
+        keep_running = 0;
+        writeText("Disconnected");
         break;
     default:
         break;
@@ -198,16 +206,19 @@ void NetworkManager::set_key(int key){
 void NetworkManager::setSubSocket()
 {
     assert(myClientId != -1);
-    int rc;
-    char sub_adress[60];
-    strcpy(sub_adress,"tcp://");
-    strcat(sub_adress,game_server_ip.toStdString().c_str());
-    strcat(sub_adress,":5009");
-    sub_socket =zmq_socket (context, ZMQ_SUB);
-    rc = zmq_connect (sub_socket, sub_adress);
-    assert(rc==0);
-    zmq_setsockopt (sub_socket, ZMQ_SUBSCRIBE,&myClientId, sizeof(int));
-    printf("sub_socket - %s  with topic(clientId)- %d\n", sub_adress, myClientId);
+    if(sub_socket==NULL){
+        int rc;
+        char sub_adress[60];
+        strcpy(sub_adress,"tcp://");
+        strcat(sub_adress,game_server_ip.toStdString().c_str());
+        strcat(sub_adress,":5009");
+        sub_socket =zmq_socket (context, ZMQ_SUB);
+        rc = zmq_connect (sub_socket, sub_adress);
+        assert(rc==0);
+        zmq_setsockopt (sub_socket, ZMQ_SUBSCRIBE,&myClientId, sizeof(int));
+        printf("sub_socket - %s  with topic(clientId)- %d\n", sub_adress, myClientId);
+    }
+    
 }
 
 void NetworkManager::setGameServerIP(QString game_server_ip)
@@ -215,23 +226,25 @@ void NetworkManager::setGameServerIP(QString game_server_ip)
     printf("NetworkManager - set game server ip\n");
     this->game_server_ip = game_server_ip;
 
-    int rc;
-    char tcp_adress[60] = "tcp://";
-    strcat(tcp_adress, game_server_ip.toStdString().c_str());
-    strcat(tcp_adress, ":5008");   
-    req_game_socket = zmq_socket (context, ZMQ_REQ);
-    rc = zmq_connect (req_game_socket, tcp_adress);
-    assert(rc==0);
-    printf("req_game_socket : %s\n", tcp_adress);
+    if(myClientId==-1){
+        int rc;
+        char tcp_adress[60] = "tcp://";
+        strcat(tcp_adress, game_server_ip.toStdString().c_str());
+        strcat(tcp_adress, ":5008");   
+        req_game_socket = zmq_socket (context, ZMQ_REQ);
+        rc = zmq_connect (req_game_socket, tcp_adress);
+        assert(rc==0);
+        printf("req_game_socket : %s\n", tcp_adress);
 
-    push_socket = zmq_socket (context, ZMQ_PUSH);
-    char push_adress[60];
-    strcpy(push_adress,"tcp://");
-    strcat(push_adress,game_server_ip.toStdString().c_str());
-    strcat(push_adress,":5010");
-    rc = zmq_connect (push_socket, push_adress);
-    assert(rc==0);
-    printf("push_socket - %s\n", push_adress);
+        push_socket = zmq_socket (context, ZMQ_PUSH);
+        char push_adress[60];
+        strcpy(push_adress,"tcp://");
+        strcat(push_adress,game_server_ip.toStdString().c_str());
+        strcat(push_adress,":5010");
+        rc = zmq_connect (push_socket, push_adress);
+        assert(rc==0);
+        printf("push_socket - %s\n", push_adress);
+    }
 }
 
 void NetworkManager::setRequestedTeam(int team)
@@ -241,45 +254,28 @@ void NetworkManager::setRequestedTeam(int team)
 
 void NetworkManager::disconnectClient()
 {
-    /*
-    ENetEvent event;
-
-    enet_peer_disconnect (peer, 0);
-
-    // Allow up to 3 seconds for the disconnect to succeed and drop any packets received packets.
-    while (enet_host_service (client, & event, 3000) > 0)
-    {
-        switch (event.type)
-        {
-        case ENET_EVENT_TYPE_RECEIVE:
-            enet_packet_destroy (event.packet);
-            break;
-
-        case ENET_EVENT_TYPE_DISCONNECT:
-            writeText("Disconnection succeeded.");
-            emit disconnected();
-            return;
-        }
+    if(keep_running == 1){
+        printf("client dis connecting\n");
+        sendMessage(MSG_DISCONNECTED, myClientId, 0);
     }
-
-    // We've arrived here, so the disconnect attempt didn't 
-    // succeed yet.  Force the connection down.             
-    enet_peer_reset (peer);
-    */
+    
 }
 
 void NetworkManager::process_key(QKeyEvent * event, int key_status){
     //writeText("Process key");
-    if (event->key() == Qt::Key_Right )
-        set_key(key_status*KEY__DOWN);
-    if (event->key() == Qt::Key_Left)
-        set_key(key_status*KEY__UP);
-    if (event->key() == Qt::Key_Down || event->key() == Qt::Key_Up)
-        set_key(key_status*KEY__ACCELERATE);
-    if (event->key() == Qt::Key_Control)
-        set_key(key_status*KEY_FIRE);
-    if (event->key() == Qt::Key_Shift)
-        set_key(key_status*KEY_BOMB);
+    if(keep_running == 1){
+        if (event->key() == Qt::Key_Right )
+            set_key(key_status*KEY__DOWN);
+        if (event->key() == Qt::Key_Left)
+            set_key(key_status*KEY__UP);
+        if (event->key() == Qt::Key_Down || event->key() == Qt::Key_Up)
+            set_key(key_status*KEY__ACCELERATE);
+        if (event->key() == Qt::Key_Control)
+            set_key(key_status*KEY_FIRE);
+        if (event->key() == Qt::Key_Shift)
+            set_key(key_status*KEY_BOMB);
+    }
+    
 }
 
 void NetworkManager::start()

@@ -159,7 +159,7 @@ void network_loop(){
 		
 
 		zmq_pollitem_t items [] = {{ rep_socket, 0, ZMQ_POLLIN, 0 },{ pull_socket, 0, ZMQ_POLLIN, 0 }};
-		while (1) {
+		//while (netStop!=1) {
 			//send msg
 			if (sprite_global.game_clock-prevTimePlay >= 100){
 				for(k=0;k<playerCount;k++){
@@ -210,7 +210,7 @@ void network_loop(){
 	                s_send_server_msg(rep_socket, msg);
 	                printAllServers();
 	                free(msg);
-	            }else if (msg->mess_type == -1){
+	            }else if (msg->mess_type == MSG_HELLO){
 	                //as_msg of type HELLO
 	                AS_message_t *as_msg = (AS_message_t *)msg;                
 	                process_packet(as_msg);
@@ -225,7 +225,7 @@ void network_loop(){
 	            process_packet(msg);
 	        }
 
-		}
+		//}
 	}
 }
 
@@ -308,6 +308,7 @@ void process_packet(AS_message_t * msg){
 		if (clientConnected[msg->client_id]){
 			if (msg->data >= 0){
 				network_keymap[msg->client_id][msg->data]=1;
+				printf("---> network_keymap reset\n");
 			}else{
 				network_keymap[msg->client_id][-msg->data]=0;
 			}
@@ -315,6 +316,7 @@ void process_packet(AS_message_t * msg){
 		break;
 	case MSG_DISCONNECTED:
 		printf("client %d disconected.\n", msg->client_id);
+		sendMessage(MSG_DISCONNECTED, msg->client_id, 0);
 		int i = msg->client_id;
 		clientConnected[i]=0;
 		strncpy(players[i].name," \0",32);

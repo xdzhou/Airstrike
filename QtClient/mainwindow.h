@@ -36,6 +36,7 @@ private:
 
 private slots:
     void connect_clicked();
+    void disconnect_clicked();
     void keyPressEvent(QKeyEvent * event);
     void keyReleaseEvent(QKeyEvent * event);
     void startPlay();
@@ -48,6 +49,7 @@ signals:
     void setRequestedTeam(int team);
     void startNetworkManager();
     void setLogin(QString login);
+    void disconnectClient();
 };
 
 #endif // MAINWINDOW_H
