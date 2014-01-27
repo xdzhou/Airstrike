@@ -97,7 +97,7 @@ void MainWindow::keyReleaseEvent(QKeyEvent * event){
         return;
     }
     if(!event->isAutoRepeat()){
-        emit sendKeyEvent(event, -1);
+        emit networkManager->process_key(event, -1);
     } else {
         QWidget::keyPressEvent(event);
     }

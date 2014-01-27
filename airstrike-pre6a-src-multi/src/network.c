@@ -159,9 +159,9 @@ void network_loop(){
 		
 
 		zmq_pollitem_t items [] = {{ rep_socket, 0, ZMQ_POLLIN, 0 },{ pull_socket, 0, ZMQ_POLLIN, 0 }};
-		//while (netStop!=1) {
+		while (netStop!=1) {
 			//send msg
-			if (sprite_global.game_clock-prevTimePlay >= 100){
+			if (sprite_global.game_clock-prevTimePlay >= 1000){
 				for(k=0;k<playerCount;k++){
 					if (clientConnected[k]){
 						sendMessage(MSG_POINTS,k,players[k].points);
@@ -225,7 +225,7 @@ void network_loop(){
 	            process_packet(msg);
 	        }
 
-		//}
+		}
 	}
 }
 
@@ -308,7 +308,6 @@ void process_packet(AS_message_t * msg){
 		if (clientConnected[msg->client_id]){
 			if (msg->data >= 0){
 				network_keymap[msg->client_id][msg->data]=1;
-				printf("---> network_keymap reset\n");
 			}else{
 				network_keymap[msg->client_id][-msg->data]=0;
 			}

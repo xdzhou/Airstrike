@@ -106,7 +106,7 @@ void NetworkManager::network_loop(){
 }
 
 void NetworkManager::process_packet(AS_message_t * msg){
-    if(msg->mess_type!=3 && msg->mess_type!=7) showMsg(msg);
+    showMsg(msg);
     switch (msg->mess_type) {
     case MSG_POINTS:
         emit newPlayerScore(msg->data);
@@ -254,11 +254,11 @@ void NetworkManager::setRequestedTeam(int team)
 
 void NetworkManager::disconnectClient()
 {
+
     if(keep_running == 1){
         printf("client dis connecting\n");
         sendMessage(MSG_DISCONNECTED, myClientId, 0);
     }
-    
 }
 
 void NetworkManager::process_key(QKeyEvent * event, int key_status){
