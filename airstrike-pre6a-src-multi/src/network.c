@@ -159,7 +159,7 @@ void network_loop(){
 		
 
 		zmq_pollitem_t items [] = {{ rep_socket, 0, ZMQ_POLLIN, 0 },{ pull_socket, 0, ZMQ_POLLIN, 0 }};
-		while (netStop!=1) {
+		//while (netStop!=1) {
 			//send msg
 			if (sprite_global.game_clock-prevTimePlay >= 1000){
 				for(k=0;k<playerCount;k++){
@@ -225,7 +225,7 @@ void network_loop(){
 	            process_packet(msg);
 	        }
 
-		}
+		//}
 	}
 }
 

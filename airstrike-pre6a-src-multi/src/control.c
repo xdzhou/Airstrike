@@ -58,6 +58,7 @@ static void keyboard_update(controller_t *c)
 		for (i=0;i<MAX_CONTROLLER_KEYS;i++)
 		{
 			if (network_keymap[player->id][keymap[i][0]]){
+				//printf("network_keymap[playerID][keymap[i][0]] = [[%d] [[%d] [%d]]]\n", player->id, i, 0);
 				sprite_signal(c->target, keymap[i][1],0);
 				kc->key_waspressed[i] = 1;
 			} else if (kc->key_waspressed[i]) /* Send the 'unpress' signal */

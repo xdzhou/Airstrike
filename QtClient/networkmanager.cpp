@@ -157,7 +157,7 @@ void NetworkManager::sendMessage(int msgType, int clientId, int data)
     //msg.name = "Noki";
     //strcpy(msg.name,"Noki\0");
     strcpy(msg.name, login.toUtf8().data());
-    printf("client send msg: ");
+    //printf("client send msg: ");
     showMsg(&msg);
     s_send_msg(push_socket, &msg);   
 }
