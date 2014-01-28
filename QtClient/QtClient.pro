@@ -13,12 +13,12 @@ SOURCES += main.cpp\
         mainwindow.cpp ServerListDialog.cpp \
     networkmanager.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += mainwindow.h  \
     networkmanager.h ServerListDialog.h \
     messages.h \
     keys.h
 
 FORMS    += mainwindow.ui
 
-LIBS += -L~/Tool/zeromq-4.0.3/src/.libs/ -L. -lzmq
-INCLUDEPATH += ~/Tool/zeromq-4.0.3/include/
+LIBS += -lzmq
+INCLUDEPATH += 
